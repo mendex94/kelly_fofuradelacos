@@ -1,4 +1,5 @@
 /BACKEND/node_modules/
 /BACKEND/dist/
 /BACKEND/garbage/
-/BACKEND/.env
+.env
+.vscode

@@ -15,20 +15,20 @@ let db: any = {};
 try {
   db = new Sequelize(DB_NAME, DB_USER, DB_PASS, DB_CONFIG);
 } catch (error) {
-  console.error("Error ao tentar uma conexão com banco dados");
+  console.error("Erro ao tentar uma conexão com banco dados");
 }
 
-async function hasConection() {
+async function hasConnection() {
   try {
     await db.authenticate();
     console.log("Banco dados conectado!");
   } catch (error) {
-    console.error("Erro ao tentar se conectar ao banco de dados1");
+    console.error("Erro ao tentar se conectar ao banco de dados");
   }
 }
 
 Object.assign(db, {
-  hasConection,
+  hasConnection,
 });
 
 module.exports = db;

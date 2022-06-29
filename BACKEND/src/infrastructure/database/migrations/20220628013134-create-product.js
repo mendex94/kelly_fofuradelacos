@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      in_product_material: {
+      id_product_material: { 
         type: Sequelize.INTEGER
       },
       id_product_size: {
@@ -33,7 +33,10 @@ module.exports = {
       weight: {
         type: Sequelize.DECIMAL
       },
-      notes: {
+      notes: { 
+        type: Sequelize.STRING
+      },
+      images: {
         type: Sequelize.STRING
       },
       status: {

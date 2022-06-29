@@ -1,0 +1,37 @@
+** USAR MIGRATIONS **
+
+npm i -D sequelize-cli
+
+--criar arquivo .sequelizerc e adicionar na pasta raiz
+
+const path = require('path')
+
+module.exports = {
+    'config': path.resolve('./src/infrastructure/database/config','config.json'),
+    'seeders-path': path.resolve('./src/infrastructure/database/seeders','seeders'),
+    'migrations-path': path.resolve('./src/infrastructure/database/','migrations'),
+}
+
+
+npm sequelize 
+
+--criar tabela com campos já
+npx sequelize-cli model:generate --name pacientes --attributes id_paciente:int,nome:string,data_nascimento:date,email:string,createdAt:date,updateAt:date
+
+
+--criar tabela sem campos. Depois acessar o arquivo criado na pasta migrations e colocar o comando para criar a tabela
+ npx sequelize-cli migration:generate --name create-psicologo_on_sequelize
+
+
+** USAR SEEDERS **
+
+npx sequelize-cli db:seed:all
+
+** USAR .ENV (ou variaveis de ambientes) *
+
+npm install dotenv --save
+
+--criar arquivo .env na pasta raiz do projeto
+--adicionar as variaveis de ambiente e utiliza-las no arquivo desejado.
+
+importar utilizando require ('dotenv').config()

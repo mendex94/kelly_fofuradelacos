@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import { MenuOutlined } from '@material-ui/icons';
 import { useState } from 'react';
 import MenuItems from '../MenuItems';
+import '../../index.css'
 
 function Header() {
 

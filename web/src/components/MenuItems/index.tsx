@@ -1,6 +1,7 @@
 import { Close } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import CartLogo from '../../assets/carrinhobtn.png'
+import '../../index.css'
 
 interface MenuItemsProps {
     showMenu: ()=> void;

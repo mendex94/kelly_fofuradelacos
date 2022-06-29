@@ -1,13 +1,12 @@
-import Footer from "./components/Footer"
-import Header from "./components/Header"
+import Routes from './Routes';
+import './index.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Footer />
+    <div className="App"> 
+      <Routes />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

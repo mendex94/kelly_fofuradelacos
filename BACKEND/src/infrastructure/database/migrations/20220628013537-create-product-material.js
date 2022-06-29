@@ -10,10 +10,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       id_product: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        reference: { 
+          model: {
+            tableName: products,
+          },
+          foreignKey:id_product
+        }
       },
       id_material: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        reference: { 
+          model: {
+            tableName: materials,
+          },
+          foreignKey:id_material
+        }
       },
       createdAt: {
         allowNull: false,

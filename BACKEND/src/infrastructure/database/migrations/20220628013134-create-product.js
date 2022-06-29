@@ -15,10 +15,10 @@ module.exports = {
       id_product_size: {
         type: Sequelize.INTEGER
       },
-      id_product_size: {
+      id_product_color: {
         type: Sequelize.INTEGER
       },
-      id_product_color: {
+      id_album: {
         type: Sequelize.INTEGER
       },
       description: {
@@ -34,9 +34,6 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       notes: { 
-        type: Sequelize.STRING
-      },
-      images: {
         type: Sequelize.STRING
       },
       status: {

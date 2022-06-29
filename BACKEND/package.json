@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
-    "env": "^0.0.2",
+    "axios": "^0.27.2",
     "express": "^4.18.1",
     "express-validation": "^3.0.8",
+    "express-validator": "^6.14.0",
     "mysql2": "^2.3.3",
     "sequelize": "^6.15.0"
   },
@@ -38,5 +40,6 @@
     "ts-jest": "^28.0.3",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.4"
+
   }
 }

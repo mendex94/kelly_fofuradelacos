@@ -4,9 +4,7 @@ import express from "express";
 
 const routes = express.Router();
 
-routes.get(
-    "/hello-world", 
-    // SampleController.getHelloWorld
-);
+routes.get("catalogo/tiara", TiaraController.getOne);
+routes.get("catalogo/tiara", TiaraController.getAll);
 
 module.exports = routes;

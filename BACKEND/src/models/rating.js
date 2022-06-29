@@ -1,28 +1,40 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class rating extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
+const db = require("../../../infrastructure/database");
+const { DataTypes } = require("sequelize");
+
+export const  Ratings = db.define(
+  "Ratings",
+  {
+    id_rating: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
+    id_product: {
+      type: DataTypes.INTEGER
+    },
+    description: {
+      type: DataTypes.STRING
+    },
+    date: {
+      type: DataTypes.DATE
+    },
+    evaluation_grade: {
+      type: DataTypes.INTEGER
+    },
+    author: {
+      type: DataTypes.STRING
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE
     }
+  },
+  {
+    tableName: "ratings",
   }
-  rating.init({
-    id_rating: DataTypes.INTEGER,
-    id_product: DataTypes.INTEGER,
-    description: DataTypes.STRING,
-    date: DataTypes.DATE,
-    evaluation_grade: DataTypes.INTEGER,
-    author: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'rating',
-  });
-  return rating;
-};
+);

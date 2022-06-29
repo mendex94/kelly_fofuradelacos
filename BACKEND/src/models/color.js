@@ -1,24 +1,27 @@
 const db = require ('../dataBase/dbConexao')
 const { DataTypes } = require ('sequelize')
 
-const Color = db.define ('color', {
+export const Colors = db.define (
+    'Colors', {
     id_color: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
+        allowNull: false,
         autoIncrement: true,
-        allowNull: false
-    },
-    name: {
+        primaryKey: true,
+        type: DataTypes.INTEGER
+      },
+      name: {
         type: DataTypes.STRING
-    },
-    createdAt: {
+      },
+      createdAt: {
+        allowNull: false,
         type: DataTypes.DATE
-    },
-    updatedAt: {
+      },
+      updatedAt: {
+        allowNull: false,
         type: DataTypes.DATE
-    }
+      }
 }, {
-    tableName: 'color'
+    tableName: 'colors'
 })
 
 module.exports = Color

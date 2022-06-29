@@ -1,33 +1,55 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class product extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
+const db = require("../../../infrastructure/database");
+const { DataTypes } = require("sequelize");
+
+export const  Products = db.define(
+  "Products",
+  {
+    id_product: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
+    id_product_material: { 
+      type: DataTypes.INTEGER
+    },
+    id_product_size: {
+      type: DataTypes.INTEGER
+    },
+    id_product_color: {
+      type: DataTypes.INTEGER
+    },
+    id_album: {
+      type: DataTypes.INTEGER
+    },
+    description: {
+      type: DataTypes.STRING
+    },
+    model: {
+      type: DataTypes.STRING
+    },
+    type: {
+      type: DataTypes.STRING
+    },
+    weight: {
+      type: DataTypes.DECIMAL
+    },
+    notes: { 
+      type: DataTypes.STRING
+    },
+    status: {
+      type: DataTypes.INTEGER
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE
     }
+  },
+  {
+    tableName: "products",
   }
-  product.init({
-    id_product: DataTypes.INTEGER,
-    in_product_material: DataTypes.INTEGER,
-    id_product_size: DataTypes.INTEGER,
-    id_product_size: DataTypes.INTEGER,
-    id_product_color: DataTypes.INTEGER,
-    description: DataTypes.STRING,
-    model: DataTypes.STRING,
-    type: DataTypes.STRING,
-    weight: DataTypes.DECIMAL,
-    notes: DataTypes.STRING,
-    status: DataTypes.INTEGER
-  }, {
-    sequelize,
-    modelName: 'product',
-  });
-  return product;
-};
+);

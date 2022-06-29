@@ -1,28 +1,40 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class order extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
+const db = require("../../../infrastructure/database");
+const { DataTypes } = require("sequelize");
+
+export const  Orders = db.define(
+  "Orders",
+  {
+    id_order: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
+    date_order: {
+      type: DataTypes.DATE
+    },
+    total_order: {
+      type: DataTypes.DECIMAL
+    },
+    discount: {
+      type: DataTypes.DECIMAL
+    },
+    products_quantity: {
+      type: DataTypes.INTEGER
+    },
+    shipping_total: {
+      type: DataTypes.DECIMAL
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE
     }
+  },
+  {
+    tableName: "orders",
   }
-  order.init({
-    id_order: DataTypes.INTEGER,
-    date_order: DataTypes.DATE,
-    total_order: DataTypes.DECIMAL,
-    discount: DataTypes.DECIMAL,
-    products_quantity: DataTypes.INTEGER,
-    shipping_total: DataTypes.DECIMAL
-  }, {
-    sequelize,
-    modelName: 'order',
-  });
-  return order;
-};
+);

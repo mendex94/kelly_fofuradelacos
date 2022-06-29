@@ -1,25 +1,31 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class highlight extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
+const db = require("../../../infrastructure/database");
+const { DataTypes } = require("sequelize");
+
+export const  Highlights = db.define(
+  "Highlights",
+  {
+    id_highlight: {
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
+    },
+    id_product: {
+      type: DataTypes.INTEGER
+    },
+    status: {
+      type: DataTypes.INTEGER
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE
     }
+  },
+  {
+    tableName: "highlights",
   }
-  highlight.init({
-    id_highlight: DataTypes.INTEGER,
-    id_product: DataTypes.INTEGER,
-    status: DataTypes.INTEGER
-  }, {
-    sequelize,
-    modelName: 'highlight',
-  });
-  return highlight;
-};
+);

@@ -1,19 +1,55 @@
 const db = require("../../../infrastructure/database");
 import { DataTypes } from "sequelize";
 
-export const ModelSample = db.define(
-  "sample",
+export const Produtos = db.define(
+  "Produtos",
   {
-    id_sample: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
+    id_product: {
+      allowNull: false,
       autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER
     },
-    sample: {
-      type: DataTypes.STRING,
+    id_product_material: { 
+      type: DataTypes.INTEGER
+    },
+    id_product_size: {
+      type: DataTypes.INTEGER
+    },
+    id_product_color: {
+      type: DataTypes.INTEGER
+    },
+    description: {
+      type: DataTypes.STRING
+    },
+    model: {
+      type: DataTypes.STRING
+    },
+    type: {
+      type: DataTypes.STRING
+    },
+    weight: {
+      type: DataTypes.DECIMAL
+    },
+    notes: {
+      type: DataTypes.STRING
+    },
+    images: {
+      type: DataTypes.STRING
+    },
+    status: {
+      type: DataTypes.INTEGER
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE
     }
   },
   {
-    tableName: "sample",  
+    tableName: "produtos",  
   }
 );

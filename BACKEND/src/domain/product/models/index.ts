@@ -11,6 +11,7 @@ import { Product_Albums } from "./product_album";
 import { Highlights } from "./highlight";
 import { Ratings } from "./rating"
 
+
 Products.belongsToMany(Collections,{
     foreignKey:'id_product',
     through:Product_Collections
@@ -70,7 +71,8 @@ Highlights.hasMany(Products,{
 Products.belongsTo(Highlights)
 
 
-module.exports = {
+
+export default {
     Products,
     Collections,
     Colors,

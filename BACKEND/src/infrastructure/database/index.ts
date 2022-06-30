@@ -32,4 +32,4 @@ Object.assign(db, {
   hasConnection,
 });
 
-module.exports = db;
+export = db;

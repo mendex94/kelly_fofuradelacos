@@ -24,5 +24,4 @@ export const Colors = db.define (
     tableName: 'colors'
 })
 
-module.exports = Colors
 

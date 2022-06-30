@@ -1,3 +1,3 @@
-import { SampleService } from './SampleService';
+import { ProductService } from './ProductService';
 
-export const sampleService = new SampleService;
+export const productService = new ProductService;

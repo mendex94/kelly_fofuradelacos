@@ -1,5 +1,3 @@
-import { Product_Sizes } from './product_size';
-import { Product_Materials } from './product_material';
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
@@ -55,3 +53,4 @@ export const Products = db.define(
     tableName: "products",
   }
 );
+

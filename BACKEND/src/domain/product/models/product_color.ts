@@ -15,6 +15,7 @@ export const  Product_Colors = db.define(
     },
     id_product: {
       type: DataTypes.INTEGER,
+      foreign_key: true,
       references:{
         model: Products,
         key: 'id_product' 
@@ -22,6 +23,7 @@ export const  Product_Colors = db.define(
     },
     id_color: {
       type: DataTypes.INTEGER,
+      foreign_key: true,
       references:{
         model: Colors,
         key: 'id_colors'

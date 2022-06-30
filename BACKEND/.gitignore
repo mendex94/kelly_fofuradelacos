@@ -1,10 +1,3 @@
-<<<<<<< HEAD
 node_modules/
 .env
-=======
-node_modules
-dist
-garbage
-.env
-.vscode
->>>>>>> 1ec4649efb8c408f5e487da8e3294b109e9ed73f
+../BACKEND/.vscode/

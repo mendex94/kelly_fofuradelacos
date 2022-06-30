@@ -7,4 +7,7 @@ const routes = express.Router();
 routes.get("catalogo/tiara", TiaraController.getOne);
 routes.get("catalogo/tiara", TiaraController.getAll);
 
+routes.get()
+
+
 module.exports = routes;

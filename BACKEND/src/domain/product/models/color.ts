@@ -1,4 +1,4 @@
-const db = require ('../dataBase/dbConexao')
+const db = require("../../../infrastructure/database");
 const { DataTypes } = require ('sequelize')
 
 export const Colors = db.define (
@@ -24,5 +24,5 @@ export const Colors = db.define (
     tableName: 'colors'
 })
 
-module.exports = Color
+module.exports = Colors
 

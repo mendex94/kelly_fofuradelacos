@@ -4,6 +4,7 @@ import WhatsAppIcon from '../../assets/whatsappicon.png'
 import GamaBadge from '../../assets/gamabadge.png'
 import Securitybadge from '../../assets/securitybadge.png'
 import GenericBadge from '../../assets/genericbadge.png'
+import '../../index.css'
 
 function Footer() {
   return (

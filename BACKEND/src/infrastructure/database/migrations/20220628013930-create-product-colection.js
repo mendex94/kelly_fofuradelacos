@@ -1,15 +1,15 @@
 'use strict';
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('product_colections', {
+    await queryInterface.createTable('product_collections', {
       
-      id_product_colection: {
+      id_product_collection: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_colection: {
+      id_collection: {
         type: Sequelize.INTEGER
       },
       id_product: {
@@ -26,6 +26,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('product_colections');
+    await queryInterface.dropTable('product_collections');
   }
 };

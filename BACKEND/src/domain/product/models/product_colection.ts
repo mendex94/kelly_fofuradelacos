@@ -1,16 +1,16 @@
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const  Product_Colections = db.define(
-  "Product_Colections",
+export const  Product_Collections = db.define(
+  "Product_Collections",
   {
-    id_product_colection: {
+    id_product_collection: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    id_colection: {
+    id_collection: {
       type: DataTypes.INTEGER
     },
     id_product: {
@@ -26,6 +26,6 @@ export const  Product_Colections = db.define(
     }
   },
   {
-    tableName: "product_colections",
+    tableName: "product_collections",
   }
 );

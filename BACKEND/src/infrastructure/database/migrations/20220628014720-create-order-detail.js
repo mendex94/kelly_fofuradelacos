@@ -36,7 +36,7 @@ module.exports = {
       id_product_material: {
         type: Sequelize.INTEGER
       },
-      id_product_colection: {
+      id_product_collection: {
         type: Sequelize.INTEGER
       },
       createdAt: {

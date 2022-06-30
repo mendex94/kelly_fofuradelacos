@@ -1,9 +1,9 @@
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require ('sequelize')
 
-export const Colections = db.define (
-    'Colections', {
-        id_colection: {
+export const Collections = db.define (
+    'Collections', {
+        id_collection: {
             allowNull: false,
             autoIncrement: true,
             primaryKey: true,
@@ -30,7 +30,7 @@ export const Colections = db.define (
             type: DataTypes.DATE
           }
 }, {
-    tableName: 'colections'
+    tableName: 'collections'
 })
 
 

@@ -1,3 +1,5 @@
+import { Products } from "./product";
+
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
@@ -11,7 +13,11 @@ export const  Product_Albums = db.define(
       type: DataTypes.INTEGER
     },
     id_product: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references:{
+        model: Products,
+        key: 'id_product'
+    }
     },
     url_image: {
       type: DataTypes.STRING

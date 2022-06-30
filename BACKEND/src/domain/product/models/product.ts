@@ -1,7 +1,9 @@
+import { Product_Sizes } from './product_size';
+import { Product_Materials } from './product_material';
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const  Products = db.define(
+export const Products = db.define(
   "Products",
   {
     id_product: {
@@ -10,7 +12,7 @@ export const  Products = db.define(
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    id_product_material: { 
+    id_product_material: {
       type: DataTypes.INTEGER
     },
     id_product_size: {
@@ -34,7 +36,7 @@ export const  Products = db.define(
     weight: {
       type: DataTypes.DECIMAL
     },
-    notes: { 
+    notes: {
       type: DataTypes.STRING
     },
     status: {

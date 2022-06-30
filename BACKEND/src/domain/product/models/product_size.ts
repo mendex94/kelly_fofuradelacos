@@ -1,3 +1,6 @@
+import { Sizes } from './size';
+import { Products } from "./product";
+
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
@@ -11,10 +14,18 @@ export const Product_Sizes = db.define(
       type: DataTypes.INTEGER
     },
     id_size: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references:{
+        model: Sizes,
+        key: 'id_size'
+    }
     },
     id_product: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references:{
+        model: Products,
+        key: 'id_product' 
+      }     
     },
     createdAt: {
       allowNull: false,
@@ -27,5 +38,6 @@ export const Product_Sizes = db.define(
   },
   {
     tableName: "product_sizes",
+
   }
 );

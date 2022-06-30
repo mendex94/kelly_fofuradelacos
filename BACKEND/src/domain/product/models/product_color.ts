@@ -1,3 +1,6 @@
+import { Colors } from './color';
+import { Products } from "./product";
+
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
@@ -11,10 +14,18 @@ export const  Product_Colors = db.define(
       type: DataTypes.INTEGER
     },
     id_product: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references:{
+        model: Products,
+        key: 'id_product' 
+      }     
     },
     id_color: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      references:{
+        model: Colors,
+        key: 'id_colors'
+    }
     },
     createdAt: {
       allowNull: false,

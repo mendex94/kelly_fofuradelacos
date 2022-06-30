@@ -4,11 +4,11 @@ import WhatsAppIcon from '../../assets/whatsappicon.png'
 import GamaBadge from '../../assets/gamabadge.png'
 import Securitybadge from '../../assets/securitybadge.png'
 import GenericBadge from '../../assets/genericbadge.png'
-import '../../index.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <footer className="h-[300px] bg-[#BC8383] w-screen flex flex-col md:flex-row items-center justify-around text-[28px] font-normal text-[#F9F7F4]">
+    <footer className="h-[300px] bg-[#BC8383] w-full flex flex-col md:flex-row items-center justify-around text-[28px] font-normal text-[#F9F7F4]">
       <div className='flex gap-[63px]'>
         <div className='hidden md:inline mb-'>
           <LogoFooter />
@@ -17,12 +17,12 @@ function Footer() {
         <div className='flex flex-col justify-center'>
          <div className='flex gap-[68px]'>
          <div className='flex flex-col font-fiona text-h4 items-center md:items-start'>
-            <a href="#">Sobre nós</a>
-            <a href="#">Dúvidas</a>
+            <Link to='/sobre'>Sobre nós</Link>
+            <Link to='/suporte'>Dúvidas</Link>
           </div>
           <div className='flex flex-col font-fiona items-center md:items-start'>
-            <a href="#">Loja</a>
-            <a href="#">Personalize</a>
+            <Link to='/catalogo'>Loja</Link>
+            <Link to='/personalize'>Personalize</Link>
           </div>
          </div>
           <div className='flex gap-6 mt-16 text-h4 justify-center md:justify-start'>

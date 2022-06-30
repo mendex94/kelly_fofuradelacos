@@ -1,4 +1,4 @@
-const db = require ('../dataBase/dbConexao')
+const db = require("../../../infrastructure/database");
 const { DataTypes } = require ('sequelize')
 
 export const Colections = db.define (

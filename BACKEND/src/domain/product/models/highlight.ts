@@ -17,8 +17,7 @@ export const  Highlights = db.define(
       references:{
         model: Products,
         key: 'id_product'
-    }
-    },
+    }},
     status: {
       type: DataTypes.INTEGER
     },

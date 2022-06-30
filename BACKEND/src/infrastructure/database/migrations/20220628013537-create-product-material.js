@@ -11,12 +11,6 @@ module.exports = {
       },
       id_product: {
         type: Sequelize.INTEGER,
-        foreignKey: true,
-        field: "id_product",
-        references: {
-          model: "products",
-          key: "id_product"
-        }
       },
       id_material: {
         type: Sequelize.INTEGER

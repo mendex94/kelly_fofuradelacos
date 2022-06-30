@@ -18,6 +18,9 @@ module.exports = {
       id_product_color: {
         type: Sequelize.INTEGER
       },
+      id_product_collection: {
+        type: Sequelize.INTEGER
+      },
       id_album: {
         type: Sequelize.INTEGER
       },

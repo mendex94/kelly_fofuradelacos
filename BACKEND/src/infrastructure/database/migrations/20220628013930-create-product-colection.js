@@ -1,19 +1,25 @@
-'use strict';
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('product_collections', {
       
-      id_product_collection: {
+      id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
       id_collection: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { model: 'collections', key: 'id'},
+        onDelete: 'CASCADE',
+        allowNull: false,
       },
       id_product: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { model: 'products', key: 'id'},
+        onDelete: 'CASCADE',
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,

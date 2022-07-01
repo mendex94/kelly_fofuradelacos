@@ -1,15 +1,15 @@
-import { Collections } from './collection';
-import { Sizes } from './size';
-import { Colors } from './color';
-import { Materials } from './material';
-import { Product_Materials } from './product_material';
-import { Products } from "./product";
-import { Product_Sizes } from "./product_size";
-import { Product_Colors } from "./product_color";
-import { Product_Collections } from "./product_collection";
-import { Product_Albums } from "./product_album";
-import { Highlights } from "./highlight";
-import { Ratings } from "./rating"
+const { Collections } = require ('./collection');
+const { Sizes } = require ('./size');
+const { Colors } = require ('./color');
+const { Materials } = require ('./material');
+const { Product_Materials } = require ('./product_material');
+const { Products } = require ("./product");
+const { Product_Sizes } = require ("./product_size");
+const { Product_Colors } = require ("./product_color");
+const { Product_Collections } = require ("./product_collection");
+const { Product_Albums } = require ("./product_album");
+const { Highlights } = require ("./highlight");
+const { Ratings } = require ("./rating")
 
 
 Products.belongsToMany(Collections,{
@@ -72,7 +72,7 @@ Products.belongsTo(Highlights)
 
 
 
-export default {
+module.exports = {
     Products,
     Collections,
     Colors,

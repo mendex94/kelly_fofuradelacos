@@ -1,12 +1,12 @@
-import { Products } from "./product";
+const { Products } = require ("./product");
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const  Highlights = db.define(
-  "Highlights",
+const  Product_Albums = db.define(
+  "Product_Albums",
   {
-    id_highlight: {
+    id_album: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -17,9 +17,10 @@ export const  Highlights = db.define(
       references:{
         model: Products,
         key: 'id_product'
-    }},
-    status: {
-      type: DataTypes.INTEGER
+    }
+    },
+    url_image: {
+      type: DataTypes.STRING
     },
     createdAt: {
       allowNull: false,
@@ -31,6 +32,8 @@ export const  Highlights = db.define(
     }
   },
   {
-    tableName: "highlights",
+    tableName: "product_albums",
   }
 );
+
+module.exports = Product_Albums

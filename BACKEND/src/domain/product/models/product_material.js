@@ -1,10 +1,10 @@
-import { Materials } from './material';
-import { Products } from "./product";
+const { Materials } = require ('./material');
+const { Products } = require ("./product");
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const Product_Materials = db.define(
+const Product_Materials = db.define(
   "Product_Materials",
   {
     id_product_material: {
@@ -40,3 +40,5 @@ export const Product_Materials = db.define(
     tableName: "product_materials",
   }
 );
+
+module.exports = Product_Materials

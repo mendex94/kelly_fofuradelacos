@@ -1,9 +1,9 @@
-'use strict';
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('product_materials', {
      
-      id_product_material: {
+      id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
@@ -11,9 +11,15 @@ module.exports = {
       },
       id_product: {
         type: Sequelize.INTEGER,
+        references: { model: 'products', key: 'id'},
+        onDelete: 'CASCADE',
+        allowNull: false,
       },
       id_material: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: { model: 'materials', key: 'id'},
+        onDelete: 'CASCADE',
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,

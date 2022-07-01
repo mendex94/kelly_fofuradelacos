@@ -1,7 +1,7 @@
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const Products = db.define(
+const Products = db.define(
   "Products",
   {
     id_product: {
@@ -54,3 +54,4 @@ export const Products = db.define(
   }
 );
 
+module.exports = Products

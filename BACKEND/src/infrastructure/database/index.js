@@ -11,7 +11,7 @@ const DB_CONFIG = {
 };
 
 // objeto para guardar a conexão do banco dados
-let db: any = {};
+let db = {};
 
 try {
   db = new Sequelize(DB_NAME, DB_USER, DB_PASS, DB_CONFIG);
@@ -32,4 +32,4 @@ Object.assign(db, {
   hasConnection,
 });
 
-export = db;
+module.exports = db;

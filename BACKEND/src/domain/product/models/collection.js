@@ -1,7 +1,7 @@
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require ('sequelize')
 
-export const Collections = db.define (
+const Collections = db.define (
     'Collections', {
         id_collection: {
             allowNull: false,
@@ -33,5 +33,4 @@ export const Collections = db.define (
     tableName: 'collections'
 })
 
-
-
+module.exports = Collections

@@ -1,17 +1,25 @@
+const { Products } = require ("./product");
+
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const Sizes = db.define(
-  "Sizes",
+const  Highlights = db.define(
+  "Highlights",
   {
-    id_size: {
+    id_highlight: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    name: {
-      type: DataTypes.STRING
+    id_product: {
+      type: DataTypes.INTEGER,
+      references:{
+        model: Products,
+        key: 'id_product'
+    }},
+    status: {
+      type: DataTypes.INTEGER
     },
     createdAt: {
       allowNull: false,
@@ -23,6 +31,8 @@ export const Sizes = db.define(
     }
   },
   {
-    tableName: "sizes",
+    tableName: "highlights",
   }
 );
+
+module.exports = Highlights

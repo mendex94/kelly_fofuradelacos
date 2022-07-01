@@ -1,27 +1,12 @@
-'use strict';
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('products', {
     
-      id_product: {
+      id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
-      },
-      id_product_material: { 
-        type: Sequelize.INTEGER
-      },
-      id_product_size: {
-        type: Sequelize.INTEGER
-      },
-      id_product_color: {
-        type: Sequelize.INTEGER
-      },
-      id_product_collection: {
-        type: Sequelize.INTEGER
-      },
-      id_album: {
         type: Sequelize.INTEGER
       },
       description: {

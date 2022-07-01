@@ -1,34 +1,16 @@
-import { Products } from "./product";
-
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const  Ratings = db.define(
-  "Ratings",
+const Materials = db.define(
+  "Materials",
   {
-    id_rating: {
+    id_material: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER
     },
-    id_product: {
-      type: DataTypes.INTEGER,
-      references:{
-        model: Products,
-        key: 'id_product'
-    }
-    },
     description: {
-      type: DataTypes.STRING
-    },
-    date: {
-      type: DataTypes.DATE
-    },
-    evaluation_grade: {
-      type: DataTypes.INTEGER
-    },
-    author: {
       type: DataTypes.STRING
     },
     createdAt: {
@@ -41,6 +23,8 @@ export const  Ratings = db.define(
     }
   },
   {
-    tableName: "ratings",
+    tableName: "materials",
   }
 );
+
+module.exports = Materials

@@ -1,10 +1,10 @@
-import { Collections } from "./collection";
-import { Products } from "./product";
+const { Collections } = require ("./collection");
+const { Products } = require ("./product");
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const Product_Collections = db.define(
+const Product_Collections = db.define(
   "Product_Collections",
   {
     id_product_collection: {
@@ -40,3 +40,5 @@ export const Product_Collections = db.define(
     tableName: "product_collections",
   }
 );
+
+module.exports = Product_Collections

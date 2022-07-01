@@ -1,5 +1,5 @@
-import express from 'express';
-import handleMiddleware from './middlewares/handleMiddleware';
+const express = require('express')
+const handleMiddleware = require('./middlewares/handleMiddleware')
 const db = require ('./infrastructure/database')
 const cors = require('cors')
 
@@ -14,4 +14,4 @@ app.use(express.json());
 app.use(routes);
 app.use(handleMiddleware);
 
-export default app;
+module.exports = app;

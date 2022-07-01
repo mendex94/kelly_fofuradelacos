@@ -1,9 +1,9 @@
-'use strict';
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('colors', {
      
-      id_color: {
+      id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,

@@ -6,7 +6,7 @@ function CardButton() {
       height="40"
       fill="none"
       viewBox="0 0 41 40"
-      className='rounded-full text-[#F0F0F0] bg-rosa-200 p-2'
+      className='rounded-full text-[#F0F0F0] bg-rosa-200 p-2 cursor-pointer hover:scale-150 transition'
     >
       <path
         stroke="#F0F0F0"

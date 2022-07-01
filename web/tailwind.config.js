@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./index.html",
@@ -7,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       fiona: ["Fiona", "sans-serif"],
+      raleway: ['Raleway', 'sans-serif']
     },
     fontSize: {
       'h1': '100px',

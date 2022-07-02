@@ -6,7 +6,7 @@ const { DataTypes } = require("sequelize");
 const  Highlights = db.define(
   "Highlights",
   {
-    id_highlight: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -16,7 +16,7 @@ const  Highlights = db.define(
       type: DataTypes.INTEGER,
       references:{
         model: Products,
-        key: 'id_product'
+        key: 'id'
     }},
     status: {
       type: DataTypes.INTEGER

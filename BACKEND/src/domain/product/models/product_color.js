@@ -7,7 +7,7 @@ const { DataTypes } = require("sequelize");
 const  Product_Colors = db.define(
   "Product_Colors",
   {
-    id_product_color: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -18,7 +18,7 @@ const  Product_Colors = db.define(
       foreign_key: true,
       references:{
         model: Products,
-        key: 'id_product' 
+        key: 'id' 
       }     
     },
     id_color: {
@@ -26,7 +26,7 @@ const  Product_Colors = db.define(
       foreign_key: true,
       references:{
         model: Colors,
-        key: 'id_colors'
+        key: 'id'
     }
     },
     createdAt: {

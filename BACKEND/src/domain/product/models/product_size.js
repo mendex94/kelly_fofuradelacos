@@ -7,7 +7,7 @@ const { DataTypes } = require("sequelize");
 const Product_Sizes = db.define(
   "Product_Sizes",
   {
-    id_product_size: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -17,14 +17,14 @@ const Product_Sizes = db.define(
       type: DataTypes.INTEGER,
       references:{
         model: Sizes,
-        key: 'id_size'
+        key: 'id'
     }
     },
     id_product: {
       type: DataTypes.INTEGER,
       references:{
         model: Products,
-        key: 'id_product' 
+        key: 'id' 
       }     
     },
     createdAt: {

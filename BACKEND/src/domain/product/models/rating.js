@@ -6,7 +6,7 @@ const { DataTypes } = require("sequelize");
 const  Ratings = db.define(
   "Ratings",
   {
-    id_rating: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -16,7 +16,7 @@ const  Ratings = db.define(
       type: DataTypes.INTEGER,
       references:{
         model: Products,
-        key: 'id_product'
+        key: 'id'
     }
     },
     description: {

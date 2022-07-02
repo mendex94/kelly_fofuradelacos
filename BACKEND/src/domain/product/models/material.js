@@ -4,7 +4,7 @@ const { DataTypes } = require("sequelize");
 const Materials = db.define(
   "Materials",
   {
-    id_material: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,

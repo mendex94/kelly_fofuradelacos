@@ -1,12 +1,12 @@
-const { Request, Response } = require('express')
+const { Request, Response } = require('express');
 const productService = require('../services')
 
 const ProductsController = {
- 
+
   async getAll(req, res) {
     try {
-      const Products = await productService.allProducts();
-      return res.status(200).json(Products);
+      const products = await productService.allProducts();
+      return res.status(200).json(products);
     } catch (error) {
 
       return res.status(500).json(error);
@@ -25,7 +25,34 @@ const ProductsController = {
     }catch(error){
       return res.status(500).json("Erro não catalogado!")
     }
+  },
+
+async getLacos (req, res) {
+  try {
+    const type_product = 'laços'
+    const lacos = await productService.getProductbyType(type_product);
+    if (!lacos.length > 0) {
+      return res.status(400).json("Não foi encontrado laços");
+    }
+    return res.status(200).json(lacos);
+  } catch (error) {
+    return res.status(500).json(error);
   }
-};
+},
+
+async getColecaoParis(req, res) {
+  try {
+    const type_product = 'boina'
+    const colecaoParis = await productService.getProductbyType(type_product);
+    if (!colecaoParis.length > 0) {
+      return res.status(400).json("Não foi encontrado Coleção Paris");
+    }
+    return res.status(200).json(colecaoParis);
+  } catch (error) {
+
+    return res.status(500).json(error);
+  }
+}
+}
 
 module.exports = ProductsController

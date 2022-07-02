@@ -52,22 +52,23 @@ const ProductService = {
     }
   },
 
-  //   async findProductbyType(type) {
-  //     try {
-  //       const colecaoParis = await Products.getColecaoParis({
-  //         include: [{
-  //           model: User,
-  //           required: true
-  //          }],
-  //        where type: type,
-  //         })
-  //       return colecaoParis;
-  //     } catch (error) {
-  //       console.log(error)
-  //     }
-  //   }         
-  }        
+  async findHighlights(){
+    try{
+      const dataHighlights = await Products.findAll({
+        include: [
+          {
+            model: Highlights,
+            as: "Highlights",
+            required: true,
+            through: 
+            { attributes: [] },
+          },
+        ],
+      })
+    }catch(error){
 
-  module.exports = ProductService
+    }
+  }
+};
 
-
+module.exports = ProductService;

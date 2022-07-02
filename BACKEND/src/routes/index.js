@@ -6,4 +6,6 @@ const routes = express.Router();
 
 routes.get("/catalogo", ProductsController.getAll);
 
+routes.get("/catalogo/tiaras", ProductsController.getTiaras);
+
 module.exports = routes;

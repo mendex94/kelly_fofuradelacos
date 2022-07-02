@@ -9,9 +9,9 @@ function RowCard() {
 
             <div className='flex justify-between items-center px-6 my-4 w-full'>
 
-                <div className='text-fiona'>
-                    <p className='text-p3'>Laço Floral</p>
-                    <p className='text-[36px]'>R$ 38,00</p>
+                <div className='text-montserrat'>
+                    <p className='text-p3 font-medium'>Laço Floral</p>
+                    <p className='font-fiona text-[36px]'>R$ 38,00</p>
                 </div>
 
                 <CardButton />

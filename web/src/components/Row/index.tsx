@@ -39,6 +39,18 @@ function Row() {
             <RowCard />
             <RowCard />
             <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
+            <RowCard />
           </div>
 
 

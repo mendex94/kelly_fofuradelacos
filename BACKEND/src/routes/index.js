@@ -9,5 +9,6 @@ routes.get("/catalogo", ProductsController.getAll);
 routes.get("/catalogo/lacos", ProductsController.getLacos);
 routes.get("/catalogo/colecaoparis", ProductsController.getColecaoParis);
 
+routes.get("/catalogo/tiaras", ProductsController.getTiaras);
 
 module.exports = routes;

@@ -1,15 +1,17 @@
 const { Request, Response } = require("express");
-const productService = require("../services");
+const productService = require("../services/");
 
 const ProductsController = {
+
   async getAll(req, res) {
     try {
       const products = await productService.allProducts();
-      return res.status(200).json(products);
+      return res.status(200).json(await products);
     } catch (error) {
       return res.status(500).json(error);
     }
   },
+ 
 
   async getHighlights(req, res) {
     try {

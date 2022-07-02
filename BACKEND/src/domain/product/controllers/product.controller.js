@@ -53,15 +53,27 @@ const ProductsController = {
   },
 
   async getTiaras(req, res) {
-    try {
-      const Products = await productService.allProducts();
-      return res.status(200).json(Products);
-      const type = "tiara"
+    try {        
+      const type = "tiara";
       const tiaras = await findProductByType(type);
-      if (!tiaras.length > 0){
+      if (!tiaras.length > 0) {
         return res.status(400).json("Não há tiaras cadastradas")
       } 
       return res.status(200).json(tiaras);
+    } catch (error) {
+
+      return res.status(500).json("Erro não catalogado");
+    }
+  },
+
+  async getAcessorios(req, res) {
+    try {
+      const type = "acessorio";
+      const acessorios = await findProductByType(type);
+      if (!acessorios.length > 0){
+        return res.status(400).json("Não há acessórios cadastrados")
+      } 
+      return res.status(200).json(acessorios);
     } catch (error) {
 
       return res.status(500).json("Erro não catalogado");

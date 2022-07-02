@@ -19,6 +19,19 @@ module.exports = {
       "product_albums",
       [
         {
+          id: 100,
+          id_product: 1,
+          url_image: "https://res-console.cloudinary.com/drderxybw/thumbnails/v1/image/upload/v1656164767/c2FtcGxlcy9hbmltYWxzL2NhdA==/template/d18xMDAwLGFyXzE6MSxjX2ZpbGwsZ19hdXRvLGVfYXJ0Omhva3VzYWk=",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_albums",
+      [
+        {
           id: 2,
           id_product: 2,
           url_image: "https://res-console.cloudinary.com/drderxybw/thumbnails/v1/image/upload/v1656164767/c2FtcGxlcy9hbmltYWxzL2NhdA==/template/d18xMDAwLGFyXzE6MSxjX2ZpbGwsZ19hdXRvLGVfYXJ0Omhva3VzYWk=",

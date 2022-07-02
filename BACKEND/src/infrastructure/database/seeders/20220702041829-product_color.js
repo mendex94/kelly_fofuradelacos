@@ -32,6 +32,19 @@ module.exports = {
       "product_colors",
       [
         {
+          id: 100,
+          id_product: 1,
+          id_color:6,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_colors",
+      [
+        {
           id: 3,
           id_product: 1,
           id_color:3,

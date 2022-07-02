@@ -3,14 +3,18 @@ const { type } = require('os');
 const productService = require('../services')
 
 const ProductsController = {
-
-  async getAll(req, res) {
+ 
+  async getTiaras(req, res) {
     try {
-      const Products = await productService.allProducts();
-      return res.status(200).json(Products);
+      const type = "tiara"
+      const tiaras = await findProductByType(type);
+      if (!tiaras.length > 0){
+        return res.status(400).json("Não há tiaras cadastradas")
+      } 
+      return res.status(200).json(tiaras);
     } catch (error) {
 
-      return res.status(500).json(error);
+      return res.status(500).json("Erro não catalogado");
     }
   },
 

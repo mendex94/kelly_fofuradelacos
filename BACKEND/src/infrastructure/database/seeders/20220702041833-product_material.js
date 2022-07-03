@@ -2,23 +2,115 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 1,
+          id_product: 1,
+          id_material:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 2,
+          id_product: 1,
+          id_material:2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 3,
+          id_product: 1,
+          id_material:3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 4,
+          id_product: 1,
+          id_material:4,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 5,
+          id_product: 2,
+          id_material:5,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 6,
+          id_product: 2,
+          id_material:6,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 7,
+          id_product: 3,
+          id_material:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_materials",
+      [
+        {
+          id: 8,
+          id_product: 3,
+          id_material:3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    
+   await queryInterface.bulkDelete('product_materials', null, {});
+    
   }
 };

@@ -1,39 +1,39 @@
-const { Products } = require ("./product");
-
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
+const Products = require("./product");
 
-const  Product_Albums = db.define(
+const Product_Albums = db.define(
   "Product_Albums",
   {
-    id_album: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
     },
     id_product: {
       type: DataTypes.INTEGER,
-      references:{
+      foreignKey: true,
+      references: {
         model: Products,
-        key: 'id_product'
-    }
+        key: "id",
+      },
     },
     url_image: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
     createdAt: {
       allowNull: false,
-      type: DataTypes.DATE
+      type: DataTypes.DATE,
     },
     updatedAt: {
       allowNull: false,
-      type: DataTypes.DATE
-    }
+      type: DataTypes.DATE,
+    },
   },
   {
     tableName: "product_albums",
   }
 );
 
-module.exports = Product_Albums
+module.exports = Product_Albums;

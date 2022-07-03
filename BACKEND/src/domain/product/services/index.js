@@ -1,4 +1,4 @@
-const { ProductService } = require('./ProductService')
+const  ProductService  = require('./ProductService')
 
 
 const productService = ProductService

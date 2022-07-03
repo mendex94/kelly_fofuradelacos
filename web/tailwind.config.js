@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     fontFamily: {
       fiona: ["Fiona", "sans-serif"],
-      raleway: ['Raleway', 'sans-serif']
+      raleway: ['Raleway', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif']
     },
     fontSize: {
       'h1': '100px',

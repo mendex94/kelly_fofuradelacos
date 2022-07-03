@@ -4,22 +4,10 @@ const { DataTypes } = require("sequelize");
 const Products = db.define(
   "Products",
   {
-    id_product: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
-      type: DataTypes.INTEGER
-    },
-    id_product_material: {
-      type: DataTypes.INTEGER
-    },
-    id_product_size: {
-      type: DataTypes.INTEGER
-    },
-    id_product_color: {
-      type: DataTypes.INTEGER
-    },
-    id_album: {
       type: DataTypes.INTEGER
     },
     description: {

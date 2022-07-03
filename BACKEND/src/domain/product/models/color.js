@@ -3,7 +3,7 @@ const { DataTypes } = require ('sequelize')
 
 const Colors = db.define (
     'Colors', {
-    id_color: {
+    id:{
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,

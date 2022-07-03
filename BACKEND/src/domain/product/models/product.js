@@ -19,6 +19,9 @@ const Products = db.define(
     type: {
       type: DataTypes.STRING
     },
+    price: {
+      type: DataTypes.DECIMAL
+    },
     weight: {
       type: DataTypes.DECIMAL
     },

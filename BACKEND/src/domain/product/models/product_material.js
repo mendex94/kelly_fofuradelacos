@@ -1,5 +1,5 @@
-const { Materials } = require ('./material');
-const { Products } = require ("./product");
+const  Materials = require ('./material');
+const  Products  = require ("./product");
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");

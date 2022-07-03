@@ -1,5 +1,5 @@
-const { Collections } = require ("./collection");
-const { Products } = require ("./product");
+const  Collections = require ("./collection");
+const  Products = require ("./product");
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");

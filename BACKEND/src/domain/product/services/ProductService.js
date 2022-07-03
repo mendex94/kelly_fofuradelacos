@@ -4,6 +4,8 @@ const { Products } = require("../models");
 const { Product_Albums } = require("../models");
 const { Sizes } = require("../models");
 const { Highlights } = require("../models");
+const { Ratings } = require("../models");
+
 
 const ProductService = {
   async allProducts() {
@@ -37,6 +39,10 @@ const ProductService = {
             model: Materials,
             required: false,
           },
+          {
+            model: Ratings,
+            required: false,
+          },
         ],
       });
       return product;
@@ -64,6 +70,10 @@ const ProductService = {
           },
           {
             model: Materials,
+            required: false,
+          },
+          {
+            model: Ratings,
             required: false,
           },
         ],
@@ -98,6 +108,10 @@ const ProductService = {
             model: Highlights,
             required: true,
           },
+          {
+            model: Ratings,
+            required: false,
+          }                       
         ],
       });
 

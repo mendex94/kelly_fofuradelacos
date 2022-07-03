@@ -5,7 +5,7 @@ const ProductService = require('../domain/product/services/ProductService');
 
 const routes = express.Router();
 
-routes.get("/catalogo/", ProductsController.getAll);
+routes.get("/catalogo", ProductsController.getAll);
 //routes.get("/catalogo/:id", ProductsController.getProductById);
 
 

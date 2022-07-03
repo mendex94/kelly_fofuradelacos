@@ -8,7 +8,7 @@ import CarouselRightIcon from '../../assets/CarouselRightIcon.svg'
 const featuredProducts = [
   Banner1,
   Banner2,
-  Banner3
+  Banner3,
 ]
 
 let count = 0;
@@ -57,7 +57,7 @@ function CarouselHome() {
   
   return (
     <div ref={carouselRef} className="w-full select-none relative">
-        <img className='scroll-smooth' src={featuredProducts [currentIndex]} alt="Banner" />
+        <img className='scroll-smooth w-full' src={featuredProducts [currentIndex]} alt="Banner" />
 
       <div className='absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center'>
         <button onClick={handleOnPrevClick}><img src={CarouselLeftIcon} alt="" /></button>

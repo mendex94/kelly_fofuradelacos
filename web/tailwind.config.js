@@ -39,7 +39,7 @@ module.exports = {
       },
       verde: {
         100: '7A8C6F'
-      }
+      },
     },
   },
   plugins: [

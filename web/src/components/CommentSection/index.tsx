@@ -4,13 +4,13 @@ import Comment from '../Comment'
 
 function CommentSection() {
   return (
-    <section className='bg-bege-100'>
-        <div className='container mx-auto'>
-            <h1 className='font-fiona text-h1 text-rosa-200'>Avaliações</h1>
+    <section className='bg-bege-100 py-20 flex justify-center'>
+        <div className='container mx-2'>
+            <h1 className='font-montserrat text-h3 text-rosa-200 font-bold'>Avaliações</h1>
             <div className='flex gap-8 items-center'>
-                <p className='text-h5 text-preto-100 font-fiona'>4.0</p>
+                <p className='text-[40px] font-semibold text-preto-100 font-montserrat'>4.0</p>
                 <Rating name="read-only" value={4} readOnly style={{ color: '#BC8383' }} size='small' />
-                <p className='text-raleway text-p3 text-preto-100'>1 Avaliação</p>
+                <p className='text-montserrat font-medium text-p3 text-preto-100'>1 Avaliação</p>
             </div>
             <Comment />
         </div>

@@ -3,7 +3,7 @@ import CardButton from '../CardButton'
 
 function RowCard() {
     return (
-        <div className='rounded-[35px] shadow-lg bg-white transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105'>
+        <div className='rounded-[35px] shadow-lg bg-white transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
 
             <img className='' src={LacoFloral} alt="" />
 

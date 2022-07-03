@@ -29,20 +29,10 @@ function Row() {
             <button onClick={() => handleClick('left')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition
                     ${!isMoved && 'hidden'}`}><img src={LeftIcon} alt="" /></button>
           </div>
-        <div className='flex justify-between overflow-x-scroll scrollbar-hide snap-mandatory snap-x mx-10 md:mx-0' ref={rowRef}>
+        <div className='flex justify-between overflow-x-auto scrollbar-hide snap-mandatory snap-x mx-10 md:mx-0' ref={rowRef}>
           
 
-          <div className='flex gap-12 md:mx-0 md:ml-4 mx-auto'>
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
-            <RowCard />
+          <div className='flex gap-12 md:mx-0 md:ml-6 mx-auto'>
             <RowCard />
             <RowCard />
             <RowCard />

@@ -18,6 +18,9 @@ module.exports = {
       type: {
         type: Sequelize.STRING
       },
+      price:{
+        type:Sequelize.DECIMAL
+      },
       weight: {
         type: Sequelize.DECIMAL
       },

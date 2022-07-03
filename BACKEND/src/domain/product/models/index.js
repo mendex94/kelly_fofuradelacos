@@ -27,11 +27,11 @@ Highlights.belongsTo(Products, {
   foreignKey: "id_product",
 });
 
-Ratings.hasMany(Products,{
+Products.hasMany(Ratings,{
     foreignKey:'id_product',
 })
 
-Products.belongsTo(Ratings,{
+Ratings.belongsTo(Products,{
     foreignKey:'id_product',
 })
 

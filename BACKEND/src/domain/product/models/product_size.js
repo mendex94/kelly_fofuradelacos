@@ -1,5 +1,5 @@
-const { Sizes } = require('./size');
-const { Products } = require ("./product");
+const Sizes = require('./size');
+const Products = require ("./product");
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");

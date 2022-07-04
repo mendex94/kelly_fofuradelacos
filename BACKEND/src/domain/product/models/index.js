@@ -19,58 +19,58 @@ Product_Albums.belongsTo(Products,{
     foreignKey:"id_product",
 })
 
-// Products.belongsToMany(Collections,{
-//     foreignKey:'id_product',
-//     through:Product_Collections
-// })
+Products.belongsToMany(Collections,{
+    foreignKey:'id_product',
+    through:Product_Collections
+})
 
-// Collections.belongsToMany(Products,{
-//     foreignKey:'id_collection',
-//     through:Product_Collections
-// })
+Collections.belongsToMany(Products,{
+    foreignKey:'id_collection',
+    through:Product_Collections
+})
 
-// Products.belongsToMany(Colors,{
-//     foreignKey:'id_product',
-//     through:Product_Colors
-// })
+Products.belongsToMany(Colors,{
+    foreignKey:'id_product',
+    through:Product_Colors
+})
 
-// Colors.belongsToMany(Products,{
-//     foreignKey:'id_color',
-//     through:Product_Colors
-// })
+Colors.belongsToMany(Products,{
+    foreignKey:'id_color',
+    through:Product_Colors
+})
 
-// Products.belongsToMany(Materials,{
-//     foreignKey:'id_product',
-//     through:Product_Materials
-// })
+Products.belongsToMany(Materials,{
+    foreignKey:'id_product',
+    through:Product_Materials
+})
 
-// Materials.belongsToMany(Products,{
-//     foreignKey:'id_material',
-//     through:Product_Materials
-// })
+Materials.belongsToMany(Products,{
+    foreignKey:'id_material',
+    through:Product_Materials
+})
 
-// Products.belongsToMany(Sizes,{
-//     foreignKey:'id_product',
-//     through:Product_Sizes
-// })
+Products.belongsToMany(Sizes,{
+    foreignKey:'id_product',
+    through:Product_Sizes
+})
 
-// Sizes.belongsToMany(Products,{
-//     foreignKey:'id_size',
-//     through:Product_Sizes
-// })
+Sizes.belongsToMany(Products,{
+    foreignKey:'id_size',
+    through:Product_Sizes
+})
 
 
-// Ratings.hasMany(Products,{
-//     foreignKey:'id_product',
-// })
+Ratings.hasMany(Products,{
+    foreignKey:'id_product',
+})
 
-// Products.belongsTo(Ratings)
+Products.belongsTo(Ratings)
 
-// Highlights.hasMany(Products,{
-//     foreignKey:'id_product',
-// })
+Highlights.hasMany(Products,{
+    foreignKey:'id_product',
+})
 
-// Products.belongsTo(Highlights)
+Products.belongsTo(Highlights)
 
 
 

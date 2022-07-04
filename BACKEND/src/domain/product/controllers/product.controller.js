@@ -28,8 +28,8 @@ const ProductsController = {
 
   async getLacos(req, res) {
     try {
-      const type_product = "laços";
-      const lacos = await productService.getProductbyType(type_product);
+      const type = "laços";
+      const lacos = await productService.getProductbyType(type);
       if (!lacos.length > 0) {
         return res.status(400).json("Não foi encontrado laços");
       }
@@ -54,8 +54,8 @@ const ProductsController = {
 
   async getTiaras(req, res) {
     try {        
-      const type = "tiara";
-      const tiaras = await findProductByType(type);
+      const type_product = "tiara";
+      const tiaras = await findProductByType(type_product);
       if (!tiaras.length > 0) {
         return res.status(400).json("Não há tiaras cadastradas")
       } 
@@ -68,8 +68,8 @@ const ProductsController = {
 
   async getAcessorios(req, res) {
     try {
-      const type = "acessorio";
-      const acessorios = await findProductByType(type);
+      const type_product = "acessorio";
+      const acessorios = await findProductByType(type_product);
       if (!acessorios.length > 0){
         return res.status(400).json("Não há acessórios cadastrados")
       } 

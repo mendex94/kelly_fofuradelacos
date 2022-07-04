@@ -18,7 +18,7 @@ const MenuItems = ({ showMenu, active }: MenuItemsProps) => {
             <li className='hover:scale-125'><Link to='/personalize'>PERSONALIZADO</Link></li>
             <li className='hover:scale-125'><Link to='/sobre'>SOBRE NÓS</Link></li>
             <li className='hover:scale-125'><Link to='/suporte'>DÚVIDAS</Link></li>
-            <li><button className='flex row items-center gap-4'>CARRINHO<img src={CartLogo} alt="" /></button></li>
+            <li><Link to='/carrinho' className='flex row items-center gap-4'>CARRINHO<img src={CartLogo} alt="" /></Link></li>
         </ul>
     );
 };

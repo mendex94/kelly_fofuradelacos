@@ -17,7 +17,8 @@ function CardsRowHome() {
               <p className="text-p3">Da costura ao bordado, feitos à mão, com amor e excelência!</p>
             </div>
           </div>
-        </div><div className="flex flex-col m-auto">
+        </div>
+        <div className="flex flex-col m-auto">
             <img className="m-auto relative top-[85px]" src={Icon2} alt="" />
           <div className="bg-bege-100  py-4 rounded-[10px]">
             <div className="mt-20">
@@ -25,7 +26,8 @@ function CardsRowHome() {
               <p className="text-p3">Da costura ao bordado, feitos à mão, com amor e excelência!</p>
             </div>
           </div>
-        </div><div className="flex flex-col m-auto">
+        </div>
+        <div className="flex flex-col m-auto">
             <img className="m-auto relative top-[85px]" src={Icon3} alt="" />
           <div className="bg-bege-100  py-4 rounded-[10px]">
             <div className="mt-20">

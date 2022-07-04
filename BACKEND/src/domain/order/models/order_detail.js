@@ -1,7 +1,10 @@
+import { Customers } from "./customer";
+import { Orders } from "./order";
+
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const  Order_Details = db.define(
+export const Order_Details = db.define(
   "Order_Details",
   {
     id_order_detail: {
@@ -11,10 +14,28 @@ export const  Order_Details = db.define(
       type: DataTypes.INTEGER
     },
     id_order: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      foreignKey: true,
+      references: {
+        model: Orders,
+        key: "id",
+      }
     },
     id_product: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      foreignKey: true,
+      references: {
+        model: Products,
+        key: "id",
+      }
+    },
+    id_customer: {
+      type: DataTypes.INTEGER,
+      foreignKey: true,
+      references: {
+        model: Customers,
+        key: "id",
+      }
     },
     amount: {
       type: DataTypes.INTEGER

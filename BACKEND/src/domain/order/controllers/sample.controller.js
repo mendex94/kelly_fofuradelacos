@@ -1,6 +1,6 @@
-import { ModelSample } from "../models/modelsample";
-import { Request, Response } from "express";
-import { sampleService } from "../services";
+const { ModelSample } = require ("../models/modelsample");
+const { Request, Response } = require ("express");
+const { sampleService } = require ("../services");
 
 export const SampleController = {
  

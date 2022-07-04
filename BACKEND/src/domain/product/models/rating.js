@@ -1,7 +1,6 @@
-const { Products } = require('./product')
-
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
+const  Products  = require('./product')
 
 const  Ratings = db.define(
   "Ratings",
@@ -14,10 +13,11 @@ const  Ratings = db.define(
     },
     id_product: {
       type: DataTypes.INTEGER,
-      references:{
+      foreignKey: true,
+      references: {
         model: Products,
-        key: 'id'
-    }
+        key: "id",
+      },
     },
     description: {
       type: DataTypes.STRING

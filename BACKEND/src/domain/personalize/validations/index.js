@@ -1,12 +1,13 @@
-import { create } from "./sample/create";
-import { getOne } from "./sample/getOne";
-import { destroy}  from "./sample/destroy";
-import { update } from "./sample/update";
+const { create } = require ("./sample/create");
+const { getOne } = require ("./sample/getOne");
+const { destroy}  = require ("./sample/destroy");
+const { update } = require ("./sample/update");
 
-export const SampleValidation = {
+const SampleValidation = {
   create,
   getOne,
   destroy,
   update,
 };
 
+module.exports = SampleValidation

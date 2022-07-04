@@ -1,7 +1,9 @@
-import { validate, Joi } from "express-validation";
+const { validate, Joi } = require ("express-validation");
 
-export const destroy = validate({
+const destroy = validate({
   params: Joi.object({
     
   }),
 });
+
+module.exports = destroy

@@ -1,6 +1,6 @@
-import { validate, Joi } from "express-validation";
+const { validate, Joi } = require ("express-validation");
 
-export const update = validate({
+const update = validate({
   params: Joi.object({
     
   }),
@@ -8,3 +8,5 @@ export const update = validate({
     
   }),
 });
+
+module.exports = update

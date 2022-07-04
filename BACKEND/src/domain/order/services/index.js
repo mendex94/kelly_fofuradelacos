@@ -1,3 +1,6 @@
-import { SampleService } from './SampleService';
+const  OrderService  = require('./OrderService')
 
-export const sampleService = new SampleService;
+
+const orderService = OrderService
+
+module.exports = orderService

@@ -1,4 +1,4 @@
-import { ModelSample } from "../models/modelsample";
+const { Orders } = require("../models");
 
 export class SampleService {
 

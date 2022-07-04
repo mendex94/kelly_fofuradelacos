@@ -1,22 +1,38 @@
-const  Collections  = require ('./collection');
-const  Sizes  = require ('./size');
-const  Colors  = require ('./color');
-const  Materials  = require ('./material');
-const  Product_Materials  = require ('./product_material');
-const  Products  = require ("./product");
-const  Product_Sizes  = require ("./product_size");
-const  Product_Colors  = require ("./product_color");
-const  Product_Collections = require ("./product_collection");
-const  Product_Albums  = require ("./product_album");
-const  Highlights  = require ("./highlight");
-const  Ratings  = require ("./rating")
+const Collections = require("./collection");
+const Sizes = require("./size");
+const Colors = require("./color");
+const Materials = require("./material");
+const Product_Materials = require("./product_material");
+const Products = require("./product");
+const Product_Sizes = require("./product_size");
+const Product_Colors = require("./product_color");
+const Product_Collections = require("./product_collection");
+const Product_Albums = require("./product_album");
+const Highlights = require("./highlight");
+const Ratings = require("./rating");
 
-Products.hasMany(Product_Albums,{
+Products.hasMany(Product_Albums, {
+  foreignKey: "id_product",
+});
+
+Product_Albums.belongsTo(Products, {
+  foreignKey: "id_product",
+});
+
+Products.hasMany(Highlights, {
+  foreignKey: "id_product",
+});
+
+Highlights.belongsTo(Products, {
+  foreignKey: "id_product",
+});
+
+Products.hasMany(Ratings,{
     foreignKey:'id_product',
 })
 
-Product_Albums.belongsTo(Products,{
-    foreignKey:"id_product",
+Ratings.belongsTo(Products,{
+    foreignKey:'id_product',
 })
 
 Products.belongsToMany(Collections,{

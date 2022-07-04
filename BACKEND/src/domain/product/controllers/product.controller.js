@@ -11,9 +11,18 @@ const ProductsController = {
       return res.status(500).json(error);
     }
   },
- 
+  
+  async getProductById(req, res) {
+    const { id } = req.params;
+    try {
+      const products = await productService.findProductbyId(id);
+      return res.status(200).json(await products);
+    } catch (error) {
+      return res.status(500).json(error);
+    }
+  },
 
-  async getHighlights(req, res) {
+  async getHighlights(req,res) {
     try {
       const highlights = await productService.findHighlights();
 
@@ -28,8 +37,8 @@ const ProductsController = {
 
   async getLacos(req, res) {
     try {
-      const type = "laços";
-      const lacos = await productService.getProductbyType(type);
+      const type_product = "laço";
+      const lacos = await productService.findProductbyType(type_product);
       if (!lacos.length > 0) {
         return res.status(400).json("Não foi encontrado laços");
       }
@@ -42,7 +51,7 @@ const ProductsController = {
   async getColecaoParis(req, res) {
     try {
       const type_product = "boina";
-      const colecaoParis = await productService.getProductbyType(type_product);
+      const colecaoParis = await productService.findProductbyType(type_product);
       if (!colecaoParis.length > 0) {
         return res.status(400).json("Não foi encontrado Coleção Paris");
       }
@@ -55,7 +64,7 @@ const ProductsController = {
   async getTiaras(req, res) {
     try {        
       const type_product = "tiara";
-      const tiaras = await findProductByType(type_product);
+      const tiaras = await productService.findProductbyType(type_product);
       if (!tiaras.length > 0) {
         return res.status(400).json("Não há tiaras cadastradas")
       } 
@@ -69,7 +78,7 @@ const ProductsController = {
   async getAcessorios(req, res) {
     try {
       const type_product = "acessorio";
-      const acessorios = await findProductByType(type_product);
+      const acessorios = await productService.findProductbyType(type_product);
       if (!acessorios.length > 0){
         return res.status(400).json("Não há acessórios cadastrados")
       } 

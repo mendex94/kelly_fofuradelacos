@@ -1,6 +1,6 @@
-import app from '../../..';
-import supertest from "supertest";
-import { hasUncaughtExceptionCaptureCallback } from 'process';
+const app = require ('../../..');
+const supertest = require ("supertest");
+const { hasUncaughtExceptionCaptureCallback } = require ('process');
 
 describe('No controller ao executar a funcao', () => {
 

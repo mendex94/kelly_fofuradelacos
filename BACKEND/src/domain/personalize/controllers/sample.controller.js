@@ -1,12 +1,16 @@
-const { ModelSample } = require ("../models/modelsample");
-const { Request, Response } = require ("express");
-const { sampleService } = require ("../services");
+const { Request, Response } = require("express");
+const orderService = require("../services/index");
 
-export const SampleController = {
- 
-  async getHelloWorld(req, res) {
-    
-    return res.status(200).json("Hello World");
-    
+const OrdersController = {
+
+  async postOrder(req, res) {
+    try {
+      const orders = await orderService.allProducts();
+      return res.status(200).json(await orders);
+    } catch (error) {
+      return res.status(500).json(error);
+    }
   },
-};
+}
+
+module.exports = OrdersController;

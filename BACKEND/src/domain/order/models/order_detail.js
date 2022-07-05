@@ -1,13 +1,14 @@
-import { Customers } from "./customer";
-import { Orders } from "./order";
+const Customers = require ("./customer");
+const Orders = require("./order");
+const Products = require("../../product/models/product")
 
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const Order_Details = db.define(
+const Order_Details = db.define(
   "Order_Details",
   {
-    id_order_detail: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -74,3 +75,5 @@ export const Order_Details = db.define(
     tableName: "order_details",
   }
 );
+
+module.exports = Order_Details

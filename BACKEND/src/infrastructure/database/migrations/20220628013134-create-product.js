@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       notes: { 
-        type: Sequelize.STRING
+        type: Sequelize.STRING(1024)
       },
       status: {
         type: Sequelize.INTEGER

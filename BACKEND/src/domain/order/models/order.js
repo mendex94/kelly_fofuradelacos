@@ -1,10 +1,10 @@
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
 
-export const  Orders = db.define(
+const  Orders = db.define(
   "Orders",
   {
-    id_order: {
+    id: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
@@ -38,3 +38,5 @@ export const  Orders = db.define(
     tableName: "orders",
   }
 );
+
+module.exports = Orders

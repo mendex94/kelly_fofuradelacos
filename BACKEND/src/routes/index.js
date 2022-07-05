@@ -16,6 +16,10 @@ routes.get("/catalogo/colecaoparis", ProductsController.getColecaoParis);
 routes.get("/catalogo/tiaras", ProductsController.getTiaras);
 routes.get("/catalogo/acessorios", ProductsController.getAcessorios);
 
-routes.post("/order", OrdersController,postOrder);
+routes.post("/pedido", OrdersController,postOrder);
+
+routes.get("/frete", ShippingController.getShipping);
+
+routes.post("/personalizado", PersonalizeController,postPersonalize);
 
 module.exports = routes;

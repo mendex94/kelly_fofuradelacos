@@ -7,7 +7,7 @@ module.exports = {
       [
         {
           id: 1,
-          name: "PP",
+          name: "11x5cm",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -19,7 +19,7 @@ module.exports = {
       [
         {
           id: 2,
-          name: "P",
+          name: "15x17cm",
           createdAt: new Date(),
           updatedAt: new Date(),
         },

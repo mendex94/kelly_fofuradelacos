@@ -1,6 +1,14 @@
 const { Orders } = require("../models");
 
-export class SampleService {
-
-   
+const ProductService = {
+    async allProducts() {
+      try {
+        const fullProducts = await Products.findAll();
+  
+        return fullProducts;
+      } catch (error) {
+        console.log(error);
+      }
+    },
 }
+module.exports = OrderService;

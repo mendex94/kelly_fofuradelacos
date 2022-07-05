@@ -1,8 +1,8 @@
 const db = require("../../../infrastructure/database");
-const { DataTypes } = require("sequelize");
+const { DataTypes } = require ("sequelize");
 
-const  Customers = db.define(
-  "Customers",
+const Personalized_Orders = db.define(
+  "Personalized_Orders",
   {
     id: {
       allowNull: false,
@@ -13,10 +13,10 @@ const  Customers = db.define(
     name: {
       type: DataTypes.STRING
     },
-    phone: {
+    email: {
       type: DataTypes.STRING
     },
-    address: {
+    description: {
       type: DataTypes.STRING
     },
     createdAt: {
@@ -29,8 +29,8 @@ const  Customers = db.define(
     }
   },
   {
-    tableName: "customers",
+    tableName: "personalized_orders",  
   }
 );
 
-module.exports = Customers
+module.exports = Personalized_Orders

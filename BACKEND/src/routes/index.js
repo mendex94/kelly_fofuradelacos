@@ -2,7 +2,6 @@ const express = require('express');
 const { postOrder } = require('../domain/order/controllers/order.controller');
 const OrdersController = require('../domain/order/controllers/order.controller');
 const ProductsController = require('../domain/product/controllers/product.controller');
-const ProductService = require('../domain/product/services/ProductService');
 
 
 const routes = express.Router();

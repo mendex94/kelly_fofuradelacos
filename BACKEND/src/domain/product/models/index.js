@@ -35,57 +35,72 @@ Ratings.belongsTo(Products,{
     foreignKey:'id_product',
 })
 
-Products.belongsToMany(Colors, {
-  foreignKey: "id_product",
-  through: Product_Colors,
-});
+Products.belongsToMany(Collections,{
+    foreignKey:'id_product',
+    through:Product_Collections
+})
 
-Colors.belongsToMany(Products, {
-  foreignKey: "id_color",
-  through: Product_Colors,
-});
+Collections.belongsToMany(Products,{
+    foreignKey:'id_collection',
+    through:Product_Collections
+})
 
-Products.belongsToMany(Collections, {
-  foreignKey: "id_product",
-  through: Product_Collections,
-});
+Products.belongsToMany(Colors,{
+    foreignKey:'id_product',
+    through:Product_Colors
+})
 
-Collections.belongsToMany(Products, {
-  foreignKey: "id_collection",
-  through: Product_Collections,
-});
+Colors.belongsToMany(Products,{
+    foreignKey:'id_color',
+    through:Product_Colors
+})
 
-Products.belongsToMany(Materials, {
-  foreignKey: "id_product",
-  through: Product_Materials,
-});
+Products.belongsToMany(Materials,{
+    foreignKey:'id_product',
+    through:Product_Materials
+})
 
-Materials.belongsToMany(Products, {
-  foreignKey: "id_material",
-  through: Product_Materials,
-});
+Materials.belongsToMany(Products,{
+    foreignKey:'id_material',
+    through:Product_Materials
+})
 
-Products.belongsToMany(Sizes, {
-  foreignKey: "id_product",
-  through: Product_Sizes,
-});
+Products.belongsToMany(Sizes,{
+    foreignKey:'id_product',
+    through:Product_Sizes
+})
 
-Sizes.belongsToMany(Products, {
-  foreignKey: "id_size",
-  through: Product_Sizes,
-});
+Sizes.belongsToMany(Products,{
+    foreignKey:'id_size',
+    through:Product_Sizes
+})
 
-module.exports = {  
-  Collections,
-  Product_Collections,
-  Colors,
-  Product_Colors,
-  Materials,
-  Product_Materials,
-  Sizes,
-  Product_Sizes,
-  Product_Albums,
-  Ratings,
-  Highlights,
-  Products
+
+Ratings.hasMany(Products,{
+    foreignKey:'id_product',
+})
+
+Products.belongsTo(Ratings)
+
+Highlights.hasMany(Products,{
+    foreignKey:'id_product',
+})
+
+Products.belongsTo(Highlights)
+
+
+
+module.exports = {
+    Products,
+    Collections,
+    Colors,
+    Materials,
+    Sizes,
+    Product_Albums,
+    Ratings,
+    Highlights,
+    Product_Materials,
+    Product_Sizes,
+    Product_Colors,
+    Product_Collections
 };

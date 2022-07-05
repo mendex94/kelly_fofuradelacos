@@ -9,7 +9,6 @@ function Product() {
     <div>
       <Header />
       <ProductItem />
-      <Row />
       <CommentSection />
       <Footer />
     </div>

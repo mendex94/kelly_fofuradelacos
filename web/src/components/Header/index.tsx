@@ -38,7 +38,7 @@ function Header() {
             <MenuItems showMenu={showMenu} active={active} />
           </nav>
         </div>
-        <Link to='/carrinho' className='hidden lg:flex items-center gap-4'>CARRINHO <img src={CartLogo} alt="" /><span className='text-p5 text-bege-100 relative right-8 bottom-3 w-5 h-5 bg-preto-100 rounded-full text-center'>{cartTotalQuantity}</span></Link>
+        <Link to='/carrinho' className='hidden lg:flex items-center gap-3'>CARRINHO <img src={CartLogo} alt="" /><span className='text-p5 text-bege-100 relative right-8 bottom-3 w-5 h-5 bg-preto-100 rounded-full text-center'>{cartTotalQuantity}</span></Link>
       </div>
     </header>
   )

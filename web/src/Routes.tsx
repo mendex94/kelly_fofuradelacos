@@ -17,7 +17,7 @@ import "react-toastify/dist/ReactToastify.css"
 export default function Routes() {
   return (
     <BrowserRouter>
-    <ToastContainer />
+    <ToastContainer hideProgressBar={true} limit={3}/>
       <WrapperRoutes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />

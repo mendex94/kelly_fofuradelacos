@@ -17,10 +17,13 @@ const cartSlice = createSlice({
             const itemIndex = state.cartItems.findIndex((item: Product) => item.id === action.payload.id)
             if (itemIndex >= 0) {
                 state.cartItems[itemIndex].cartQuantity += 1
+                toast(`+1 ${state.cartItems[itemIndex].description} adicionado ao carrinho!`, {
+                    position: 'top-center'
+                })
             } else {
                 const tempProduct: Product[] = { ...action.payload, cartQuantity: 1 }
                 state.cartItems.push(tempProduct)
-                toast.success('Produto adicionado ao carrinho!', {
+                toast(`${action.payload.description} adicionado ao carrinho!`, {
                     position: 'top-center'
                 })
             }
@@ -30,6 +33,9 @@ const cartSlice = createSlice({
             const newCartItems = state.cartItems.filter((item: Product) => item.id !== action.payload.id)
             state.cartItems = newCartItems
             localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
+            toast('Item removido do carrinho!', {
+                position: 'top-center'
+            })
         },
         decreaseCartQuantity(state, action) {
             const itemIndex = state.cartItems.findIndex((item: Product) => item.id === action.payload.id)

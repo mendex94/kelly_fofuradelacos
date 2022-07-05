@@ -10,7 +10,7 @@ interface RowProps {
   product: Product[]
 }
 
-function Row({title, product}: RowProps) {
+function Row({ title, product }: RowProps) {
   const rowRef = useRef<HTMLDivElement>(null)
   const [isMoved, setIsMoved] = useState(false)
 
@@ -29,26 +29,25 @@ function Row({title, product}: RowProps) {
 
   return (
     <div className='container mx-auto bg-white flex flex-col'>
-      <RowTitle title={title}/>
+      <RowTitle title={title} />
       <div className='flex flex-nowrap gap-4 items-center justify-center'>
-          <div>
-            <button onClick={() => handleClick('left')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition
+        <div>
+          <button onClick={() => handleClick('left')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition
                     ${!isMoved && 'hidden'}`}><img src={LeftIcon} alt="" /></button>
-          </div>
+        </div>
         <div className='flex justify-between overflow-x-auto scrollbar-hide snap-mandatory snap-x mx-10 md:mx-0' ref={rowRef}>
-          
+
 
           <div className='flex gap-12 md:mx-0 md:ml-6 mx-auto'>
-          {product.map((product) => (
-                        <RowCard key={product.id} product={product} />
-                    ))}
+            {product.map((product) => (
+              <RowCard key={product.id} product={product} />
+            ))}
           </div>
-
 
         </div>
-          <div>
-            <button onClick={() => handleClick('right')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition`}><img src={RightIcon} alt="" /></button>
-          </div>
+        <div>
+          <button onClick={() => handleClick('right')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition`}><img src={RightIcon} alt="" /></button>
+        </div>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ module.exports = {
           model: "",
           type: "laço",
           price: 39.90,
-          weight: "",
+          weight: null,
           notes: "",
           status: 1,
           createdAt: new Date(),

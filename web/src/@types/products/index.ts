@@ -13,6 +13,7 @@ export interface Product {
     Colors: Colors[],
     Sizes: Sizes[],
     Materials: Materials[]
+    cartQuantity?: number | any
 }
 
 export interface Product_Albums {

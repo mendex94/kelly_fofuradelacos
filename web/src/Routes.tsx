@@ -10,10 +10,14 @@ import Catalog from "./pages/Catalog";
 import Custom from "./pages/Custom";
 import Product from "./pages/Product";
 import Support from "./pages/Support";
+import { ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css"
+
 
 export default function Routes() {
   return (
     <BrowserRouter>
+    <ToastContainer />
       <WrapperRoutes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />

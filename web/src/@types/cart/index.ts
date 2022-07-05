@@ -1,7 +1,7 @@
 import { Product } from "../products";
 
 export interface CartState {
-    cartItems: [] | Product[],
+    cartItems: [] | Product[] | any,
     cartTotalQuantity: number,
     cartTotalAmount: number,
 }

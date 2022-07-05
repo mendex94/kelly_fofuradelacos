@@ -2,12 +2,17 @@ import LogoHeader from '../LogoHeader';
 import CartLogo from '../../assets/carrinhobtn.png'
 import { Link } from 'react-router-dom'
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MenuItems from '../MenuItems';
 import '../../index.css'
+import { useDispatch, useSelector } from 'react-redux'
+import store, { RootStore } from '../../store';
+import cart, { getTotals } from '../../store/modules/cart';
+
 
 function Header() {
-
+  store.dispatch(getTotals())
+  const { cartTotalQuantity } = useSelector((state: RootStore) => state.cart)
   const [active, setActive] = useState(false)
 
   const showMenu = () => {
@@ -33,7 +38,7 @@ function Header() {
             <MenuItems showMenu={showMenu} active={active} />
           </nav>
         </div>
-        <Link to='/carrinho' className='hidden lg:flex items-center gap-4'>CARRINHO <img src={CartLogo} alt="" /></Link>
+        <Link to='/carrinho' className='hidden lg:flex items-center gap-4'>CARRINHO <img src={CartLogo} alt="" /><span className='text-p5 text-bege-100 relative right-8 bottom-3 w-5 h-5 bg-preto-100 rounded-full text-center'>{cartTotalQuantity}</span></Link>
       </div>
     </header>
   )

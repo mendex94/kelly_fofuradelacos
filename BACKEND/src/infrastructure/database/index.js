@@ -1,12 +1,12 @@
 require('dotenv').config()
 const Sequelize = require("sequelize");
 
-const DB_NAME = process.env.DB_NAME_DEV;
-const DB_USER = process.env.DB_USER;
-const DB_PASS = process.env.DB_PASSWORD;
+const DB_NAME = "zmucgf11ffxyf2nh";//process.env.DB_NAME_DEV;
+const DB_USER ="v31kfqep3rqse5vd"; //process.env.DB_USER;
+const DB_PASS = "lktb4ktol3ef3apb";//process.env.DB_PASSWORD;
 const DB_CONFIG = {
   dialect: "mysql",
-  host: "localhost",
+  host: "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
 };
 

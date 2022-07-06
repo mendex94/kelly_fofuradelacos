@@ -3,16 +3,21 @@ const Order_Details = require('./order_detail')
 const Customer = require('./customer')
 
 
-Orders.belongsToMany(Order_Details, {
-    foreignKey: "id_product",
+Orders.hasMany(Order_Details, {
+    foreignKey: "id_order",
 });
-
-Order_Details.belongsToMany(Orders, {
-    foreignKey: "id_product",
+Order_Details.belongsTo(Orders, {
+    foreignKey: "id_order",
 });
-Customer.hasMany(Order, {
+Customer.hasMany(Orders, {
     foreignKey: "id_customer",
 });
 Orders.belongsTo(Customer, {
     foreignKey: "id_order",
 });
+
+module.exports = {
+    Orders,
+    Order_Details,
+    Customer
+}

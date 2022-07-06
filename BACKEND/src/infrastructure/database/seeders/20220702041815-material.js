@@ -19,7 +19,7 @@ module.exports = {
       [
         {
           id: 2,
-          description: "Pedraria",
+          description: "Cetim",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -31,7 +31,7 @@ module.exports = {
       [
         {
           id: 3,
-          description: "Aço",
+          description: "Tule",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -43,7 +43,7 @@ module.exports = {
       [
         {
           id: 4,
-          description: "Plastico",
+          description: "Veludo",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -55,7 +55,7 @@ module.exports = {
       [
         {
           id: 5,
-          description: "Paete",
+          description: "Cadarço",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -67,13 +67,158 @@ module.exports = {
       [
         {
           id: 6,
-          description: "Tecido",
+          description: "Malha Canelada",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
       ],
       {}
     );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 7,
+          description: "Plástico",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 8,
+          description: "Metal",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 9,
+          description: "Linho de Poliéster",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 10,
+          description: "Strass",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 11,
+          description: "Lurex",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 12,
+          description: "Malha Acetinada",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 13,
+          description: "Pedras",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 14,
+          description: "Algodão",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 15,
+          description: "Pérolas",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 16,
+          description: "Poliéster",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 17,
+          description: "Resina",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "materials",
+      [
+        {
+          id: 18,
+          description: "PVC",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    
   },
 
   async down (queryInterface, Sequelize) {

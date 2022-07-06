@@ -1,4 +1,4 @@
-const  OrderService  = require('./OrderService')
+const  { OrderService } = require('./OrderService')
 
 
 const orderService = OrderService

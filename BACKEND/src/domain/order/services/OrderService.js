@@ -1,6 +1,6 @@
 const { Orders } = require("../models");
-const { Orders_Detail } = require("../models");
-const { Customers } = require("../models/customer");
+const { Order_Details } = require("../models");
+const { Customers } = require("../models");
 
 const OrderService = {
   async createOrder(data) {
@@ -32,7 +32,7 @@ const OrderService = {
           products_quantity,
           shipping_total,
       })
-      const newOrderDetail = await Orders_Detail.create({
+      const newOrderDetail = await Order_Details.create({
         id_order,
         id_product,
         amount,

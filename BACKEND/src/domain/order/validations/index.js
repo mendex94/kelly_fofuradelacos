@@ -1,8 +1,10 @@
-import { create } from "./sample/create";
+const { create } = require ("./sample/create");
 
 
-export const SampleValidation = {
-  create,
-
+const SampleValidation = {
+  create
 };
+
+module.exports = SampleValidation
+
 

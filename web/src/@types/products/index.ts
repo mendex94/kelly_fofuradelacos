@@ -13,6 +13,7 @@ export interface Product {
     Colors: Colors[],
     Sizes: Sizes[],
     Materials: Materials[]
+    Ratings: Rating[],
     cartQuantity?: number | any
 }
 
@@ -68,6 +69,17 @@ export interface Product_Materials {
     id: number,
     id_product: number,
     id_material: number,
+    createdAt: string,
+    updatedAt: string
+}
+
+export interface Rating {
+    id: number,
+    id_product: number,
+    description: string,
+    date: string,
+    evaluation_grade: number,
+    author: string,
     createdAt: string,
     updatedAt: string
 }

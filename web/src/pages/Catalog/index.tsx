@@ -13,7 +13,7 @@ function Catalog() {
   return (
     <div className='bg-bege-100'>
       <Header />
-      <BannerCatalogo />
+      <BannerCatalogo title='Loja' frase="Consulte nosso catalogo feito com cuidado e amor para você!"/>
       <Row title='Laços' product={productList}/>
       <Footer />
     </div>

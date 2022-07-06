@@ -2,12 +2,12 @@ import LogoHeader from '../LogoHeader';
 import CartLogo from '../../assets/carrinhobtn.png'
 import { Link } from 'react-router-dom'
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import MenuItems from '../MenuItems';
 import '../../index.css'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import store, { RootStore } from '../../store';
-import cart, { getTotals } from '../../store/modules/cart';
+import { getTotals } from '../../store/modules/cart';
 
 
 function Header() {

@@ -201,6 +201,18 @@
                   "updatedAt": "2022-07-03T20:13:08.000Z"
                 }
               }
+            ],
+            "Ratings": [
+              {
+                "id": 1,
+                "id_product": 1,
+                "description": "Gostei , o produto é muito bem feito!",
+                "date": "2022-07-03T20:13:13.000Z",
+                "evaluation_grade": 5,
+                "author": "Danilo Sales",
+                "createdAt": "2022-07-03T20:13:13.000Z",
+                "updatedAt": "2022-07-03T20:13:13.000Z"
+              }
             ]
           },
           {

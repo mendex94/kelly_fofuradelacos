@@ -17,7 +17,7 @@ function RowCard({product}: RowCardProps) {
 
     return (
         <div className='rounded-[35px] shadow-lg bg-white transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
-            <Link to='/produto'>
+            <Link to={`/produto/${product.id}`} state={product}>
                 <img className='' src={LacoFloral} alt="" />
             </Link>            
             <div className='flex justify-between items-center px-6 my-4 w-full'>

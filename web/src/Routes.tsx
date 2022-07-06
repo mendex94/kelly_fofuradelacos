@@ -24,7 +24,7 @@ export default function Routes() {
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/catalogo" element={<Catalog />} />
         <Route path="/personalize" element={<Custom />} />
-        <Route path="/produto" element={<Product />} />
+        <Route path="/produto/:id" element={<Product />} />
         <Route path="/suporte" element={<Support />} />
       </WrapperRoutes>
     </BrowserRouter>

@@ -15,6 +15,10 @@ function Catalog() {
       <Header />
       <BannerCatalogo title='Loja' frase="Consulte nosso catalogo feito com cuidado e amor para você!"/>
       <Row title='Laços' product={productList}/>
+      <Row title='Destaques' product={productList}/>
+      <Row title='Tiaras' product={productList}/>
+      <Row title='Boinas' product={productList}/>
+      <Row title='Outros acessórios' product={productList}/>
       <Footer />
     </div>
   )

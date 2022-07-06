@@ -6,6 +6,7 @@ import Rating from '@mui/material/Rating'
 import { Product } from "../../@types/products"
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../store/modules/cart"
+import MaterialPill from "../MaterialPill"
 
 function ProductItem() {
   const location = useLocation()
@@ -15,11 +16,10 @@ function ProductItem() {
     const handleAddToCart = (product: Product) => {
         dispatch(addToCart(product))
     }
-
-  return (
+  return ( 
     <div className='bg-bege-100 py-6 w-full'>
       <div className='font-montserrat text-h5 text-preto-100 md:container md:mx-auto mb-4'>
-        <Link to='/'>Home</Link>/<Link to='/catalogo'>Loja</Link>/<p className='inline'>Laço de Linho - Preto</p>
+        <Link to='/'>Home</Link>/<Link to='/catalogo'>Loja</Link>/<p className='inline'>{product.description}</p>
       </div>
       <div className='container mx-auto flex flex-col lg:flex-row'>
         <div className='flex flex-col lg:flex-row gap-6'>
@@ -42,12 +42,11 @@ function ProductItem() {
             você!</p>
           </div>
           <div className='mb-14'>
-            <h3 className='text-h6 font-semibold text-preto-100'>Detalhes do produto</h3>
+            <h3 className='text-h6 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
             <div className='flex text-preto-100 text-p3 gap-5'>
-              <p className='p-[10px] rounded-[33px] text-center bg-rosa-400 text-rosa-100 font-medium text-p3'>15 cm x 17 cm</p>
-              <p className='p-[10px] rounded-[33px] text-center bg-rosa-400 text-rosa-100 font-medium text-p3'>preto</p>
-              <p className='p-[10px] rounded-[33px] text-center bg-rosa-400 text-rosa-100 font-medium text-p3'>linho</p>
-              <p className='p-[10px] rounded-[33px] text-center bg-rosa-400 text-rosa-100 font-medium text-p3'>pedraria</p>
+              {product.Materials.map((material) => 
+                <MaterialPill material={material} key={material.id}/>
+              )}
             </div>
           </div>
           <h3 className='text-h3 text-preto-100'>R$ {product.price},00</h3>

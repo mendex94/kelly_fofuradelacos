@@ -15,7 +15,6 @@ const cartSlice = createSlice({
     reducers: {
         addToCart(state, action) {
             const itemIndex = state.cartItems.findIndex((item: Product) => item.id === action.payload.id)
-            console.log(`Action: ${action.payload.id} cartItem: ${state.cartItems[itemIndex].id}`)
             if (itemIndex >= 0) {
                 state.cartItems[itemIndex].cartQuantity += 1
                 toast(`+1 ${state.cartItems[itemIndex].description} adicionado ao carrinho!`, {

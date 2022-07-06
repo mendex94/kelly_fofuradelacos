@@ -6,13 +6,13 @@ import { useState } from 'react';
 import MenuItems from '../MenuItems';
 import '../../index.css'
 import { useSelector } from 'react-redux'
-import store, { RootStore } from '../../store';
-import { getTotals } from '../../store/modules/cart';
+import { RootStore } from '../../store';
+
 
 
 function Header() {
-  store.dispatch(getTotals())
   const { cartTotalQuantity } = useSelector((state: RootStore) => state.cart)
+
   const [active, setActive] = useState(false)
 
   const showMenu = () => {
@@ -29,16 +29,16 @@ function Header() {
               <MenuOutlinedIcon className='scale-150 cursor-pointer text-rosa-200' onClick={showMenu} />
             </div>
             <ul className='hidden lg:flex gap-14 text-[18px] text-preto-100 tracking-wider leading-3'>
-              <li><NavLink to='/' className={({isActive}) => isActive ? 'text-rosa-100 font-bold': 'text-preto-100'}>HOME</NavLink></li>
-              <li><NavLink to='/catalogo' className={({isActive}) => isActive ? 'text-rosa-100 font-bold': 'text-preto-100'}>LOJA</NavLink></li>
-              <li><NavLink to='/personalize' className={({isActive}) => isActive ? 'text-rosa-100 font-bold': 'text-preto-100'}>PERSONALIZADO</NavLink></li>
-              <li><NavLink to='/sobre' className={({isActive}) => isActive ? 'text-rosa-100 font-bold': 'text-preto-100'}>SOBRE NÓS</NavLink></li>
-              <li><NavLink to='/suporte' className={({isActive}) => isActive ? 'text-rosa-100 font-bold': 'text-preto-100'}>DÚVIDAS</NavLink></li>
+              <li><NavLink to='/' className={({ isActive }) => isActive ? 'text-rosa-100 font-bold' : 'text-preto-100'}>HOME</NavLink></li>
+              <li><NavLink to='/catalogo' className={({ isActive }) => isActive ? 'text-rosa-100 font-bold' : 'text-preto-100'}>LOJA</NavLink></li>
+              <li><NavLink to='/personalize' className={({ isActive }) => isActive ? 'text-rosa-100 font-bold' : 'text-preto-100'}>PERSONALIZADO</NavLink></li>
+              <li><NavLink to='/sobre' className={({ isActive }) => isActive ? 'text-rosa-100 font-bold' : 'text-preto-100'}>SOBRE NÓS</NavLink></li>
+              <li><NavLink to='/suporte' className={({ isActive }) => isActive ? 'text-rosa-100 font-bold' : 'text-preto-100'}>DÚVIDAS</NavLink></li>
             </ul>
             <MenuItems showMenu={showMenu} active={active} />
           </nav>
         </div>
-        <NavLink to='/carrinho' className={({isActive}) => isActive ? 'text-rosa-100 font-bold hidden lg:flex items-center gap-3': 'text-preto-100 hidden lg:flex items-center gap-3'}>CARRINHO <img src={CartLogo} alt="" /><span className='text-p5 text-bege-100 relative right-8 bottom-3 w-5 h-5 bg-preto-100 rounded-full text-center'>{cartTotalQuantity}</span></NavLink>
+        <NavLink to='/carrinho' className={({ isActive }) => isActive ? 'text-rosa-100 font-bold hidden lg:flex items-center gap-3' : 'text-preto-100 hidden lg:flex items-center gap-3'}>CARRINHO <img src={CartLogo} alt="" /><span className='text-p5 text-bege-100 relative right-8 bottom-3 w-5 h-5 bg-preto-100 rounded-full text-center'>{cartTotalQuantity}</span></NavLink>
       </div>
     </header>
   )

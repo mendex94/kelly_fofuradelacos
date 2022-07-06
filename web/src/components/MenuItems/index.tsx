@@ -4,8 +4,7 @@ import CartLogo from '../../assets/carrinhobtn.png'
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import '../../index.css'
 import { useSelector } from 'react-redux';
-import store, { RootStore } from '../../store';
-import { getTotals } from '../../store/modules/cart';
+import { RootStore } from '../../store';
 
 interface MenuItemsProps {
     showMenu: () => void;
@@ -13,8 +12,8 @@ interface MenuItemsProps {
 }
 
 const MenuItems = ({ showMenu, active }: MenuItemsProps) => {
-    store.dispatch(getTotals())
     const { cartTotalQuantity } = useSelector((state: RootStore) => state.cart)
+
     return (
         <ul className={active ? 'text-right flex-col z-50 flex items-end fixed inset-0 left-1/4 uppercase bg-[#EAE6E3]/40 backdrop-blur-lg gap-8 justify-center p-8 lg:hidden' : 'hidden'}>
             <CloseOutlinedIcon onClick={showMenu} className='cursor-pointer' />

@@ -28,22 +28,22 @@ function Row({ title, product }: RowProps) {
 
 
   return (
-    <div className='w-full md:container mx-auto bg-white flex flex-col'>
+    <div className={`w-full flex flex-col pb-10 ${title === 'Destaques' && 'bg-[#FFFFFF]'}`}>
       <RowTitle title={title} />
-      <div className='flex flex-nowrap gap-4 items-center justify-center'>
+      <div className='flex w-screen md:container mx-auto flex-nowrap gap-4 items-center justify-center'>
         <div>
-          <button onClick={() => handleClick('left')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition
-                    ${!isMoved && 'hidden'}`}><img src={LeftIcon} alt="" /></button>
+          <button onClick={() => handleClick('left')} className={`hidden h-20 w-20 md:inline z-40 m-auto cursor-pointer hover:scale-125 transition
+                    ${!isMoved && 'hidden'}`}><img src={LeftIcon} alt=""/></button>
         </div>
-        <div className='flex justify-between overflow-x-auto scrollbar-hide snap-mandatory snap-x mx-10 md:mx-0' ref={rowRef}>
-          <div className='flex gap-12 md:mx-0 md:ml-6 mx-auto'>
+        <div className='flex justify-between overflow-x-auto scrollbar-hide snap-mandatory snap-x mx-10 md:mx-0 transition-all' ref={rowRef}>
+          <div className='flex gap-10 md:mx-0 mx-auto ml-2'>
             {product.map((product) => (
               <RowCard key={product.id} product={product} />
             ))}
           </div>
         </div>
         <div>
-          <button onClick={() => handleClick('right')} className={`hidden md:inline z-40 m-auto cursor-pointer hover:scale-125 transition`}><img src={RightIcon} alt="" /></button>
+          <button onClick={() => handleClick('right')} className={`hidden h-20 w-20 md:inline z-40 m-auto cursor-pointer hover:scale-125 transition`}><img src={RightIcon} alt="" /></button>
         </div>
       </div>
     </div>

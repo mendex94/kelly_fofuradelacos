@@ -14,7 +14,6 @@ function RowCard({product}: RowCardProps) {
     const handleAddToCart = (product: Product) => {
         dispatch(addToCart(product))
     }
-
     return (
         <div className='rounded-[35px] shadow-lg bg-white transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
             <Link to={`/produto/${product.id}`} state={product}>

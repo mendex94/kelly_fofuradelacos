@@ -12,9 +12,18 @@ import Product from "./pages/Product";
 import Support from "./pages/Support";
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css"
+import { useSelector } from "react-redux";
+import store, { RootStore } from "./store";
+import { useEffect } from "react";
+import { getTotals } from "./store/modules/cart";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 export default function Routes() {
+  const { cartItems } = useSelector((state: RootStore) => state.cart)
+    useEffect(() => {
+        store.dispatch(getTotals())
+    }, [cartItems])
   return (
     <BrowserRouter>
     <ToastContainer hideProgressBar={true} limit={3}/>
@@ -26,6 +35,7 @@ export default function Routes() {
         <Route path="/personalize" element={<Custom />} />
         <Route path="/produto/:id" element={<Product />} />
         <Route path="/suporte" element={<Support />} />
+        <Route path="*" element={<NotFoundPage />} />
       </WrapperRoutes>
     </BrowserRouter>
   );

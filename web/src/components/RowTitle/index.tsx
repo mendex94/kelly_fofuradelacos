@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LeftLeaf from "../LeftLeaf"
 import RightLeaf from "../RightLeaf"
 
@@ -9,11 +10,11 @@ function RowTitle({title}: RowTitleProps) {
     return (
         <div className='flex justify-center mt-20'>
             <div className='flex items-center'>
-                <div className='hidden md:inline'>
+                <div className={`hidden ${title.length < 20 && 'md:inline'}`}>
                 <LeftLeaf />
                 </div>
-                <h1 className='text-h3 font-bold text-rosa-200 font-montserrat mx-12'>{title}</h1>
-                <div className='hidden md:inline'>
+                <h1 className={`text-h3 font-bold text-rosa-200 font-montserrat mx-12`}>{title}</h1>
+                <div className={`hidden ${title.length < 20 && 'md:inline'}`}>
                 <RightLeaf />
                 </div>
             </div>

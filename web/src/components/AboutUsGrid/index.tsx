@@ -8,11 +8,11 @@ function AboutUsGrid() {
   return (
     <div className='bg-bege-100 lg:pb-14 hidden lg:block'> 
         <div className="container mx-auto flex flex-row gap-5 justify-center">
-            <img src={Grid01} alt="" />
-            <img src={Grid02} alt="" />
-            <img src={Grid03} alt="" />
-            <img src={Grid04} alt="" />
-            <img src={Grid05} alt="" />
+            <img className='hover:scale-105 transition-transform' src={Grid01} alt="" />
+            <img className='hover:scale-105 transition-transform' src={Grid02} alt="" />
+            <img className='hover:scale-105 transition-transform' src={Grid03} alt="" />
+            <img className='hover:scale-105 transition-transform' src={Grid04} alt="" />
+            <img className='hover:scale-105 transition-transform' src={Grid05} alt="" />
         </div>
     </div>
   )

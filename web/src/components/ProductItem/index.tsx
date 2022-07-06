@@ -22,7 +22,7 @@ function ProductItem() {
         <Link to='/'>Home</Link>/<Link to='/catalogo'>Loja</Link>/<p className='inline'>Laço de Linho - Preto</p>
       </div>
       <div className='container mx-auto flex flex-col lg:flex-row'>
-        <div className='flex flex-col lg:flex-row'>
+        <div className='flex flex-col lg:flex-row gap-6'>
           <div className='hidden md:hidden lg:flex lg:flex-col gap-4'>
             <img className='object-cover' src={LacoPreto1} alt="" />
             <img className='object-cover' src={LacoPreto2} alt="" />

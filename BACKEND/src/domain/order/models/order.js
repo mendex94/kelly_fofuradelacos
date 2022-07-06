@@ -1,5 +1,6 @@
 const db = require("../../../infrastructure/database");
 const { DataTypes } = require("sequelize");
+const Customers = require("./customer");
 
 const  Orders = db.define(
   "Orders",
@@ -9,6 +10,14 @@ const  Orders = db.define(
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER
+    },
+    id_customer: {
+      type: DataTypes.INTEGER,
+      foreignKey: true,
+      references: {
+        model: Customers,
+        key: "id",
+      }
     },
     date_order: {
       type: DataTypes.DATE
@@ -39,4 +48,4 @@ const  Orders = db.define(
   }
 );
 
-module.exports = Orders
+module.exports = Orders;

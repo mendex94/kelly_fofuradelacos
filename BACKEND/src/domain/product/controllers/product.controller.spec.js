@@ -1,5 +1,5 @@
-import app from "../../..";
-import supertest from 'supertest';
+const app = require("../../..");
+const supertest = require('supertest');
 
 
 

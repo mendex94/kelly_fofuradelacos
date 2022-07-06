@@ -16,7 +16,7 @@ const  Customers = db.define(
     phone: {
       type: DataTypes.STRING
     },
-    address: {
+    email: {
       type: DataTypes.STRING
     },
     createdAt: {

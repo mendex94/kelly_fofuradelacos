@@ -39,4 +39,4 @@ const  Orders = db.define(
   }
 );
 
-module.exports = Orders
+module.exports = Orders;

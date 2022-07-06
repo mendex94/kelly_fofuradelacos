@@ -1,7 +1,8 @@
 const express = require('express');
 const OrdersController = require('../domain/order/controllers/order.controller');
 const ProductsController = require('../domain/product/controllers/product.controller');
-
+const PersonalizeController = require('../domain/personalize/controllers/personalize.controller');
+const  postPersonalize  = require('../domain/personalize/services');
 
 const routes = express.Router();
 
@@ -16,8 +17,8 @@ routes.get("/catalogo/acessorios", ProductsController.getAcessorios);
 
 routes.post("/pedido", OrdersController.postOrder);
 
-routes.get("/frete", ShippingController.getShipping);
+// routes.get("/frete", ShippingController.getShipping);
 
-routes.post("/personalizado", PersonalizeController,postPersonalize);
+routes.post("/personalizado", PersonalizeController.postPersonalize);
 
 module.exports = routes;

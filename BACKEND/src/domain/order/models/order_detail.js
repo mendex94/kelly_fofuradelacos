@@ -30,14 +30,6 @@ const Order_Details = db.define(
         key: "id",
       }
     },
-    id_customer: {
-      type: DataTypes.INTEGER,
-      foreignKey: true,
-      references: {
-        model: Customers,
-        key: "id",
-      }
-    },
     amount: {
       type: DataTypes.INTEGER
     },

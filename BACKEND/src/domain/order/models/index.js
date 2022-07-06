@@ -3,14 +3,13 @@ const Order_Details = require('./order_detail')
 const Customer = require('./customer')
 
 
-Orders.belongsToMany(Order_Details, {
+Orders.hasMany(Order_Details, {
     foreignKey: "id_product",
 });
-
-Order_Details.belongsToMany(Orders, {
+Order_Details.belongsTo(Orders, {
     foreignKey: "id_product",
 });
-Customer.hasMany(Order, {
+Customer.hasMany(Orders, {
     foreignKey: "id_customer",
 });
 Orders.belongsTo(Customer, {

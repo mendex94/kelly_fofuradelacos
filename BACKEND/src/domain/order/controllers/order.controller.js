@@ -5,7 +5,7 @@ const OrdersController = {
 
   async postOrder(req, res) {
     try {
-      const newOrder = await orderService.createOrder(req.body);
+      const newOrder = await orderService.createOrder(req);
 
       return res.status(200).json(newOrder)
 

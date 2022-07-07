@@ -1,6 +1,6 @@
 const Orders = require('./order')
 const Order_Details = require('./order_detail')
-const Customer = require('./customer')
+const Customers = require('./customer')
 
 
 Orders.hasMany(Order_Details, {
@@ -9,15 +9,15 @@ Orders.hasMany(Order_Details, {
 Order_Details.belongsTo(Orders, {
     foreignKey: "id_order",
 });
-Customer.hasMany(Orders, {
+Customers.hasMany(Orders, {
     foreignKey: "id_customer",
 });
-Orders.belongsTo(Customer, {
-    foreignKey: "id_order",
+Orders.belongsTo(Customers, {
+    foreignKey: "id_customer",
 });
 
 module.exports = {
     Orders,
     Order_Details,
-    Customer
+    Customers
 }

@@ -18,8 +18,8 @@ routes.get("/catalogo/colecaoparis", ProductsController.getColecaoParis);
 routes.get("/catalogo/tiaras", ProductsController.getTiaras);
 routes.get("/catalogo/acessorios", ProductsController.getAcessorios);
 
-routes.post("/pedido", OrderValidation.create, OrdersController.postOrder);
-
+//routes.post("/pedido", OrderValidation.create, OrdersController.postOrder);
+routes.post("/pedido", OrdersController.postOrder);
 // routes.get("/frete", ShippingController.getShipping);
 
 routes.post("/personalizado", personalizeValidation,PersonalizeController.postPersonalize);

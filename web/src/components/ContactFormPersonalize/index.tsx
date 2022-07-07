@@ -9,7 +9,7 @@ const validationSchema = Yup.object({
     .email("E-mail não é válido")
     .required("É necessário que insira seu e-mail!"),
   description: Yup.string()
-    .min(10, "Mínimo de 0 caracteres")
+    .min(10, "Mínimo de 10 caracteres")
     .required("É necessário que insira sua mensagem!"),
 });
 

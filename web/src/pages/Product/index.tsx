@@ -7,14 +7,14 @@ import productRequests from "../../hooks/productsHooks/productRequests"
 
 function Product() {
   const {
-    productList
+    destaquesList
   } = productRequests();
   
   return (
     <div>
       <Header />
       <ProductItem />
-      <Row title='Você também pode gostar...' product={productList}/>
+      <Row title='Você também pode gostar...' product={destaquesList}/>
       <CommentSection />
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 const { Request, Response } = require("express");
-const orderService = require("../services/");
+const orderService = require("../services/OrderService");
 
 const OrdersController = {
 

@@ -1,11 +1,11 @@
 const { Request, Response } = require("express");
-const orderService = require("../services/");
+const orderService = require("../services/OrderService");
 
 const OrdersController = {
 
   async postOrder(req, res) {
     try {
-      const newOrder = await orderService.createOrder(req.body);
+      const newOrder = await orderService.createOrder(req);
 
       return res.status(200).json(newOrder)
 

@@ -3,7 +3,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.addColumn(
       'orders',
-      'id_customers',
+      'id_customer',
       {
         type: Sequelize.INTEGER,
         references: { model: 'customers', key: 'id' },
@@ -15,7 +15,7 @@ module.exports = {
   async down(queryInterface, Sequelize) {
     await queryInterface.removeColumn(
       'orders',
-      'id_customers',
+      'id_customer',
       { });
   }
 };

@@ -9,8 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-
-      total_order: {
+     total_order: {
         type: Sequelize.DECIMAL
       },
       discount: {

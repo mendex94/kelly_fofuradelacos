@@ -28,6 +28,9 @@ const Products = db.define(
     notes: {
       type: DataTypes.STRING
     },
+    overall_evaluation: {
+      type: DataTypes.INTEGER
+    },
     status: {
       type: DataTypes.INTEGER
     },

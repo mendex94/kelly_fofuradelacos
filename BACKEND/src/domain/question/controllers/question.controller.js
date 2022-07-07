@@ -1,5 +1,5 @@
 const { Request, Response } = require("express");
-const productService = require("../services/");
+const productService = require("../services");
 
 const ProductsController = {
 

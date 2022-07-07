@@ -10,18 +10,7 @@ const  Orders = db.define(
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER
-    },
-    id_customer: {
-      type: DataTypes.INTEGER,
-      foreignKey: true,
-      references: {
-        model: Customers,
-        key: "id",
-      }
-    },
-    date_order: {
-      type: DataTypes.DATE
-    },
+    },   
     total_order: {
       type: DataTypes.DECIMAL
     },
@@ -41,7 +30,15 @@ const  Orders = db.define(
     updatedAt: {
       allowNull: false,
       type: DataTypes.DATE
-    }
+    },
+    id_customer: {
+      type: DataTypes.INTEGER,
+      foreignKey: true,
+      references: {
+        model: Customers,
+        key: "id",
+      }
+    },
   },
   {
     tableName: "orders",

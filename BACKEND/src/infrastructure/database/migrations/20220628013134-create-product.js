@@ -27,6 +27,9 @@ module.exports = {
       notes: { 
         type: Sequelize.STRING(1024)
       },
+      overall_evaluation:{
+        type: Sequelize.INTEGER
+      },
       status: {
         type: Sequelize.INTEGER
       },

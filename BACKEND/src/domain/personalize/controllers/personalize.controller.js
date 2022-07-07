@@ -5,8 +5,8 @@ const PersonalizeController = {
 
   async postPersonalize(req, res) {
     try {
-      const orders = await personalizedService.create();
-      return res.status(200).json(await orders);
+      const orders = await personalizedService.postPersonalize(req);      
+      return res.status(200).json(orders);
     } catch (error) {
       return res.status(500).json(error);
     }

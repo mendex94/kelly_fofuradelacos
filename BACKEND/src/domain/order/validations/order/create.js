@@ -1,6 +1,5 @@
 const { validate, Joi } = require("express-validation");
 
-
 const create = validate({
   body: Joi.object({  
     name: Joi.string().required(),
@@ -20,6 +19,10 @@ const create = validate({
   }),
 });
 
-module.exports = {
+const OrderValidation = {
   create
 };
+
+module.exports = OrderValidation
+
+

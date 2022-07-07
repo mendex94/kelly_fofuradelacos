@@ -31,14 +31,6 @@ const  Orders = db.define(
       allowNull: false,
       type: DataTypes.DATE
     },
-    id_customer: {
-      type: DataTypes.INTEGER,
-      foreignKey: true,
-      references: {
-        model: Customers,
-        key: "id",
-      }
-    },
   },
   {
     tableName: "orders",

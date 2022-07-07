@@ -29,7 +29,7 @@ function ContactFormSupport() {
   });
 
   return (
-    <div className="bg-bege-100 pt-2 pb-[110px]">
+    <div className="bg-bege-100 py-[110px]">
       <div className="form-container w-10/12 m-auto">
         <p className="text-[44px] font-semibold text-rosa-200 pb-12">
           Ficou alguma dúvida? Entre em contato!

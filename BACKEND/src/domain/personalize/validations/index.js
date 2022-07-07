@@ -1,13 +1,8 @@
-const { create } = require ("./sample/create");
-const { getOne } = require ("./sample/getOne");
-const { destroy}  = require ("./sample/destroy");
-const { update } = require ("./sample/update");
+const  {create}  = require('/personalize/create')
 
-const SampleValidation = {
-  create,
-  getOne,
-  destroy,
-  update,
+
+const PersonalizeValitation = {
+  create
 };
 
-module.exports = SampleValidation
+module.exports = PersonalizeValitation

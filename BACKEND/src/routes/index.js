@@ -3,7 +3,7 @@ const OrdersController = require('../domain/order/controllers/order.controller')
 const ProductsController = require('../domain/product/controllers/product.controller');
 const PersonalizeController = require('../domain/personalize/controllers/personalize.controller');
 const  postPersonalize  = require('../domain/personalize/services');
-const psicologoValidation = require('../domain/personalize/validations/create')
+const personalizeValidation = require('../domain/personalize/validations/create')
 
 const routes = express.Router();
 
@@ -20,6 +20,6 @@ routes.post("/pedido", OrdersController.postOrder);
 
 // routes.get("/frete", ShippingController.getShipping);
 
-routes.post("/personalizado", psicologoValidation,PersonalizeController.postPersonalize);
+routes.post("/personalizado", personalizeValidation,PersonalizeController.postPersonalize);
 
 module.exports = routes;

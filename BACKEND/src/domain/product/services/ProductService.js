@@ -17,7 +17,7 @@ const ProductService = {
       console.log(error);
     }
   },
-
+  
   async findProductbyType(type_product) {
     try {
       const product = await Products.findAll({

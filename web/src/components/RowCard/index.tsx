@@ -15,17 +15,17 @@ function RowCard({product}: RowCardProps) {
         dispatch(addToCart(product))
     }
     return (
-        <div className='rounded-[35px] shadow-lg bg-white transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
-            <Link to={`/produto/${product.id}`} state={product}>
-                <img className='' src={LacoFloral} alt="" />
+        <div className='rounded-[35px] shadow-lg bg-[#FFFFFF] transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
+            <Link to={`/produto`} state={product}>
+                <img className='object-cover' src={LacoFloral} alt="" />
             </Link>            
-            <div className='flex justify-between items-center px-6 my-4 w-full'>
+            <div className='flex justify-between items-center px-6 my-4 w-full relative'>
                 <div className='text-montserrat'>
-                    <p className='text-p3 font-medium'>{product.description}</p>
+                    <p className={`font-medium ${product.description.length > 20 ? 'text-p4' : 'text-p3'}`}>{product.description}</p>
                     <p className='font-montserrat font-bold text-[36px]'>R$ {product.price},00</p>
                 </div>
 
-                <button onClick={()=> handleAddToCart(product)}><CardButton/></button>
+                <button className='absolute right-7 bottom-3' onClick={()=> handleAddToCart(product)}><CardButton/></button>
             </div>
 
         </div>

@@ -1,10 +1,10 @@
 const { Colors } = require("../models");
 const { Materials } = require("../models");
-const { Products } = require("../models");
+const  {Products } = require("../models");
 const { Product_Albums } = require("../models");
 const { Sizes } = require("../models");
 const { Highlights } = require("../models");
-const { Ratings } = require("../models");
+const  {Ratings } = require("../models");
 
 
 const ProductService = {

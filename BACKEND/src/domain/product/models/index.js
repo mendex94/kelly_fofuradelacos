@@ -76,20 +76,6 @@ Sizes.belongsToMany(Products,{
 })
 
 
-Ratings.hasMany(Products,{
-    foreignKey:'id_product',
-})
-
-Products.belongsTo(Ratings)
-
-Highlights.hasMany(Products,{
-    foreignKey:'id_product',
-})
-
-Products.belongsTo(Highlights)
-
-
-
 module.exports = {
     Products,
     Collections,

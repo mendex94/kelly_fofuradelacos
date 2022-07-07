@@ -77,7 +77,7 @@ const ProductsController = {
 
   async getAcessorios(req, res) {
     try {
-      const type_product = "acessorio";
+      const type_product = "acessórios";
       const acessorios = await productService.findProductbyType(type_product);
       if (!acessorios.length > 0){
         return res.status(400).json("Não há acessórios cadastrados")

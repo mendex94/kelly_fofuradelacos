@@ -3,7 +3,7 @@ const Sequelize = require("sequelize");
 
 const DB_NAME = "zmucgf11ffxyf2nh";//process.env.DB_NAME_DEV;
 const DB_USER ="v31kfqep3rqse5vd"; //process.env.DB_USER;
-const DB_PASS = "lktb4ktol3ef3apb";//process.env.DB_PASSWORD;
+const DB_PASS = "u7bpxkb99v8frq02";//process.env.DB_PASSWORD;
 const DB_CONFIG = {
   dialect: "mysql",
   host: "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",

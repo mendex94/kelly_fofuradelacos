@@ -23,16 +23,16 @@ function CartComponent() {
                 {cart.cartItems.length === 0 ? (
                     <div className='h-screen flex justify-center pt-72'>
                         <div>
-                            <p className='font-montserrat font-bold text-h4'>Seu carrinho está vazio!</p>
-                            <Link to='/catalogo' className='font-semibold text-rosa-200 text-h5 underline underline-offset-1'><ArrowBackOutlinedIcon /> Começar a comprar</Link>
+                            <p className='font-montserrat font-bold text-h3'>Seu carrinho está vazio!</p>
+                            <Link to='/catalogo' className='font-semibold text-rosa-200 text-h4 underline underline-offset-1'><ArrowBackOutlinedIcon /> Começar a comprar</Link>
                         </div>
                     </div>
                 ) : (
                     <>
                         <div className='hidden md:flex border-b border-rosa-400 text-h5 mb-14 font-montserrat'>
-                            <h3 className='w-[40%] pl-14'>PRODUTOS</h3>
-                            <h3 className='w-1/5 text-right'>QUANTIDADE</h3>
-                            <h3 className='w-1/5 pl-16'>VALOR</h3>
+                            <h3 className='w-[40%] pl-14 text-h3'>PRODUTOS</h3>
+                            <h3 className='w-1/5 text-right text-h3'>QUANTIDADE</h3>
+                            <h3 className='w-1/5 pl-16 text-h3'>VALOR</h3>
                         </div>
                         <div className='container md:flex md:justify-between'>
                             <div className=''>
@@ -43,8 +43,8 @@ function CartComponent() {
                             <div className='flex flex-col'>
                                 <FreteForm />
                                 <TotalPrice subtotal={cart.cartTotalAmount}/>
-                                <button className='w-full bg-rosa-200 font-montserrat py-5 rounded-lg text-bege-100 mb-5 font-bold'>Enviar o Pedido</button>
-                                <Link to='/catalogo' className='font-montserrat text-center w-full text-rosa-200 underline underline-offset-1 font-normal text-h6 mb-5'>Continuar comprando</Link>
+                                <button className='w-full bg-rosa-200 py-5 rounded-lg text-bege-100 mb-5 text-h3 font-semibold'>Enviar o Pedido</button>
+                                <Link to='/catalogo' className='text-center w-full text-rosa-200 underline underline-offset-1 text-h3 mb-5'>Continuar comprando</Link>
                             </div>
                         </div>
                     </>

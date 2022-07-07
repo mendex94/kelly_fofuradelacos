@@ -21,8 +21,8 @@ function RowCard({product}: RowCardProps) {
             </Link>            
             <div className='flex justify-between items-center px-6 my-4 w-full'>
                 <div className='text-montserrat'>
-                    <p className='text-p3 font-medium'>{product.description}</p>
-                    <p className='font-montserrat font-bold text-[36px]'>R$ {product.price},00</p>
+                    <p className='text-h3'>{product.description}</p>
+                    <p className='font-bold text-p2'>R$ {product.price},00</p>
                 </div>
 
                 <button onClick={()=> handleAddToCart(product)}><CardButton/></button>

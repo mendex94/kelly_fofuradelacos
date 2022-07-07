@@ -6,6 +6,7 @@ const  postPersonalize  = require('../domain/personalize/services');
 const personalizeValidation = require('../domain/personalize/validations/create')
 const OrderValidation = require("../domain/order/validations/order/create");
 const ProductValidation = require("../domain/product/validations/getone");
+const FreteController = require('../domain/api-frete/controllers/frete.controller');
 
 const routes = express.Router();
 
@@ -23,5 +24,7 @@ routes.post("/pedido", OrdersController.postOrder);
 // routes.get("/frete", ShippingController.getShipping);
 
 routes.post("/personalizado", personalizeValidation,PersonalizeController.postPersonalize);
+
+routes.get("/frete", FreteController.getFrete);
 
 module.exports = routes;

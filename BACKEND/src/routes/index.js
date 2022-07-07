@@ -5,11 +5,12 @@ const PersonalizeController = require('../domain/personalize/controllers/persona
 const  postPersonalize  = require('../domain/personalize/services');
 const personalizeValidation = require('../domain/personalize/validations/create')
 const OrderValidation = require("../domain/order/validations/order/create");
+const ProductValidation = require("../domain/product/validations/getone");
 
 const routes = express.Router();
 
 routes.get("/catalogo", ProductsController.getAll);
-routes.get("/catalogo/:id", ProductsController.getProductById);
+routes.get("/catalogo/produto/:id", ProductValidation.getOne,ProductsController.getProductById);
 
 routes.get("/catalogo/destaques", ProductsController.getHighlights);
 routes.get("/catalogo/lacos", ProductsController.getLacos);

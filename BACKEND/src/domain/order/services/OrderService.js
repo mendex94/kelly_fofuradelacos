@@ -52,27 +52,27 @@ const orderService = {
     console.log(error);
   }
   },    
-//   async getCustomerId(name, phone, email) {
-//   const searchCustomer = await Customers.findAll({
-//     where: {
-//       name,
-//       phone,
-//       email
-//     }
-//   })
-//   if (!searchCustomer.length > 0) {
-//     return insertCustomer(name, phone, email)
-//   }
-//   return searchCustomer.id
-// },
-//   async insertCustomer(name, phone, email) {
-//   const createCustomer = await Customers.create({
-//     name,
-//     phone,
-//     email
-//   })
-//   return createCustomer.id
-// },
+  async getCustomerId(name, phone, email) {
+  const searchCustomer = await Customers.findAll({
+    where: {
+      name,
+      phone,
+      email
+    }
+  })
+  if (!searchCustomer.length > 0) {
+    return insertCustomer(name, phone, email)
+  }
+  return searchCustomer.id
+},
+  async insertCustomer(name, phone, email) {
+  const createCustomer = await Customers.create({
+    name,
+    phone,
+    email
+  })
+  return createCustomer.id
+},
 }
 
 module.exports = orderService;

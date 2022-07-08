@@ -5,23 +5,8 @@ const { Customers } = require("../models");
 const orderService = {
   async createOrder(req) {
     try {
-      const {
-        name,
-        phone,
-        email,
-        total_order,
-        discount,
-        products_quantity,
-        shipping_total,
-        id_product,
-        amount,
-        unit_value,
-        percentage_discount,
-        id_product_size,
-        id_product_color,
-        id_product_material
-      } =  req.body;
-      console.log(req.body);
+      
+       console.log(req.body);
 
      // const idcostumer = 1//getCostumerId(name, phone, email);
 

@@ -1,9 +1,7 @@
-import { CategoryRounded } from '@mui/icons-material';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
 import { useFormik } from "formik";
 import { useSelector } from 'react-redux';
 import * as Yup from "yup";
-import { CartState } from '../../@types/cart';
 import { Product } from '../../@types/products';
 import { RootStore } from '../../store';
 

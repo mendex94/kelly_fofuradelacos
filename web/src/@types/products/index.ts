@@ -17,7 +17,8 @@ export interface Product {
     Sizes: Sizes[],
     Materials: Materials[]
     Ratings: Rating[],
-    cartQuantity?: number | any
+    cartQuantity?: number | any,
+    overall_evaluation: number,
 }
 
 export interface Product_Albums {

@@ -1,5 +1,4 @@
 const db = require("../../../infrastructure/database");
-const { postQuestion } = require("../controllers/question.controller");
 const Questions = require('../models/question');
 
 const QuestionService = {

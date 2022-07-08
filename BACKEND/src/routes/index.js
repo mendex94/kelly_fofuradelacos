@@ -8,6 +8,7 @@ const ProductValidation = require("../domain/product/validations/getone");
 const FreteController = require('../domain/shipping-calculator/controllers/frete.controller');
 const { postQuestion } = require('../domain/question/controllers/question.controller');
 const QuestionController = require('../domain/question/controllers/question.controller');
+const QuestionValidation = require('../domain/question/validations')
 
 const routes = express.Router();
 
@@ -23,11 +24,7 @@ routes.get("/catalogo/acessorios", ProductsController.getAcessorios);
 //routes.post("/pedido", OrderValidation.create, OrdersController.postOrder);
 routes.post("/pedido", OrdersController.postOrder);
 routes.post("/frete", FreteController.getFrete);
-
-
 routes.post("/personalizado", personalizeValidation, PersonalizeController.postPersonalize);
-routes.post("/duvida", QuestionController.postQuestion);
-
 routes.post("/duvida", QuestionController.postQuestion);
 
 module.exports = routes;

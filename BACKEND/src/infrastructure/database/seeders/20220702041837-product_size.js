@@ -8,7 +8,7 @@ module.exports = {
         {
           id: 1,
           id_product: 1,
-          id_size:4,
+          id_size: 4,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -21,7 +21,7 @@ module.exports = {
         {
           id: 2,
           id_product: 2,
-          id_size:7,
+          id_size: 7,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -34,7 +34,7 @@ module.exports = {
         {
           id: 3,
           id_product: 3,
-          id_size:8,
+          id_size: 8,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -47,7 +47,7 @@ module.exports = {
         {
           id: 4,
           id_product: 4,
-          id_size:5,
+          id_size: 5,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -60,7 +60,7 @@ module.exports = {
         {
           id: 5,
           id_product: 5,
-          id_size:5,
+          id_size: 5,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -73,7 +73,7 @@ module.exports = {
         {
           id: 6,
           id_product: 6,
-          id_size:1,
+          id_size: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -99,7 +99,7 @@ module.exports = {
         {
           id: 8,
           id_product: 8,
-          id_size:3,
+          id_size: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },

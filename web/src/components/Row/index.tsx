@@ -30,7 +30,7 @@ function Row({ title, product }: RowProps) {
   return (
     <div className={`w-full flex flex-col pb-10 ${title === 'Destaques' && 'bg-[#FFFFFF]'}`}>
       <RowTitle title={title} />
-      <div className='flex w-screen md:container mx-auto flex-nowrap gap-4 items-center justify-center'>
+      <div className='flex w-screen md:container md:mx-auto gap-4 items-center justify-center'>
         <div>
           <button onClick={() => handleClick('left')} className={`hidden h-20 w-20 md:inline z-40 m-auto cursor-pointer hover:scale-125 transition
                     ${!isMoved && 'hidden'}`}><img src={LeftIcon} alt=""/></button>

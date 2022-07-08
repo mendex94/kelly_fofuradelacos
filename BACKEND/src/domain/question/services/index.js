@@ -1,6 +1,6 @@
-const  ProductService  = require('./ProductService')
+const  PersonalizedService  = require('./PersonalizeService')
 
 
-const productService = ProductService
+const personalizedService = PersonalizedService
 
-module.exports = productService
+module.exports = personalizedService

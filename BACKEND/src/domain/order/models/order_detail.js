@@ -51,9 +51,6 @@ const Order_Details = db.define(
     id_product_material: {
       type: DataTypes.INTEGER
     },
-    id_product_collection: {
-      type: DataTypes.INTEGER
-    },
     createdAt: {
       allowNull: false,
       type: DataTypes.DATE

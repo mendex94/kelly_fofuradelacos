@@ -51,12 +51,6 @@ module.exports = {
         onDelete: 'CASCADE',
         allowNull: false,
       },
-      id_product_collection: {
-        type: Sequelize.INTEGER,
-        references: { model: 'product_collections', key: 'id'},
-        onDelete: 'CASCADE',
-        allowNull: false,
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

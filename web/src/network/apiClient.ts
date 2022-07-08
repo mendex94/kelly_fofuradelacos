@@ -21,3 +21,12 @@ export const renderTiaras = ():Promise<Product[]> => {
 export const renderAcessorios = ():Promise<Product[]> => {
     return api.get<Product[]>('/catalogo/acessorios').then(response => response.data)    
 }
+
+export const postContact = async (contact: Omit<Contact, 'id'>): Promise<Contact> => {
+    try {
+        const response = await api.post("/personalizado", contact)
+        return response.data
+    } catch (error) {
+        return error as unknown as Contact;
+    }
+}

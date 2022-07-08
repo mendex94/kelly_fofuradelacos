@@ -7,7 +7,6 @@ export interface Product {
     weight: string,
     notes: string,
     status: number,
-    overall_evaluation: number,
     createdAt: string,
     updatedAt: string,
     Product_Albums: Product_Albums[],
@@ -83,13 +82,4 @@ export interface Rating {
     author: string,
     createdAt: string,
     updatedAt: string
-}
-
-export interface productsInitialState {
-    lacoList: [],
-    destaquesList: [],
-    colecaoparisList: [],
-    tiarasList: [],
-    acessoriosList: [],
-    status: any
 }

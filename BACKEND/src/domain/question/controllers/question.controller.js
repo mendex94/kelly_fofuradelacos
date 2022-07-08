@@ -1,6 +1,5 @@
 const { Request, Response } = require("express");
 const questionService = require("../services/index");
-// const {postQuestion} = require("../services/index");
 const QuestionController = {
 
   async postQuestion(req, res) {

@@ -8,8 +8,6 @@ module.exports = {
         {
           id: 1,
           description: "Laço Preto",
-          short_description: 
-            "Laço em linho e pedraria, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 39.0,
@@ -30,8 +28,6 @@ module.exports = {
         {
           id: 2,
           description: "Laço Cetim Azul",
-          short_description: 
-            "Laço em cetim, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 50.0,
@@ -52,8 +48,6 @@ module.exports = {
         {
           id: 3,
           description: "Laço Coral",
-          short_description: 
-            "Laço em tule, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 50.0,
@@ -74,8 +68,6 @@ module.exports = {
         {
           id: 4,
           description: "Laço Veludo Vinho",
-          short_description: 
-            "Laço em veludo, feito à mão, podendo sofre pequenas variações.",
           model: "",
           type: "laço",
           price: 70.0,
@@ -96,8 +88,6 @@ module.exports = {
         {
           id: 5,
           description: "Laço Cetim Rosa",
-          short_description: 
-            "Laço em cetim, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 38.0,
@@ -118,8 +108,6 @@ module.exports = {
         {
           id: 6,
           description: "Laço Xadrez",
-          short_description: 
-            "Laço em linho, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 38.0,
@@ -140,8 +128,6 @@ module.exports = {
         {
           id: 7,
           description: "Laço de Veludo Preto",
-          short_description: 
-            "Laço em veludo, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 38.0,
@@ -162,8 +148,6 @@ module.exports = {
         {
           id: 8,
           description: "Laço Preto em Cadarço",
-          short_description: 
-            "Laço em cadarço, feito à mão, podendo sofrer pequenas variações.",
           model: "",
           type: "laço",
           price: 25.0,
@@ -184,8 +168,6 @@ module.exports = {
         {
           id: 9,
           description: "Tiara Princesa Akosua",
-          short_description: 
-            "Tiara em malha canelada, feita à mão, podendo sofrer pequenas variações.",
           model: "Princesa Akosua",
           type: "tiara",
           price: 100.0,
@@ -206,8 +188,6 @@ module.exports = {
         {
           id: 10,
           description: "Tiara Princesa Charlotte",
-          short_description: 
-            "Tiara em plástico e pedraria, feita à mão, podendo sofrer pequenas variações.",
           model: "Princesa Charlotte",
           type: "tiara",
           price: 100.0,
@@ -227,8 +207,6 @@ module.exports = {
         {
           id: 11,
           description: "Tiara Princesa Mako",
-          short_description:
-            "Tiara em veludo, feita à mão, podendo sofrer pequenas variações.",
           model: "Princesa Mako",
           type: "tiara",
           price: 80.0,
@@ -249,8 +227,6 @@ module.exports = {
         {
           id: 12,
           description: "Tiara Princesa Grace Kelly",
-          short_description: 
-            "Tiara dourada em metal com pérolas, feita à mão, podendo sofrer pequenas variações.",
           model: "Princesa Grace Kelly",
           type: "tiara",
           price: 100.0,
@@ -270,8 +246,6 @@ module.exports = {
         {
           id: 13,
           description: "Tiara Princesa Angela",
-          short_description: 
-            "Tiara com miçangas, feita à mão, podendo sofrer pequenas alterações.",
           model: "Princesa Angela",
           type: "tiara",
           price: 100.0,
@@ -292,8 +266,6 @@ module.exports = {
         {
           id: 14,
           description: "Tiara Princesa Diana",
-          short_description: 
-            "Tiara preta de strass, feita à mão, podendo sofrer pequenas alterações.",
           model: "Princesa Diana",
           type: "tiara",
           price: 70.0,
@@ -314,8 +286,6 @@ module.exports = {
         {
           id: 15,
           description: "Tiara Princesa Leonor",
-          short_description: 
-            "Tiara preta e dourada em lurex, feita à mão, podendo sofrer pequenas alterações.",
           model: "Princesa Leonor",
           type: "tiara",
           price: 70.0,
@@ -336,8 +306,6 @@ module.exports = {
         {
           id: 16,
           description: "Tiara Princesa Isabel",
-          short_description: 
-            "Tiara em malha acetinada, feita à mão, podendo sofrer pequenas alterações.",
           model: "Princesa Isabel",
           type: "tiara",
           price: 65.0,
@@ -358,8 +326,6 @@ module.exports = {
         {
           id: 17,
           description: "Boina Preta",
-          short_description: 
-            "Boina em poliéster, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 70.0,
@@ -380,8 +346,6 @@ module.exports = {
         {
           id: 18,
           description: "Boina Branca",
-          short_description: 
-            "Boina em algodão, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 70.0,
@@ -402,8 +366,6 @@ module.exports = {
         {
           id: 19,
           description: "Boina Vermelha",
-          short_description: 
-            "Boina em poliéster, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 70.0,
@@ -424,8 +386,6 @@ module.exports = {
         {
           id: 20,
           description: "Boina Preta com Laço de Veludo",
-          short_description: 
-            "Boina em poliéster e veludo, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 85.0,
@@ -446,8 +406,6 @@ module.exports = {
         {
           id: 21,
           description: "Boina Preta com Pérolas",
-          short_description: 
-            "Boina em poliéster com pérolas, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 85.0,
@@ -468,8 +426,6 @@ module.exports = {
         {
           id: 22,
           description: "Boina Azul",
-          short_description: 
-            "Boina em poliéster e veludo, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 70.0,
@@ -490,8 +446,6 @@ module.exports = {
         {
           id: 23,
           description: "Boina Bege",
-          short_description: 
-            "Boina em algodão, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 70.0,
@@ -512,8 +466,6 @@ module.exports = {
         {
           id: 24,
           description: "Boina Roxa",
-          short_description: 
-            "Boina em algodão, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "boina",
           price: 70.0,
@@ -534,8 +486,6 @@ module.exports = {
         {
           id: 25,
           description: "Presilha Gama",
-          short_description: 
-            "Presilha em resina e metal.",
           model: "",
           type: "acessórios",
           price: 25.0,
@@ -556,8 +506,6 @@ module.exports = {
         {
           id: 26,
           description: "Presilha de Strass Prata Vazada",
-          short_description: 
-            "Presilha em strass e metal.",
           model: "",
           type: "acessórios",
           price: 28.0,
@@ -578,8 +526,6 @@ module.exports = {
         {
           id: 27,
           description: "Presilha de Strass Prata",
-          short_description: 
-            "Presilha em strass e metal.",
           model: "",
           type: "acessórios",
           price: 28.0,
@@ -600,8 +546,6 @@ module.exports = {
         {
           id: 28,
           description: "Piranha Espinha Rosa",
-          short_description: 
-            "Piranha de PVC, do tipo espinha.",
           model: "",
           type: "acessórios",
           price: 15.0,
@@ -621,8 +565,6 @@ module.exports = {
         {
           id: 29,
           description: "Piranha Floral Roxa",
-          short_description: 
-            "Piranha de PVC, do tipo espinha.",
           model: "",
           type: "acessórios",
           price: 15.0,
@@ -642,8 +584,6 @@ module.exports = {
         {
           id: 30,
           description: "Xuxinha Vermelha",
-          short_description: 
-            "Xuxinha em linho de poliéster, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "acessórios",
           price: 10.0,
@@ -664,8 +604,6 @@ module.exports = {
         {
           id: 31,
           description: "Xuxinha Vinho com Pérolas",
-          short_description: 
-            "Xuxinha em veludo com pérolas, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "acessórios",
           price: 20.0,
@@ -686,8 +624,6 @@ module.exports = {
         {
           id: 32,
           description: "Xuxinha preta",
-          short_description: 
-            "Xuxinha em veludo e tule, feita à mão, podendo sofrer pequenas alterações.",
           model: "",
           type: "acessórios",
           price: 20.0,

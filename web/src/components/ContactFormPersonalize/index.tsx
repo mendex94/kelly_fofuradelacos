@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { postContact } from "../../network/apiClient";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -64,7 +65,7 @@ function ContactFormPersonalize() {
           />
           {formik.errors.description && <span>{formik.errors.description}</span>}
           <div className="flex justify-end">
-          <button className="flex justify-center text-[30px] font-bold text-bege-100 bg-rosa-200 px-16 py-1 rounded-[15px] hover:bg-rosa-100" type="submit">Enviar pedido</button>
+          <button className="flex justify-center text-p2 font-bold text-bege-100 bg-rosa-200 px-16 py-1 rounded-[15px] hover:bg-rosa-100" type="submit">Enviar pedido</button>
           </div>
         </form>
       </div>

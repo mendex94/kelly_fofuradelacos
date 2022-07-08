@@ -1,11 +1,7 @@
 import Routes from './Routes';
 import './index.css';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import store from './store';
-import { productsFetch } from './store/modules/products';
 
 function App() {
-  store.dispatch(productsFetch())
   return (
     <div className="App"> 
       <Routes />

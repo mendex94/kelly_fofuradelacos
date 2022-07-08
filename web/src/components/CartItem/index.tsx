@@ -25,17 +25,23 @@ function CartItem({ product }: CartItemProps) {
     }
 
     return (
-        <div className='container p-2 bg-[#FFFFFF] md:rounded-lg md:p-10 md:justify-between mb-5 flex flex-col gap-3 md:flex-row h-64 md:gap-32'>
+        <div className='w-full p-2 bg-[#FFFFFF] md:rounded-lg md:p-10 md:justify-between mb-5 flex flex-col gap-3 md:flex-row h-64 md:w-11/12'>
             <div className='flex gap-2 md:gap-3'>
                 <img src={LacoCart} alt="" className='rounded-[30px] shadow-lg' />
-                <div className='flex flex-col gap-6'>
-                    <div className='flex justify-between'>
-                        <h2 className='font-bold md:text-p2 text-p3'>{product.description}</h2>
-                        <button className='md:hidden relative text-rosa-200' onClick={() => handleRemoveFromCart(product)}><DeleteForeverOutlinedIcon /></button>
+                <div className='flex gap-3'>
+                    <div className='flex flex-col gap-6'>
+                        <div>
+                            <div>
+                                <h2 className='font-bold md:text-p2 text-p3'>{product.description}</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p className='font-medium md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
+                            <p className='text-p4 max-w-[200px] truncate'>{product.notes}</p>
+                        </div>
                     </div>
                     <div>
-                        <p className='font-medium md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
-                        <p className='text-p4 max-w-[350px] truncate'>{product.notes}</p>
+                        <button className='md:hidden text-rosa-200' onClick={() => handleRemoveFromCart(product)}><DeleteForeverOutlinedIcon /></button>
                     </div>
                 </div>
             </div>
@@ -49,7 +55,7 @@ function CartItem({ product }: CartItemProps) {
                     <button className='underline underline-offset-1 text-preto-100 text-h6 font-normal hidden md:inline font-montserrat' onClick={() => handleRemoveFromCart(product)}>Remover</button>
                 </div>
                 <div>
-                    <h2 className='font-bold md:text-p2 text-h6 md:mr-0 w-36 text-right'>R$ {+product.price * product.cartQuantity},00</h2>
+                    <h2 className='pr-4 md:pr-0 font-bold md:text-p2 text-h6 md:mr-0 text-right w-full'>R$ {+product.price * product.cartQuantity},00</h2>
                 </div>
             </div>
         </div>

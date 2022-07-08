@@ -83,3 +83,12 @@ export interface Rating {
     createdAt: string,
     updatedAt: string
 }
+
+export interface productsInitialState {
+    lacoList: any,
+    destaquesList: any,
+    colecaoparisList: any,
+    tiarasList: any,
+    acessoriosList: any,
+    status: any
+}

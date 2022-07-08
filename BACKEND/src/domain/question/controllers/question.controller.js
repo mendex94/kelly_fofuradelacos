@@ -1,16 +1,16 @@
 const { Request, Response } = require("express");
-const personalizedService = require("../services/index");
+const questionService = require("../services/index");
 
-const PersonalizeController = {
+const QuestionController = {
 
-  async postPersonalize(req, res) {
+  async postQuestion(req, res) {
     try {
-      const orders = await personalizedService.postPersonalize(req);      
-      return res.status(200).json(orders);
+      const question = await questionService.postQuestion(req);      
+      return res.status(200).json(question);
     } catch (error) {
       return res.status(500).json(error);
     }
   },
 }
 
-module.exports = PersonalizeController;
+module.exports = QuestionController;

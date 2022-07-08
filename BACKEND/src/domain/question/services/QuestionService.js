@@ -1,17 +1,17 @@
 const db = require("../../../infrastructure/database");
-const Personalized_Orders = require('../models/personalized_order');
+const Questions = require('../models/question');
 
-const PersonalizedService = {
-  async postPersonalize(req) {
+const QuestiondService = {
+  async postQuestion(req) {
     //const {name, email, description} = data.body;
     console.log(req.body)
     try {
-        const postPersonalize = await Personalized_Orders.create(req.body);  
-        console.log(postPersonalize);
-        return postPersonalize;
+        const postQuestion = await Questions.create(req.body);  
+        console.log(postQuestion);
+        return postQuestion;
       } catch (error) {
         console.log(error);
       }
     },
 }
-module.exports = PersonalizedService;
+module.exports = QuestiondService;

@@ -4,7 +4,6 @@ import CardButton from '../CardButton'
 import { useDispatch } from 'react-redux' 
 import { addToCart } from '../../store/modules/cart'
 import { Link } from 'react-router-dom'
-import { productsFetch } from '../../store/modules/products'
 
 interface RowCardProps {
     product: Product

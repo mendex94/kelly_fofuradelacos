@@ -16,7 +16,7 @@ function ProductItem() {
     const handleAddToCart = (product: Product) => {
         dispatch(addToCart(product))
     }
-    console.log(product.description.length)
+    console.log(product.Product_Albums[0].url_image)
   return ( 
     <div className='bg-bege-100 py-6 w-full'>
       <div className='font-montserrat text-h3 text-preto-100 md:container md:mx-auto mb-4'>
@@ -43,26 +43,17 @@ function ProductItem() {
             pequenas variações. São modelos exclusivos, feitos somente para
             você!</p>
           </div>
-<<<<<<< HEAD
           <div className='mb-14'>
             <h3 className='text-h4 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
-=======
-          <div className='mb-6'>
-            <h3 className='text-h6 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
->>>>>>> 86c0eed5b386d51ab248d6bae2489b95b1134bf0
             <div className='flex text-preto-100 text-p3 gap-5'>
               {product.Materials.map((material) => 
                 <MaterialPill material={material} key={material.id}/>
               )}
             </div>
           </div>
-<<<<<<< HEAD
-          <h3 className='text-h4 text-preto-100'>R$ {product.price},00</h3>
-=======
           </div>
           <div>
           <h3 className='text-h3 text-preto-100'>R$ {product.price},00</h3>
->>>>>>> 86c0eed5b386d51ab248d6bae2489b95b1134bf0
           <button onClick={() => handleAddToCart(product)} className='font-montserrat text-p2 font-bege-200 bg-rosa-200 px-9 py-5 w-full rounded-2xl text-[#FFFFFF] font-bold'>Adicionar ao carrinho</button>
           </div>
         </div>

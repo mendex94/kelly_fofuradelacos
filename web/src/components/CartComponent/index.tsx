@@ -17,6 +17,7 @@ function CartComponent() {
         dispatch(getTotals())
     }, [cart, dispatch])
 
+
     return (
         <div className='flex justify-center bg-bege-100 md:pt-24'>
             <div className='container'>

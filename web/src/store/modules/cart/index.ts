@@ -1,13 +1,34 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { CartState } from '../../../@types/cart'
 import { Product } from '../../../@types/products'
 import { toast } from 'react-toastify'
+import axios from 'axios'
 
 const initialState: CartState = {
     cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems') || '[]') : [],
     cartTotalQuantity: 0,
     cartTotalAmount: 0,
+    checkoutItems: [],
+    checkoutStatus: null
 }
+
+const api = axios.create({
+    baseURL: 'http://localhost:4000'
+})
+
+export const checkoutFetch: any = createAsyncThunk(
+    "cart/checkoutFetch",
+    async (order: any) => {
+        const checkout = await api.post('/pedido', order)
+        return checkout.data
+    }
+)
+
+const filterInt = function (value: string) {
+    if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
+      return Number(value);
+    return NaN;
+  }
 
 const cartSlice = createSlice({
     name: 'cart',
@@ -60,6 +81,29 @@ const cartSlice = createSlice({
             })
             state.cartTotalQuantity = quantity
             state.cartTotalAmount = total
+            const oldProducts = state.cartItems.map((product: Product) => (
+                {
+                    id_product: product.id,
+                    id_product_size: null,
+                    id_product_color: null,
+                    id_product_material: null,
+                    amount: product.cartQuantity,
+                    unit_value: filterInt(product.price),
+                    percentage_discount: null
+                }
+            ))
+            state.checkoutItems = [...oldProducts]
+        }
+    },
+    extraReducers: {
+        [checkoutFetch.pending]: (state: CartState) => {
+            state.checkoutStatus = 'pending'
+        },
+        [checkoutFetch.fulfilled]: (state: CartState) => {
+            state.checkoutStatus= 'fulfilled'
+        },
+        [checkoutFetch.rejected]: (state: CartState) => {
+            state.checkoutStatus= 'rejected'
         }
     }
 })

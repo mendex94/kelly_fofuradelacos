@@ -19,7 +19,7 @@ function ProductItem() {
     console.log(product.description.length)
   return ( 
     <div className='bg-bege-100 py-6 w-full'>
-      <div className='font-montserrat text-h5 text-preto-100 md:container md:mx-auto mb-4'>
+      <div className='font-montserrat text-h3 text-preto-100 md:container md:mx-auto mb-4'>
         <Link to='/'>Home</Link>/<Link to='/catalogo'>Loja</Link>/<p className='inline'>{product.description}</p>
       </div>
       <div className='container mx-auto flex flex-col lg:flex-row'>
@@ -39,21 +39,30 @@ function ProductItem() {
                                                                                 mais interessante. Feito em linho de alta qualidade, este delicado laço
                                                                                 pode ser usado no coque, no rabo de cavalo e em diversos penteados
                                                                                 criativos. Vai do casual ao elegante sem esforço algum.</p>
-          <p className='text-p4 text-preto-100 max-w-[400px] leading-relaxed'>Todas as nossas peças são feitas à mão uma a uma, podendo sofrer
+          <p className='text-p3 text-preto-100 max-w-[400px] leading-relaxed'>Todas as nossas peças são feitas à mão uma a uma, podendo sofrer
             pequenas variações. São modelos exclusivos, feitos somente para
             você!</p>
           </div>
+<<<<<<< HEAD
+          <div className='mb-14'>
+            <h3 className='text-h4 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
+=======
           <div className='mb-6'>
             <h3 className='text-h6 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
+>>>>>>> 86c0eed5b386d51ab248d6bae2489b95b1134bf0
             <div className='flex text-preto-100 text-p3 gap-5'>
               {product.Materials.map((material) => 
                 <MaterialPill material={material} key={material.id}/>
               )}
             </div>
           </div>
+<<<<<<< HEAD
+          <h3 className='text-h4 text-preto-100'>R$ {product.price},00</h3>
+=======
           </div>
           <div>
           <h3 className='text-h3 text-preto-100'>R$ {product.price},00</h3>
+>>>>>>> 86c0eed5b386d51ab248d6bae2489b95b1134bf0
           <button onClick={() => handleAddToCart(product)} className='font-montserrat text-p2 font-bege-200 bg-rosa-200 px-9 py-5 w-full rounded-2xl text-[#FFFFFF] font-bold'>Adicionar ao carrinho</button>
           </div>
         </div>

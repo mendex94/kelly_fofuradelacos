@@ -19,7 +19,7 @@ function Questions({ number, title, text }: QuestionsProps) {
 
         <div className="bg-[#FFFF] rounded-[10px] px-[25px] py-[30px]">
           <p className="text-[20px] font-semibold py-2">{title}</p>
-          <p className="text-[16px]">{text}</p>
+          <p className="text-p3">{text}</p>
         </div>
       </div>
     </div>

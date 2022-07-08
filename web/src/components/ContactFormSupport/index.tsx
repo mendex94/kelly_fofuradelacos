@@ -65,7 +65,7 @@ function ContactFormSupport() {
           />
           {formik.errors.description && <span>{formik.errors.description}</span>}
           <div className="flex justify-end">
-          <button className="flex justify-center text-[30px] font-bold text-bege-100 bg-rosa-200 px-16 py-1 rounded-[15px] hover:bg-rosa-100" type="submit">Enviar</button>
+          <button className="flex justify-center text-p2 font-bold text-bege-100 bg-rosa-200 px-16 py-1 rounded-[15px] hover:bg-rosa-100" type="submit">Enviar</button>
           </div>
         </form>
       </div>

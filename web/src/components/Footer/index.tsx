@@ -17,11 +17,11 @@ function Footer() {
           </div>
           <div className='flex flex-col justify-center'>
             <div className='flex gap-[150px]'>
-              <div className='flex flex-col font-montserrat text-p3 items-center md:items-start gap-6'>
+              <div className='flex flex-col font-montserrat text-[20px] items-center md:items-start gap-6'>
                 <Link to='/sobre'>Sobre nós</Link>
                 <Link to='/suporte'>Dúvidas</Link>
               </div>
-              <div className='flex flex-col font-montserrat text-p3 items-center md:items-start gap-6'>
+              <div className='flex flex-col font-montserrat text-[20px] items-center md:items-start gap-6'>
                 <Link to='/catalogo'>Loja</Link>
                 <Link to='/personalize'>Personalize</Link>
               </div>
@@ -32,7 +32,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className='font-montserrat text-p3 text-center md:text-right gap-4 lg:flex-col lg:flex hidden mt-7'>
+        <div className='font-montserrat text-[20px] text-center md:text-right gap-4 lg:flex-col lg:flex hidden mt-7'>
           <p>Certificados</p>
           <div className='flex gap-5'>
             <img className='w-20 h-20' src={GenericBadge} alt="" />

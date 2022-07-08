@@ -30,12 +30,12 @@ function CartItem({ product }: CartItemProps) {
                 <img src={LacoCart} alt="" className='rounded-[30px] shadow-lg' />
                 <div className='flex flex-col gap-6'>
                     <div className='flex justify-between'>
-                        <h2 className='font-bold md:text-p2 text-h5 font-montserrat'>{product.description}</h2>
+                        <h2 className='font-bold md:text-p2 text-p3'>{product.description}</h2>
                         <button className='md:hidden relative text-rosa-200' onClick={() => handleRemoveFromCart(product)}><DeleteForeverOutlinedIcon /></button>
                     </div>
                     <div>
-                        <p className='font-semibold md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
-                        <p className='md:text-p3 text-p4 font-montserrat'>{product.notes}</p>
+                        <p className='font-medium md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
+                        <p className='text-p4'>{product.notes}</p>
                     </div>
                 </div>
             </div>

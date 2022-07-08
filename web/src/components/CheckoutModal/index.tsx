@@ -1,26 +1,14 @@
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
 import { useFormik } from "formik";
 import { useSelector } from 'react-redux';
-import * as Yup from "yup";
 import store, { RootStore } from '../../store';
 import { checkoutFetch } from '../../store/modules/cart';
+import {validationSchema} from '../../Validations/contactValidation';
 
 interface CheckoutModalProps {
     showModal: () => void;
     active: boolean;
 }
-
-const phoneRegExp = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/
-
-const validationSchema = Yup.object({
-    name: Yup.string().required("É necessario que insira seu nome!"),
-    email: Yup.string()
-        .email("E-mail não é válido")
-        .required("É necessário que insira seu e-mail!"),
-    phone: Yup.string()
-        .matches(phoneRegExp, "O número de telefone não é válido!")
-        .required("É necessário que insira um número de telefone!")
-});
 
 function CheckoutModal({ showModal, active }: CheckoutModalProps) {
     const cart = useSelector((state: RootStore) => state.cart)
@@ -31,6 +19,7 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
             email: ""
         },
         validationSchema,
+
         onSubmit: async (values) => {
             const order = {
                 name: values.name,

@@ -2,16 +2,7 @@ import React, { useState } from "react";
 import { postContact } from "../../network/apiClient";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-
-const validationSchema = Yup.object({
-  name: Yup.string().required("É necessario que insira seu nome!"),
-  email: Yup.string()
-    .email("E-mail não é válido")
-    .required("É necessário que insira seu e-mail!"),
-  description: Yup.string()
-    .min(10, "Mínimo de 10 caracteres")
-    .required("É necessário que insira sua mensagem!"),
-});
+import { validationSchema } from "../../Validations/contactValidation";
 
 function ContactFormPersonalize() {
   const formik = useFormik({
@@ -19,9 +10,10 @@ function ContactFormPersonalize() {
       name: "",
       email: "",
       description: "",
-    },
-
+    }, 
     validationSchema,
+    
+    
     onSubmit: async (values) => {
       await postContact(values);
       alert("Mensagem enviada com sucesso!");

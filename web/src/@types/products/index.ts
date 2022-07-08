@@ -1,4 +1,5 @@
 export interface Product {
+    Product_album: any
     id: number,
     description: string,
     model: string,

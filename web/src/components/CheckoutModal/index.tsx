@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import { useSelector } from 'react-redux';
 import store, { RootStore } from '../../store';
 import { checkoutFetch } from '../../store/modules/cart';
-import {validationSchema} from '../../Validations/contactValidation';
+import { checkoutValidation } from '../../Validations/contactValidation'
 
 interface CheckoutModalProps {
     showModal: () => void;
@@ -16,9 +16,9 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
         initialValues: {
             name: "",
             phone: "",
-            email: ""
+            email: "",
         },
-        validationSchema,
+        checkoutValidation,
 
         onSubmit: async (values) => {
             const order = {

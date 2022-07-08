@@ -12,6 +12,9 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
+      short_description: {
+        type: Sequelize.STRING
+      },
       model: {
         type: Sequelize.STRING
       },

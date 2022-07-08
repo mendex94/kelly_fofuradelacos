@@ -34,22 +34,13 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       id_product_size: {
-        type: Sequelize.INTEGER,
-        references: { model: 'product_sizes', key: 'id'},
-        onDelete: 'CASCADE',
-        allowNull: false,
+        type: Sequelize.INTEGER
       },
       id_product_color: {
-        type: Sequelize.INTEGER,
-        references: { model: 'product_colors', key: 'id'},
-        onDelete: 'CASCADE',
-        allowNull: false,
+        type: Sequelize.INTEGER
       },
       id_product_material: {
-        type: Sequelize.INTEGER,
-        references: { model: 'product_materials', key: 'id'},
-        onDelete: 'CASCADE',
-        allowNull: false,
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,

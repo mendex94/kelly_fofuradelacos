@@ -1,19 +1,22 @@
 const app = require ('../../..');
 const supertest = require ("supertest");
-const { hasUncaughtExceptionCaptureCallback } = require ('process');
 
-describe('No controller ao executar a funcao', () => {
+describe('No controller, ao executar função', () => {
 
-  describe('getHelloWorld', () => {
+  describe('create', () => {
 
-    test("em caso de sucesso, deve retornar 200", async () => {
-      const response = await supertest(app)
-        .get('/hello-world')       
+      test('em caso de sucesso, deve retornar 201', async () => {
+          const response = await supertest(app)
+          .post('/personalizado')
+          .send({
+            name: "jose",
+            email:"jose@gmail.com",
+            description:"...",
+            // createdAT:"",
+            // updateAT:"",
+          })
 
-      expect(response.status).toBe(200)
+      expect(response.status).toBe(201)
     })
-    
   })
-
-
-});
+})

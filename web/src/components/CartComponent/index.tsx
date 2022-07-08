@@ -6,16 +6,18 @@ import { useSelector } from 'react-redux'
 import { RootStore } from '../../store'
 import { Product } from "../../@types/products"
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
-import { useEffect } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { getTotals } from "../../store/modules/cart"
+import CheckoutModal from "../CheckoutModal"
 
 function CartComponent() {
+    const [active, setActive] = useState(false)
+
+    const showModal = () => {
+        setActive(!active)
+    }
     const cart = useSelector((state: RootStore) => state.cart)
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getTotals())
-    }, [cart, dispatch])
 
     return (
         <div className='flex justify-center bg-bege-100 md:pt-24'>
@@ -37,16 +39,17 @@ function CartComponent() {
                         <div className='container md:flex md:justify-between'>
                             <div className=''>
                                 {cart.cartItems.map((product: Product) => (
-                                    <CartItem key={product.id} product={product}/>
+                                    <CartItem key={product.id} product={product} />
                                 ))}
                             </div>
                             <div className='flex flex-col'>
                                 <FreteForm />
-                                <TotalPrice subtotal={cart.cartTotalAmount}/>
-                                <button className='w-full bg-rosa-200 font-montserrat py-5 rounded-lg text-bege-100 mb-5 font-bold'>Enviar o Pedido</button>
+                                <TotalPrice subtotal={cart.cartTotalAmount} />
+                                <button className='w-full bg-rosa-200 font-montserrat py-5 rounded-lg text-bege-100 mb-5 font-bold' onClick={showModal}>Enviar o Pedido</button>
                                 <Link to='/catalogo' className='font-montserrat text-center w-full text-rosa-200 underline underline-offset-1 font-normal text-h6 mb-5'>Continuar comprando</Link>
                             </div>
                         </div>
+                        <CheckoutModal showModal={showModal} active={active} />
                     </>
                 )}
             </div>

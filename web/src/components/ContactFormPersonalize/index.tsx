@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { postContact } from "../../network/apiClient";
 import { useFormik } from "formik";
 import * as Yup from "yup";

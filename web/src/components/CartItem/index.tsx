@@ -25,7 +25,7 @@ function CartItem({ product }: CartItemProps) {
     }
 
     return (
-        <div className='w-full p-2 bg-[#FFFFFF] md:rounded-lg md:p-10 md:justify-between mb-5 flex flex-col gap-3 md:flex-row h-64 md:w-11/12'>
+        <div className='w-full p-2 bg-[#FFFFFF] md:rounded-lg md:p-10 mb-5 flex flex-col gap-3 md:flex-row h-64 md:justify-between'>
             <div className='flex gap-2 md:gap-3'>
                 <img src={LacoCart} alt="" className='rounded-[30px] shadow-lg' />
                 <div className='flex gap-3'>
@@ -55,7 +55,7 @@ function CartItem({ product }: CartItemProps) {
                     <button className='underline underline-offset-1 text-preto-100 text-h6 font-normal hidden md:inline font-montserrat' onClick={() => handleRemoveFromCart(product)}>Remover</button>
                 </div>
                 <div>
-                    <h2 className='pr-4 md:pr-0 font-bold md:text-p2 text-h6 md:mr-0 text-right w-full'>R$ {+product.price * product.cartQuantity},00</h2>
+                    <h2 className='pr-4 md:pr-0 font-bold md:text-p2 text-h6 md:mr-0 text-right w-full md:pb-8'>R$ {+product.price * product.cartQuantity},00</h2>
                 </div>
             </div>
         </div>

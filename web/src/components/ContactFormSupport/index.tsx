@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { postContact } from "../../network/apiClient";
 import { useFormik } from "formik";
 import {validationSchema} from '../../Validations/contactValidation';
+import store from "../../store";
+import { contactFetch } from "../../store/modules/contacts";
 
 function ContactFormSupport() {
   const formik = useFormik({
@@ -13,8 +13,8 @@ function ContactFormSupport() {
     validationSchema,
 
     onSubmit: async (values) => {
-      await postContact(values);
-      alert("Mensagem enviada com sucesso!");
+      store.dispatch(contactFetch(values))
+      formik.resetForm()
     },
   });
 

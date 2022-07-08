@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { postContact } from "../../network/apiClient";
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { validationSchema } from "../../Validations/contactValidation";
+import { useFormik } from "formik"
+import { validationSchema } from "../../Validations/contactValidation"
+import store from "../../store";
+import { contactPersonalizedFetch } from "../../store/modules/contacts";
 
 function ContactFormPersonalize() {
   const formik = useFormik({
@@ -11,12 +10,10 @@ function ContactFormPersonalize() {
       email: "",
       description: "",
     }, 
-    validationSchema,
-    
-    
+    validationSchema, 
     onSubmit: async (values) => {
-      await postContact(values);
-      alert("Mensagem enviada com sucesso!");
+      store.dispatch(contactPersonalizedFetch(values))
+      formik.resetForm()
     },
   });
 

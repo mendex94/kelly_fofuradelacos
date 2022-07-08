@@ -35,7 +35,7 @@ function CartItem({ product }: CartItemProps) {
                     </div>
                     <div>
                         <p className='font-medium md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
-                        <p className='text-p4'>{product.notes}</p>
+                        <p className='text-p4 max-w-[350px] truncate'>{product.notes}</p>
                     </div>
                 </div>
             </div>

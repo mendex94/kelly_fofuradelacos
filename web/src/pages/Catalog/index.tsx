@@ -1,4 +1,6 @@
+import { TailSpin } from "react-loader-spinner"
 import { useSelector } from "react-redux"
+import { Product } from "../../@types/products"
 import BannerCatalogo from "../../components/BannerCatalogo"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
@@ -7,7 +9,7 @@ import { RootStore } from "../../store"
 
 
 function Catalog() {
-  const products = useSelector((state: RootStore) => state.products)
+  const products = useSelector((state: Product[]) => state.products)
   const productsStatus = useSelector((state: RootStore) => state.products.status)
 
   return (

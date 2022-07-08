@@ -5,12 +5,13 @@ const PersonalizeController = require('../domain/personalize/controllers/persona
 const personalizeValidation = require('../domain/personalize/validations/create');
 const OrderValidation = require("../domain/order/validations/order/create");
 const ProductValidation = require("../domain/product/validations/getone");
-const FreteController = require('../domain/api-frete/controllers/frete.controller');
-const QuestionController = require('../domain/question/controllers/question.controller')
+const { postQuestion } = require('../domain/question/controllers/question.controller');
+const QuestionController = require('../domain/question/controllers/question.controller');
+
 const routes = express.Router();
 
 routes.get("/catalogo", ProductsController.getAll);
-routes.get("/catalogo/produto/:id", ProductValidation.getOne,ProductsController.getProductById);
+routes.get("/catalogo/produto/:id", ProductValidation.getOne, ProductsController.getProductById);
 
 routes.get("/catalogo/destaques", ProductsController.getHighlights);
 routes.get("/catalogo/lacos", ProductsController.getLacos);
@@ -22,9 +23,9 @@ routes.get("/catalogo/acessorios", ProductsController.getAcessorios);
 routes.post("/pedido", OrdersController.postOrder);
 // routes.get("/frete", ShippingController.getShipping);
 
-routes.post("/personalizado", personalizeValidation,PersonalizeController.postPersonalize);
+routes.post("/personalizado", personalizeValidation, PersonalizeController.postPersonalize);
 routes.post("/duvida", QuestionController.postQuestion);
 
-// routes.get("/frete", FreteController.getFrete);
+routes.post("/duvida", QuestionController.postQuestion);
 
 module.exports = routes;

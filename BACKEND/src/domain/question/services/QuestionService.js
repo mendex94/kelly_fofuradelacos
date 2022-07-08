@@ -1,7 +1,8 @@
 const db = require("../../../infrastructure/database");
+const { postQuestion } = require("../controllers/question.controller");
 const Questions = require('../models/question');
 
-const QuestiondService = {
+const QuestionService = {
   async postQuestion(req) {
     //const {name, email, description} = data.body;
     console.log(req.body)
@@ -14,4 +15,4 @@ const QuestiondService = {
       }
     },
 }
-module.exports = QuestiondService;
+module.exports = QuestionService;

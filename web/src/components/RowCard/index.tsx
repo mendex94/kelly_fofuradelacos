@@ -17,7 +17,7 @@ function RowCard({product}: RowCardProps) {
     return (
         <div className='rounded-[35px] shadow-lg bg-[#FFFFFF] transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
             <Link to={`/produto`} state={product}>
-                <img className='object-cover' src={product.Product_album[0]?.url_image} alt="" />
+                <img className='object-cover' src={product.Product_Albums[1]?.url_image} alt="" />
             </Link>            
             <div className='flex justify-between items-center px-6 my-4 w-full relative'>
                 <div className='text-montserrat'>

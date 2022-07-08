@@ -1,3 +1,5 @@
+import Product from "../../pages/Product"
+
 export interface Product {
     Product_album: any
     id: number,
@@ -86,10 +88,10 @@ export interface Rating {
 }
 
 export interface productsInitialState {
-    lacoList: any,
-    destaquesList: any,
-    colecaoparisList: any,
-    tiarasList: any,
-    acessoriosList: any,
-    status: any
+    lacoList: [],
+    destaquesList: [],
+    colecaoparisList: [],
+    tiarasList: [],
+    acessoriosList: [],
+    status: string
 }

@@ -4,4 +4,6 @@ export interface CartState {
     cartItems: [] | Product[] | any,
     cartTotalQuantity: number,
     cartTotalAmount: number,
+    checkoutItems: any,
+    checkoutStatus: any
 }

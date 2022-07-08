@@ -2,8 +2,8 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
 import { useFormik } from "formik";
 import { useSelector } from 'react-redux';
 import * as Yup from "yup";
-import { Product } from '../../@types/products';
-import { RootStore } from '../../store';
+import store, { RootStore } from '../../store';
+import { checkoutFetch } from '../../store/modules/cart';
 
 interface CheckoutModalProps {
     showModal: () => void;
@@ -15,8 +15,8 @@ const phoneRegExp = /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/
 const validationSchema = Yup.object({
     name: Yup.string().required("É necessario que insira seu nome!"),
     email: Yup.string()
-    .email("E-mail não é válido")
-    .required("É necessário que insira seu e-mail!"),
+        .email("E-mail não é válido")
+        .required("É necessário que insira seu e-mail!"),
     phone: Yup.string()
         .matches(phoneRegExp, "O número de telefone não é válido!")
         .required("É necessário que insira um número de telefone!")
@@ -24,38 +24,26 @@ const validationSchema = Yup.object({
 
 function CheckoutModal({ showModal, active }: CheckoutModalProps) {
     const cart = useSelector((state: RootStore) => state.cart)
-    const handleProducts: any = () => {
-           const oldProducts = cart.cartItems.map((product: Product) => (
-            {
-                id_product: product.id,
-                id_product_size: null,
-                id_product_color: null,
-                id_product_material: null,
-                amount: product.cartQuantity,
-                unit_value: product.price,
-                percentage_discount: null
-            }
-        ))
-        const newProducts = [...oldProducts]
-        return newProducts
-    }
-    const newProductsArr = handleProducts()
-    
     const formik = useFormik({
         initialValues: {
             name: "",
             phone: "",
-            email: "",
-            total_order: cart.cartTotalAmount,
-            discount: null,
-            products_quantity: cart.cartTotalQuantity,
-            shipping_total: null,
-            Products: [...newProductsArr],     
+            email: ""
         },
         validationSchema,
         onSubmit: async (values) => {
+            const order = {
+                name: values.name,
+                phone: values.phone,
+                email: values.email,
+                total_order: cart.cartTotalAmount,
+                discount: null,
+                products_quantity: cart.cartTotalQuantity,
+                shipping_total: null,
+                Products: [...cart.checkoutItems],
+            }
+            store.dispatch(checkoutFetch(order))
             alert("Mensagem enviada com sucesso!");
-            console.log(values)
         },
     });
 

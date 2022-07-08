@@ -4,17 +4,16 @@ import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import Row from "../../components/Row"
 import { RootStore } from "../../store"
-import { TailSpin } from 'react-loader-spinner'
 
 
 function Catalog() {
   const products = useSelector((state: RootStore) => state.products)
-  const productsFetch = useSelector((state: RootStore) => state.products.status)
+  const productsStatus = useSelector((state: RootStore) => state.products.status)
 
   return (
     <div className='bg-bege-100'>
       <Header />
-      {productsFetch !== 'fulfilled' ? (
+      {productsStatus !== 'fulfilled' ? (
         <div className='h-screen flex justify-center items-center'>
           < TailSpin color='#BC8383' width='100' height='100'/>
         </div>

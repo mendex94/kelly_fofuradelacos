@@ -16,10 +16,10 @@ function ProductItem() {
     const handleAddToCart = (product: Product) => {
         dispatch(addToCart(product))
     }
-    console.log(product)
+    console.log(product.Product_Albums[0].url_image)
   return ( 
     <div className='bg-bege-100 py-6 w-full'>
-      <div className='font-montserrat text-h5 text-preto-100 md:container md:mx-auto mb-4'>
+      <div className='font-montserrat text-h3 text-preto-100 md:container md:mx-auto mb-4'>
         <Link to='/'>Home</Link>/<Link to='/catalogo'>Loja</Link>/<p className='inline'>{product.description}</p>
       </div>
       <div className='container mx-auto flex flex-col lg:flex-row'>
@@ -33,15 +33,18 @@ function ProductItem() {
         <div className='text-black-100 mx-auto flex flex-col max-h-[630px] justify-between'>
           <div>
           <h2 className={`font-montserrat font-semibold max-w-[464px] ${product.description.length > 15 ? 'text-p2' : 'text-h3'}`}>{product.description}</h2>
-          <Rating name="read-only" value={product.overall_evaluation} readOnly style={{ color: '#BC8383' }} size='large' />
+          <Rating name="read-only" value={1} readOnly style={{ color: '#BC8383' }} size='large' />
           <div className='mb-4'>
-          <p className='text-p4 text-preto-100 max-w-[400px] leading-relaxed mt-4'>{product.notes}</p>
-          <p className='text-p4 text-preto-100 max-w-[400px] leading-relaxed'>Todas as nossas peças são feitas à mão uma a uma, podendo sofrer
+          <p className='text-p4 text-preto-100 max-w-[400px] leading-relaxed mt-4'>Nosso laço é leve, confortável e delicado para deixar o seu look muito
+                                                                                mais interessante. Feito em linho de alta qualidade, este delicado laço
+                                                                                pode ser usado no coque, no rabo de cavalo e em diversos penteados
+                                                                                criativos. Vai do casual ao elegante sem esforço algum.</p>
+          <p className='text-p3 text-preto-100 max-w-[400px] leading-relaxed'>Todas as nossas peças são feitas à mão uma a uma, podendo sofrer
             pequenas variações. São modelos exclusivos, feitos somente para
             você!</p>
           </div>
-          <div className='mb-6'>
-            <h3 className='text-h6 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
+          <div className='mb-14'>
+            <h3 className='text-h4 font-semibold text-preto-100 leading-10'>Detalhes do produto</h3>
             <div className='flex text-preto-100 text-p3 gap-5'>
               {product.Materials.map((material) => 
                 <MaterialPill material={material} key={material.id}/>
@@ -50,7 +53,7 @@ function ProductItem() {
           </div>
           </div>
           <div>
-          <h3 className='text-h3 text-preto-100 font-semibold'>R$ {product.price},00</h3>
+          <h3 className='text-h3 text-preto-100'>R$ {product.price},00</h3>
           <button onClick={() => handleAddToCart(product)} className='font-montserrat text-p2 font-bege-200 bg-rosa-200 px-9 py-5 w-full rounded-2xl text-[#FFFFFF] font-bold'>Adicionar ao carrinho</button>
           </div>
         </div>

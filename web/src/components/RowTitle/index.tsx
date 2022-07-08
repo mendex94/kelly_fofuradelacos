@@ -13,7 +13,7 @@ function RowTitle({title}: RowTitleProps) {
                 <div className={`hidden ${title.length < 20 && 'md:inline'}`}>
                 <LeftLeaf />
                 </div>
-                <h1 className={`text-h3 font-bold text-rosa-200 font-montserrat mx-12`}>{title}</h1>
+                <h1 className={`text-h1 font-semibold text-rosa-200 mx-12`}>{title}</h1>
                 <div className={`hidden ${title.length < 20 && 'md:inline'}`}>
                 <RightLeaf />
                 </div>

@@ -32,7 +32,7 @@ function CartItem({ product }: CartItemProps) {
                     <div className='flex flex-col gap-6'>
                         <div>
                             <div>
-                                <h2 className='font-bold md:text-p2 text-p3'>{product.description}</h2>
+                                <h2 className='font-bold md:text-p2 text-p3 whitespace-nowrap'>{product.description}</h2>
                             </div>
                         </div>
                         <div>
@@ -55,7 +55,7 @@ function CartItem({ product }: CartItemProps) {
                     <button className='underline underline-offset-1 text-preto-100 text-h6 font-normal hidden md:inline font-montserrat' onClick={() => handleRemoveFromCart(product)}>Remover</button>
                 </div>
                 <div>
-                    <h2 className='pr-4 md:pr-0 font-bold md:text-p2 text-h6 md:mr-0 text-right w-full md:pb-8'>R$ {+product.price * product.cartQuantity},00</h2>
+                    <h2 className='pr-4 md:pr-0 font-bold md:text-h3 md:mr-0 text-right w-full md:pb-8 whitespace-nowrap'>R$ {+product.price * product.cartQuantity},00</h2>
                 </div>
             </div>
         </div>

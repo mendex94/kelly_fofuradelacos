@@ -43,6 +43,8 @@
 <li>npm install</li>
 <li>npm run dev</li>
 
+<br>
+
 <p>No diretório /web</p>
 <li>npm install</li>
 <li>npm run dev</li> 

@@ -91,6 +91,11 @@ const cartSlice = createSlice({
         },
         [checkoutFetch.fulfilled]: (state: CartState) => {
             state.checkoutStatus= 'fulfilled'
+            toast('Pedido enviado com sucesso!', {
+                position: 'top-center'
+            })
+            state.cartItems = []
+            localStorage.setItem('cartItems', JSON.stringify([]))
         },
         [checkoutFetch.rejected]: (state: CartState) => {
             state.checkoutStatus= 'rejected'

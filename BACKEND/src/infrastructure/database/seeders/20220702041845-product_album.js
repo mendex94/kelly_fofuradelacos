@@ -1304,6 +1304,48 @@ module.exports = {
       ],
       {}
     );
+    await queryInterface.bulkInsert(
+      "product_albums",
+      [
+        {
+          id: 94,
+          id_product: 6,
+          url_image:
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657327544/kelly_fofuradela%C3%A7os/6.2_jcqkzo.png",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_albums",
+      [
+        {
+          id: 95,
+          id_product: 6,
+          url_image:
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657327545/kelly_fofuradela%C3%A7os/6.1_kb1gne.png",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "product_albums",
+      [
+        {
+          id: 96,
+          id_product: 6,
+          url_image:
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657327545/kelly_fofuradela%C3%A7os/6.3_a3mmzg.png",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
   },
 
   async down(queryInterface, Sequelize) {

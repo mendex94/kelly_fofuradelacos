@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: 'http://localhost:4000'
+    baseURL: 'https://kellylacosetiarasserver.herokuapp.com'
 })
 
 export const checkoutFetch: any = createAsyncThunk(

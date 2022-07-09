@@ -37,7 +37,7 @@
 
 <hr>
 
-<h3>instruções</h3>
+<h3>Instruções</h3>
 
 <p>No diretório /backend</p>
 <li>npm install</li>

@@ -5,14 +5,18 @@ const { Customers } = require("../models");
 const orderService = {
   async createOrder(req) {
     console.log(req.body);
-   
+
     try {
       const newOrder = await Orders.create({
         total_order: req.body.total_order,
         discount: req.body.discount,
         products_quantity: req.body.products_quantity,
         shipping_total: req.body.shipping_total,
-        id_customer: await getCustomerId(req.body.name,req.body.phone,req.body.email),
+        id_customer: await getCustomerId(
+          req.body.name,
+          req.body.phone,
+          req.body.email
+        ),
       });
 
       req.body.Products.forEach((produto) => {
@@ -28,15 +32,15 @@ const orderService = {
           id_product_material: produto.id_product_material,
         });
       });
-     
+
       async function getCustomerId(name, phone, email) {
         const searchCustomer = await Customers.findAll({
           where: {
             name,
             phone,
-            email
+            email,
           },
-        })
+        });
         if (!searchCustomer.length > 0) {
           return insertCustomer(name, phone, email);
         }
@@ -51,7 +55,6 @@ const orderService = {
         });
         return createCustomer.id;
       }
-
     } catch (error) {
       console.log(error);
     }

@@ -5,30 +5,30 @@ const BASE_CEP_ORIGEM = "14061310";
 
 const FreteService = {
   async calculaFrete(req) {
-    const {cep} = req.body
-    const cdServico = "04014"
-    const cepOrigem = BASE_CEP_ORIGEM
-    const pesoProduto = 1
-    const formatoProduto = 1
-    const comprimentoProduto = 15
-    const alturaProduto = 10
-    const larguraProduto = 15
-    const diametroproduto = 10
+    const {sCepDestino} = req.body
+    const nCdServico = "04014"
+    const sCepOrigem = BASE_CEP_ORIGEM
+    const nVlPeso = 1
+    const nCdFormato = 1
+    const nVlComprimento = 15
+    const nVlAltura = 10
+    const nVlLargura = 15
+    const nVlDiametro = 10 
     try {
       
-      const frete = await correios.calcPrecoPrazo({
-        cdServico,
-        cepOrigem,
-        cep,
-        pesoProduto,
-        formatoProduto,
-        comprimentoProduto,
-        alturaProduto,
-        larguraProduto,
-        diametroproduto
+      const frete = await correios.calcPreco({
+        nCdServico,
+        sCepOrigem,
+        sCepDestino,
+        nVlPeso,
+        nCdFormato,
+        nVlComprimento,
+        nVlAltura,
+        nVlLargura,
+        nVlDiametro
       })
-      console.log(frete)
-      return frete
+      console.log(await frete)
+      return await frete
     } catch (err) {
       console.error(err)
     }

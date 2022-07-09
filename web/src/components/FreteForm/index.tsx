@@ -1,6 +1,6 @@
 import { useFormik } from "formik"
 import store from "../../store"
-import { shippingFetch } from "../../store/modules/cart"
+import { shippingFetch } from "../../store/modules/cart/cartFetch"
 
 function FreteForm() {
   const formik = useFormik({

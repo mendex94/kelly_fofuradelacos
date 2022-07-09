@@ -12,7 +12,7 @@ const featuredProducts = [
 ]
 
 let count = 0;
-let carouselInterval: number | undefined;
+let carouselInterval: any;
 
 function CarouselHome() {
   const carouselRef = useRef(document.createElement("div"))

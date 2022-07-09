@@ -4,7 +4,11 @@ import { useSelector } from "react-redux"
 import BannerCatalogo from "../../components/BannerCatalogo"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
-import Row from "../../components/Row"
+import LacosRow from "../../components/LacosRow"
+import DestaquesRow from "../../components/DestaquesRow"
+import TiarasRow from "../../components/TiarasRow"
+import BoinasRow from "../../components/BoinasRow"
+import AcessoriosRow from "../../components/AcessoriosRow"
 
 
 function Catalog() {
@@ -21,11 +25,11 @@ function Catalog() {
       ) : (
         <>
         <BannerCatalogo title='Loja' frase={<React.Fragment>Consulte nosso catálogo feito com <span className="font-bold">cuidado e amor</span> para você!</React.Fragment>}/>
-        <Row title='Laços' product={products.lacoList}/>
-        <Row title='Destaques' product={products.destaquesList}/>
-        <Row title='Tiaras' product={products.tiarasList}/>
-        <Row title='Boinas' product={products.colecaoparisList}/>
-        <Row title='Outros acessórios' product={products.acessoriosList}/>
+        <LacosRow title='Laços' product={products.lacoList}/>
+        <DestaquesRow title='Destaques' product={products.destaquesList}/>
+        <TiarasRow title='Tiaras' product={products.tiarasList}/>
+        <BoinasRow title='Boinas' product={products.colecaoparisList}/>
+        <AcessoriosRow title='Outros acessórios' product={products.acessoriosList}/>
         </>
       )}
       <Footer />

@@ -84,19 +84,6 @@ module.exports = {
       "product_sizes",
       [
         {
-          id: 7,
-          id_product: 7,
-          id_size: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-      ],
-      {}
-    );
-    await queryInterface.bulkInsert(
-      "product_sizes",
-      [
-        {
           id: 8,
           id_product: 8,
           id_size: 3,

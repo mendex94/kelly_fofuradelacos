@@ -1,8 +1,8 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 import { CartState } from '../../../@types/cart'
 import { Product } from '../../../@types/products'
 import { toast } from 'react-toastify'
-import axios from 'axios'
+import { checkoutFetch, shippingFetch } from './cartFetch'
 
 const initialState: CartState = {
     cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems') || '[]') : [],
@@ -13,26 +13,6 @@ const initialState: CartState = {
     shippingTotal: null,
     shippingFetchStatus: 'iddle'
 }
-
-const api = axios.create({
-    baseURL: 'http://localhost:4000'
-})
-
-export const checkoutFetch: any = createAsyncThunk(
-    "cart/checkoutFetch",
-    async (order: any) => {
-        const checkout = await api.post('/pedido', order)
-        return checkout.data
-    }
-)
-
-export const shippingFetch: any = createAsyncThunk(
-    "cart/shippingFetch",
-    async (cep: any) => {
-        const frete = await api.post('/frete', cep)
-        return frete.data
-    }
-)
 
 const filterInt = function (value: string) {
     if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value))
@@ -111,6 +91,11 @@ const cartSlice = createSlice({
         },
         [checkoutFetch.fulfilled]: (state: CartState) => {
             state.checkoutStatus= 'fulfilled'
+            toast('Pedido enviado com sucesso!', {
+                position: 'top-center'
+            })
+            state.cartItems = []
+            localStorage.setItem('cartItems', JSON.stringify([]))
         },
         [checkoutFetch.rejected]: (state: CartState) => {
             state.checkoutStatus= 'rejected'

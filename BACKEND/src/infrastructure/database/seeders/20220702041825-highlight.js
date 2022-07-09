@@ -7,7 +7,7 @@ module.exports = {
       [
         {
           id: 1,
-          id_product: 1,
+          id_product: 12,
           status:1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -20,7 +20,7 @@ module.exports = {
       [
         {
           id: 2,
-          id_product: 2,
+          id_product: 17,
           status:1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -46,7 +46,7 @@ module.exports = {
       [
         {
           id: 4,
-          id_product: 4,
+          id_product: 28,
           status:1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -59,7 +59,72 @@ module.exports = {
       [
         {
           id: 5,
-          id_product: 5,
+          id_product: 16,
+          status:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "highlights",
+      [
+        {
+          id: 6,
+          id_product: 10,
+          status:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "highlights",
+      [
+        {
+          id: 7,
+          id_product: 4,
+          status:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "highlights",
+      [
+        {
+          id: 8,
+          id_product: 22,
+          status:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "highlights",
+      [
+        {
+          id: 9,
+          id_product: 31,
+          status:1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+      ],
+      {}
+    );
+    await queryInterface.bulkInsert(
+      "highlights",
+      [
+        {
+          id: 10,
+          id_product: 14,
           status:1,
           createdAt: new Date(),
           updatedAt: new Date(),

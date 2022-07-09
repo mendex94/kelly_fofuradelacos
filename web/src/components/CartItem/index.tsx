@@ -32,12 +32,12 @@ function CartItem({ product }: CartItemProps) {
                     <div className='flex flex-col gap-6'>
                         <div>
                             <div>
-                                <h2 className='font-bold md:text-p2 text-p3 whitespace-nowrap'>{product.description}</h2>
+                                <h2 className='font-bold md:text-p2 max-w-[180px] text-p3 whitespace-nowrap truncate md:overflow-visible'>{product.description}</h2>
                             </div>
                         </div>
                         <div>
                             <p className='font-medium md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
-                            <p className='text-p4 max-w-[200px] truncate'>{product.notes}</p>
+                            <p className='text-p4 max-w-[180px] md:max-w-[200px] truncate'>{product.notes}</p>
                         </div>
                     </div>
                     <div>

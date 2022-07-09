@@ -27,10 +27,11 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
                 email: values.email,
                 total_order: cart.cartTotalAmount,
                 discount: null,
-                products_quantity: cart.cartTotalQuantity,
+                products_quantity: cart.cartItems.length,
                 shipping_total: null,
                 Products: [...cart.checkoutItems],
             }
+            console.log(order)
             store.dispatch(checkoutFetch(order))
             const checkoutText = `
                 Olá, meu nome é ${order.name}!

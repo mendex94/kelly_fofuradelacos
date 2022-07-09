@@ -26,7 +26,7 @@ export default function Routes() {
     }, [cartItems])
   return (
     <BrowserRouter>
-    <ToastContainer hideProgressBar={true} limit={3}/>
+    <ToastContainer hideProgressBar={true} limit={1}/>
       <WrapperRoutes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />

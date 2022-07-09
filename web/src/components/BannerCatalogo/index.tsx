@@ -2,7 +2,7 @@ import BannerLeaf from '../BannerLeaf'
 
 interface BannerCatalogoProps {
   title: string,
-  frase: string
+  frase: any
 }
 
 function BannerCatalogo({title, frase}: BannerCatalogoProps) {

@@ -5,6 +5,7 @@ import ContactForm from "../../components/ContactFormPersonalize"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import BannerCatalogo from "../../components/BannerCatalogo"
+import React from "react"
 
 
 
@@ -12,7 +13,7 @@ function Custom() {
   return (
     <div>
       <Header />
-      <BannerCatalogo title='Personalize' frase='Quer algo mais exclusivo? Personalize seus acessórios do seu jeitinho!' />
+      <BannerCatalogo title='Personalize' frase={<React.Fragment>Quer algo mais exclusivo? Personalize seus acessórios <span className="font-bold">do seu jeitinho!</span></React.Fragment>} />
       <SectionPersonalize />
       <CardsRowPersonalize />
       <GalleryPersonalize />

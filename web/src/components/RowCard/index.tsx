@@ -15,12 +15,12 @@ function RowCard({product}: RowCardProps) {
         dispatch(addToCart(product))
     }
     return (
-        <div className='rounded-[35px] shadow-lg bg-[#FFFFFF] transition my-10 cursor-pointer snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
+        <div className='rounded-[35px] shadow-lg bg-[#FFFFFF] transition my-10 snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
             <Link to={`/produto`} state={product}>
-                <img className='object-cover max-h-[302px] min-w-[304px] rounded-t-[30px]' src={product.Product_Albums[1]?.url_image} alt="" />
+                <img className='cursor-pointer object-cover max-h-[302px] min-w-[304px] rounded-t-[30px]' src={product.Product_Albums[1]?.url_image} alt="" />
             </Link>            
             <div className='flex justify-between items-center px-6 my-4 w-full relative'>
-                <div className='text-montserrat'>
+                <div className='text-montserrat cursor-default'>
                     <p className={`font-medium ${product.description.length > 20 ? 'text-p4' : 'text-p3'}`}>{product.description}</p>
                     <p className='font-montserrat font-bold text-[36px]'>R$ {product.price},00</p>
                 </div>

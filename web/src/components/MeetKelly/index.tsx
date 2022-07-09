@@ -11,12 +11,12 @@ function MeetKelly() {
                     <div className='px-8 w-9/12 max-w-6xl bg-[#FFFFFF] rounded-[30px] flex flex-col gap-9 pb-10 md:mx-0 md:pb-0 relative'>
                         <h2 className='font-semibold italic leading-9 text-h4 mt-7'>Olá, meu nome é Kelly!</h2>
                         <p className='leading-9 text-h5'>
-                            Sou artesã já há dez anos. Iniciei com cartonagem, mas um tempo depois comecei a fazer laços e fiquei apaixonada
-                            por trabalhar com eles! E seguida, comecei a fazer tiaras, que foram um sucesso! As bordadas à mão são as preferidas
+                            Sou artesã já faz dez anos. Iniciei com cartonagem, mas depois de um tempo começei a fazer laços e fiquei apaixonada
+                            por trabalhar com eles! Em seguida, comecei a fazer tiaras, que foram um sucesso! As bordadas à mão são as preferidas
                             das minhas clientes, tanto das adultas, como das bebês. É uma alegria imensa quando as mamães satisfeitas me
-                            enviam as fotos dos looks fofos de suas filhinhas lindas após receberem as encomendas. Maravilhosas demais! Viver
+                            enviam as fotos dos looks fofos de suas lindas filhinhas após receberem as encomendas. Maravilhosas demais! Viver
                             de arte no nosso país é muito difícil, principalmente durante esse período de pandemia, mas o desafio me motiva.
-                            Sou muito grata pela reconhecimento e incentivo de vocês! Acompanhem minhas páginas para mais novidades,
+                            Sou muito grata pelo reconhecimento e incentivo de vocês! Acompanhem minhas páginas para mais novidades,
                             feitas sempre com muito capricho e muito amor!
                         </p>
                         <img src={meetKellyIcon} alt="" className='w-[85px] absolute -right-6 -bottom-12 hidden lg:inline mr-12' />

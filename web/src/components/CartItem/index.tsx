@@ -27,17 +27,17 @@ function CartItem({ product }: CartItemProps) {
     return (
         <div className='w-full p-2 bg-[#FFFFFF] md:rounded-lg md:p-10 mb-5 flex flex-col gap-3 md:flex-row h-64 md:justify-between'>
             <div className='flex gap-2 md:gap-3'>
-                <img src={LacoCart} alt="" className='rounded-[30px] shadow-lg' />
+                <img src={product.Product_Albums[1]?.url_image} alt="" className='object-fit h-[169px] w-[141px] rounded-[30px] shadow-lg'/>
                 <div className='flex gap-3'>
                     <div className='flex flex-col gap-6'>
                         <div>
                             <div>
-                                <h2 className='font-bold md:text-p2 text-p3 whitespace-nowrap'>{product.description}</h2>
+                                <h2 className='font-bold md:text-p2 max-w-[180px] text-p3 whitespace-nowrap truncate md:overflow-visible'>{product.description}</h2>
                             </div>
                         </div>
                         <div>
                             <p className='font-medium md:text-p3 text-p4 font-montserrat'>Descrição do Produto</p>
-                            <p className='text-p4 max-w-[200px] truncate'>{product.notes}</p>
+                            <p className='text-p4 max-w-[180px] md:max-w-[200px] truncate'>{product.notes}</p>
                         </div>
                     </div>
                     <div>

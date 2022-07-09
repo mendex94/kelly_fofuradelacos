@@ -45,12 +45,12 @@ function CartComponent() {
               </div>
             </div>
             <div className="container md:flex md:justify-between md:gap-5">
-              <div className="w-9/12">
+              <div className="w-full md:w-9/12">
                 {cart.cartItems.map((product: Product) => (
                   <CartItem key={product.id} product={product} />
                 ))}
               </div>
-              <div className="flex flex-col w-3/12">
+              <div className="flex flex-col w-full md:w-3/12">
                 <FreteForm />
                 <TotalPrice subtotal={cart.cartTotalAmount} />
                 <button

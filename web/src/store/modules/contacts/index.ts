@@ -17,13 +17,13 @@ const api = axios.create({
 export const contactPersonalizedFetch: any = createAsyncThunk(
     "cart/contactPersonalizedFetch",
     async (contact: Contact) => {
-        await api.post('/pedido', contact)
+        await api.post('/personalizado', contact)
     }
 )
 export const contactFetch: any = createAsyncThunk(
     "cart/contactFetch",
     async (contact: Contact) => {
-        await api.post('/pedido', contact)
+        await api.post('/duvida', contact)
     }
 )
 

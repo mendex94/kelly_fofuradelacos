@@ -1,3 +1,4 @@
+import React from "react"
 import AboutUsGrid from "../../components/AboutUsGrid"
 import AboutUsProcess from "../../components/AboutUsProcess"
 import BannerCatalogo from "../../components/BannerCatalogo"
@@ -9,7 +10,7 @@ function About() {
   return (
     <div>
       <Header />
-      <BannerCatalogo title='Sobre Nós' frase='Conheça um pouco da nossa história!' />
+      <BannerCatalogo title='Sobre Nós' frase={<React.Fragment>Conheça um pouco da <span className="font-bold">nossa história</span>!</React.Fragment>} />
       <MeetKelly />
       <AboutUsGrid />
       <AboutUsProcess />

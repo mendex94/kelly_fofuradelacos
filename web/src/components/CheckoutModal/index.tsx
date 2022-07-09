@@ -1,6 +1,7 @@
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
 import { useFormik } from "formik";
 import { useSelector } from 'react-redux';
+import { Product } from '../../@types/products';
 import store, { RootStore } from '../../store';
 import { checkoutFetch } from '../../store/modules/cart';
 import { validationSchema } from '../../Validations/checkoutValidation'
@@ -26,12 +27,24 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
                 email: values.email,
                 total_order: cart.cartTotalAmount,
                 discount: null,
-                products_quantity: cart.cartTotalQuantity,
+                products_quantity: cart.cartItems.length,
                 shipping_total: null,
                 Products: [...cart.checkoutItems],
             }
+            console.log(order)
             store.dispatch(checkoutFetch(order))
-            alert("Mensagem enviada com sucesso!");
+            const checkoutText = `
+                Olá, meu nome é ${order.name}!
+                Meu e-mail é: ${order.email}
+                adquiri os seguintes produtos:\n
+                ${cart.cartItems.map((checkoutItem: Product)=> (
+                `${checkoutItem.description}: ${checkoutItem.cartQuantity} unidade(s)\n`
+                ))}
+                O valor total do pedido é: R$ ${cart.cartTotalAmount},00
+            `
+            const newCheckoutText = window.encodeURIComponent(checkoutText)
+            const phone = '5511959883728'
+            window.open("https://api.whatsapp.com/send?phone=" + phone + "&text=" + newCheckoutText, "_blank")       
         },
     });
 

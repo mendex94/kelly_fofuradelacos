@@ -47,7 +47,9 @@
 <li>npm install</li>
 <li>npm run dev</li> 
 
+<br>
 <ul>
+    
 <li>Servidor: localhost/4000</li>
 <li>Web: localhost/3000</li>
 </ul>

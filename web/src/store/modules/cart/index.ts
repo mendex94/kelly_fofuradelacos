@@ -9,7 +9,9 @@ const initialState: CartState = {
     cartTotalQuantity: 0,
     cartTotalAmount: 0,
     checkoutItems: [],
-    checkoutStatus: null
+    checkoutStatus: null,
+    shippingTotal: null,
+    shippingFetchStatus: 'iddle'
 }
 
 const api = axios.create({
@@ -21,6 +23,14 @@ export const checkoutFetch: any = createAsyncThunk(
     async (order: any) => {
         const checkout = await api.post('/pedido', order)
         return checkout.data
+    }
+)
+
+export const shippingFetch: any = createAsyncThunk(
+    "cart/shippingFetch",
+    async (cep: any) => {
+        const frete = await api.post('/frete', cep)
+        return frete.data
     }
 )
 
@@ -104,6 +114,18 @@ const cartSlice = createSlice({
         },
         [checkoutFetch.rejected]: (state: CartState) => {
             state.checkoutStatus= 'rejected'
+        },
+        [shippingFetch.peding]: (state: CartState) => {
+            if (state.checkoutStatus === 'iddle') {
+                state.checkoutStatus = 'pending'
+            }
+        },
+        [shippingFetch.fulfilled]: (state: CartState, action) => {
+            state.shippingTotal = action.payload[0].Valor.replace(',', '.');
+            state.shippingFetchStatus = 'fulfilled'
+        },
+        [shippingFetch.rejected]: (state: CartState) => {
+            state.shippingFetchStatus = 'rejected'
         }
     }
 })

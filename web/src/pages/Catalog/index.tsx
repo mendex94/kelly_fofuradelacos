@@ -20,7 +20,7 @@ function Catalog() {
         </div>
       ) : (
         <>
-        <BannerCatalogo title='Loja' frase={<React.Fragment>Consulte nosso catalogo feito com <span className="font-bold">cuidado e amor</span> para você!</React.Fragment>}/>
+        <BannerCatalogo title='Loja' frase={<React.Fragment>Consulte nosso catálogo feito com <span className="font-bold">cuidado e amor</span> para você!</React.Fragment>}/>
         <Row title='Laços' product={products.lacoList}/>
         <Row title='Destaques' product={products.destaquesList}/>
         <Row title='Tiaras' product={products.tiarasList}/>

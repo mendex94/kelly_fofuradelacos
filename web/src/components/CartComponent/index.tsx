@@ -52,7 +52,7 @@ function CartComponent() {
               </div>
               <div className="flex flex-col w-full md:w-3/12">
                 <FreteForm />
-                <TotalPrice subtotal={cart.cartTotalAmount} />
+                <TotalPrice subtotal={cart.cartTotalAmount} shipping={cart.shippingTotal} shippingStatus={cart}/>
                 <button
                   onClick={showModal}
                   className="w-full bg-rosa-200 py-5 rounded-lg text-bege-100 mb-5 text-h3 font-semibold hover:bg-rosa-100"

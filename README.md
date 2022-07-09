@@ -37,18 +37,24 @@
 
 <hr>
 
-<h3>instruções</h3>
+<h3>Instruções</h3>
 
 <p>No diretório /backend</p>
 <li>npm install</li>
 <li>npm run dev</li>
 
+<br>
+
 <p>No diretório /web</p>
 <li>npm install</li>
-<li>npm run dev</li>
+<li>npm run dev</li> 
 
-<p>Servidor: localhost/4000</p>
-<p>Web: localhost/3000</p>
+<br>
+<ul>
+    
+<li>Servidor: localhost/4000</li>
+<li>Web: localhost/3000</li>
+</ul>
 
 <hr>
 

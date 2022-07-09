@@ -9,15 +9,9 @@ describe('No controller, ao executar função', () => {
             const response = await supertest(app)
             .post('/frete')
             .send({
-                cdServico: "04014",
-                cepOrigem: 14061310,
-                cep: 01001001,
-                pesoProduto: 1,
-                formatoProduto: 1,
-                comprimentoProduto: 15,
-                alturaProduto: 10,
-                larguraProduto: 15,
-                diametroproduto: 10
+
+                sCepDestino: "01001001",
+
             })
     
             expect(response.status).toBe(201)  

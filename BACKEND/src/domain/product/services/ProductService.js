@@ -89,6 +89,10 @@ const ProductService = {
       const dataHighlights = await Products.findAll({
         include: [
           {
+            model: Highlights,
+            required: true,
+          },
+          {
             model: Product_Albums,
             required: false,
           },
@@ -103,11 +107,7 @@ const ProductService = {
           {
             model: Materials,
             required: false,
-          },
-          {
-            model: Highlights,
-            required: true,
-          },
+          },        
           {
             model: Ratings,
             required: false,

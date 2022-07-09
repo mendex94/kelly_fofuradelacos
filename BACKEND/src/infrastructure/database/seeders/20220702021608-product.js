@@ -14,7 +14,7 @@ module.exports = {
           weight: null,
           notes:
             "Nosso laço é leve, confortável e delicado para deixar o seu look muito mais interessante. Este delicado acessório pode ser usado no coque, no rabo de cavalo e em diversos penteados criativos. Todas as nossas peças são feitas à mão uma a uma, podendo sofrer pequenas variações. São modelos exclusivos, feitos somente para você!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -34,7 +34,7 @@ module.exports = {
           weight: null,
           notes:
             "Nosso laço é leve, confortável e delicado para deixar o seu look muito mais interessante. Este delicado acessório pode ser usado no coque, no rabo de cavalo e em diversos penteados criativos. Todas as nossas peças são feitas à mão uma a uma, podendo sofrer pequenas variações. São modelos exclusivos, feitos somente para você!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -54,7 +54,7 @@ module.exports = {
           weight: null,
           notes:
             "Nosso laço é leve, confortável e delicado para deixar o seu look muito mais interessante. Este delicado acessório pode ser usado no coque, no rabo de cavalo e em diversos penteados criativos. Todas as nossas peças são feitas à mão uma a uma, podendo sofrer pequenas variações. São modelos exclusivos, feitos somente para você!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -66,7 +66,7 @@ module.exports = {
       "products",
       [
         {
-          id: 4,
+          id: 5,
           description: "Laço Veludo Vinho",
           model: "",
           type: "laço",
@@ -74,7 +74,7 @@ module.exports = {
           weight: null,
           notes:
             "Nosso laço é leve, confortável e delicado para deixar o seu look muito mais interessante. Este delicado acessório pode ser usado no coque, no rabo de cavalo e em diversos penteados criativos. Todas as nossas peças são feitas à mão uma a uma, podendo sofrer pequenas variações. São modelos exclusivos, feitos somente para você!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -94,7 +94,7 @@ module.exports = {
           weight: null,
           notes:
             "Nosso laço é leve, confortável e delicado para deixar o seu look muito mais interessante. Este delicado acessório pode ser usado no coque, no rabo de cavalo e em diversos penteados criativos. Todas as nossas peças são feitas à mão uma a uma, podendo sofrer pequenas variações. São modelos exclusivos, feitos somente para você!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -114,7 +114,7 @@ module.exports = {
           weight: null,
           notes:
             "Nosso laço é leve, confortável e delicado para deixar o seu look muito mais interessante. Este delicado acessório pode ser usado no coque, no rabo de cavalo e em diversos penteados criativos. Todas as nossas peças são feitas à mão uma a uma, podendo sofrer pequenas variações. São modelos exclusivos, feitos somente para você!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -134,7 +134,7 @@ module.exports = {
           weight: null,
           notes:
             "O Laço é fabricado em fita de veludo preto com pernas longas medindo 11cm. O laço combina com looks sociais, românticos e despojados e demais ocasiões. Possui aproximadamente 11cm de largura, e 17cm de altura. Seu modelo romântico, fazem todos se apaixonar!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -154,7 +154,7 @@ module.exports = {
           weight: null,
           notes:
             "Este laço é fabricado em fita de cadarço duplo com perna bem comprida. O Cadarço é o produto que nunca sai da moda, a tendência pode ser usado em qualquer estação. O Laço é um produto 100% artesanal, feito à mão com todo o carinho. O Laço possui acabamento em bico de pato, fácil de usar podendo ser usado em diferentes texturas de cabelo, pois prende facilmente. Possui aproximadamente 12cm de perna.",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -174,7 +174,7 @@ module.exports = {
           weight: null,
           notes:
             "A tiara turbante voltou para ficar e transforma qualquer look de uma forma simples e prática, podendo ser uma grande aliada de vários penteados. Esta tiara ilumina qualquer look com charme e estilo!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -193,7 +193,7 @@ module.exports = {
           price: 100.0,
           weight: null,
           notes: "Tiara de decoração de strass",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -213,7 +213,7 @@ module.exports = {
           weight: null,
           notes:
             "Tiara trançada em veludo azul petróleo com acabamento interno impecável. Um acessório digno de uma princesa!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -232,7 +232,7 @@ module.exports = {
           price: 100.0,
           weight: null,
           notes: "Tiara de decoração de pérolas artificiais",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -252,7 +252,7 @@ module.exports = {
           weight: null,
           notes:
             "Um acessório despojado e confortável, um acessório que pode ser usado em qualquer ocasião que te deixando ainda mais moderna.",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -272,7 +272,7 @@ module.exports = {
           weight: null,
           notes:
             "Tem acessório para cabelo mais prático do que as tiaras? Além dessa praticidade, elas já mudam completamente o seu penteado de todos os dias e chamam a atenção para o seu look. ",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -292,7 +292,7 @@ module.exports = {
           weight: null,
           notes:
             "Esta tiara oferece o brilho que traz consigo! Neutra e chique, ela é capaz de transformar aquele look noite em uma variação mais night e baladex.",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -312,7 +312,7 @@ module.exports = {
           weight: null,
           notes:
             "Perfeita para transformar looks e penteados com charme, praticidade & conforto.",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -332,7 +332,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios acrílicos, a boina lisa básica preta é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -352,7 +352,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios de algodão, a boina lisa básica branca é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -372,7 +372,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios acrílicos, a boina lisa básica vermelha é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -392,7 +392,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios acrílicos com fita de veludo, a boina preta com laço de veludo é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -412,7 +412,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios acrílicos com pérolas, a boina preta com pérolas é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -432,7 +432,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios acrílicos, a boina lisa básica azul é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -452,7 +452,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios de algodão tricotado, esta boina é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -472,7 +472,7 @@ module.exports = {
           weight: null,
           notes:
             "Confeccionada em fios de algodão tricotado, esta boina é uma ótima pedida para os dias mais frios. O modelo com textura e barra dobrada garante produções mais aconchegantes nos dias de inverno. Aposte em combinar com um look moderno e confortável!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -492,7 +492,7 @@ module.exports = {
           weight: null,
           notes:
             "Presilha de cabelo fabricada à mão com base de metal e pedra de resina fabricada no Brasil.",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -512,7 +512,7 @@ module.exports = {
           weight: null,
           notes:
             "Presilha de cabelo com pedrinhas de strass pra você brilhar o ano inteiro!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -532,7 +532,7 @@ module.exports = {
           weight: null,
           notes:
             "Presilha de cabelo com pedrinhas de strass pra você brilhar o ano inteiro!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -551,7 +551,7 @@ module.exports = {
           price: 15.0,
           weight: null,
           notes: "Piranha Espinha Rosa",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -570,7 +570,7 @@ module.exports = {
           price: 15.0,
           weight: null,
           notes: "Piranha Floral Roxa",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -590,7 +590,7 @@ module.exports = {
           weight: null,
           notes:
             "Essa xuxinha acende qualquer penteado em seu vermelho aberto cheio de atitude!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -610,7 +610,7 @@ module.exports = {
           weight: null,
           notes:
             "No veludo com aplicações de pérolas, esta xuxinha não sai do seu cabelo ou pulso e te acompanha em qualquer ocasião deixando o look chic  cool.",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -630,7 +630,7 @@ module.exports = {
           weight: null,
           notes:
             "Xuxinha com laço removível na cor preta, uma peça chic para você se divertir em diferentes ocasiões e segurar as madeixas com conforto e estilo!",
-          overall_evaluation: 4,
+          overall_evaluation: 5,
           status: 1,
           createdAt: new Date(),
           updatedAt: new Date(),

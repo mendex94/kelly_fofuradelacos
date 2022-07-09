@@ -45,11 +45,12 @@
 
 <p>No diretório /web</p>
 <li>npm install</li>
-<li>npm run dev</li>
+<li>npm run dev</li> 
+<br>
 
 <ul>
-<p>Servidor: localhost/4000</p>
-<p>Web: localhost/3000</p>
+<li>Servidor: localhost/4000</li>
+<li>Web: localhost/3000</li>
 </ul>
 
 <hr>

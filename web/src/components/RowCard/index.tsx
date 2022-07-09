@@ -1,5 +1,4 @@
 import { Product } from '../../@types/products'
-import LacoFloral from '../../assets/lacofloral.png'
 import CardButton from '../CardButton'
 import { useDispatch } from 'react-redux' 
 import { addToCart } from '../../store/modules/cart'
@@ -17,7 +16,7 @@ function RowCard({product}: RowCardProps) {
     return (
         <div className='rounded-[35px] shadow-lg bg-[#FFFFFF] transition my-10 snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
             <Link to={`/produto`} state={product}>
-                <img className='cursor-pointer object-cover max-h-[302px] min-w-[304px] rounded-t-[30px]' src={product.Product_Albums[1]?.url_image} alt="" />
+                <img className='cursor-pointer object-cover max-h-[302px] min-w-[304px] rounded-t-[30px]' src={product.Product_Albums[1]?.url_image} alt={product.description} aria-label='Ir para detalhes do produto' title='Ir para detalhes do produto'/>
             </Link>            
             <div className='flex justify-between items-center px-6 my-4 w-full relative'>
                 <div className='text-montserrat cursor-default'>
@@ -25,7 +24,7 @@ function RowCard({product}: RowCardProps) {
                     <p className='font-montserrat font-bold text-[36px]'>R$ {product.price},00</p>
                 </div>
 
-                <button className='absolute right-7 bottom-3' onClick={()=> handleAddToCart(product)}><CardButton/></button>
+                <button aria-label='Adicionar ao carrinho' title='Adicionar ao carrinho' className='absolute right-7 bottom-3' onClick={()=> handleAddToCart(product)}><CardButton/></button>
             </div>
 
         </div>

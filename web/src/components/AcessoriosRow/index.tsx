@@ -1,9 +1,9 @@
 import { useRef, useState } from "react"
 import RowCard from "../RowCard"
-import RowTitle from "../RowTitle"
 import LeftIcon from '../../assets/LeftIcon.svg'
 import RightIcon from '../../assets/RightIcon.svg'
 import { Product } from "../../@types/products"
+import AcessoriosTitle from "../AcessoriosTitle"
 
 interface RowProps {
   title: string,
@@ -29,7 +29,7 @@ function Row({ title, product }: RowProps) {
 
   return (
     <div className={`w-full flex flex-col pb-10 ${title === 'Destaques' && 'bg-[#FFFFFF]'}`}>
-      <RowTitle title={title} />
+      <AcessoriosTitle title={title} />
       <div className='flex w-screen md:container md:mx-auto gap-4 items-center justify-center'>
         <div>
           <button onClick={() => handleClick('left')} className={`hidden h-20 w-20 md:inline z-40 m-auto cursor-pointer hover:scale-125 transition

@@ -27,7 +27,7 @@ function CartItem({ product }: CartItemProps) {
     return (
         <div className='w-full p-2 bg-[#FFFFFF] md:rounded-lg md:p-10 mb-5 flex flex-col gap-3 md:flex-row h-64 md:justify-between'>
             <div className='flex gap-2 md:gap-3'>
-                <img src={LacoCart} alt="" className='rounded-[30px] shadow-lg' />
+                <img src={product.Product_Albums[1]?.url_image} alt="" className='object-fit h-[169px] w-[141px] rounded-[30px] shadow-lg'/>
                 <div className='flex gap-3'>
                     <div className='flex flex-col gap-6'>
                         <div>

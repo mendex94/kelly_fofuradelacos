@@ -1,3 +1,4 @@
+import React from "react"
 import { TailSpin } from "react-loader-spinner"
 import { useSelector } from "react-redux"
 import BannerCatalogo from "../../components/BannerCatalogo"
@@ -19,7 +20,7 @@ function Catalog() {
         </div>
       ) : (
         <>
-        <BannerCatalogo title='Loja' frase="Consulte nosso catalogo feito com cuidado e amor para você!"/>
+        <BannerCatalogo title='Loja' frase={<React.Fragment>Consulte nosso catalogo feito com <span className="font-bold">cuidado e amor</span> para você!</React.Fragment>}/>
         <Row title='Laços' product={products.lacoList}/>
         <Row title='Destaques' product={products.destaquesList}/>
         <Row title='Tiaras' product={products.tiarasList}/>

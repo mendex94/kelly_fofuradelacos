@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import { useSelector } from 'react-redux';
 import { Product } from '../../@types/products';
 import store, { RootStore } from '../../store';
-import { checkoutFetch } from '../../store/modules/cart';
+import { checkoutFetch } from '../../store/modules/cart/cartFetch';
 import { validationSchema } from '../../Validations/checkoutValidation'
 
 interface CheckoutModalProps {
@@ -28,10 +28,10 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
                 total_order: cart.cartTotalAmount,
                 discount: null,
                 products_quantity: cart.cartItems.length,
-                shipping_total: null,
+                shipping_total: parseFloat(cart.shippingTotal),
                 Products: [...cart.checkoutItems],
             }
-            console.log(order)
+            formik.handleReset
             store.dispatch(checkoutFetch(order))
             const checkoutText = `
                 Olá, meu nome é ${order.name}!
@@ -44,7 +44,8 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
             `
             const newCheckoutText = window.encodeURIComponent(checkoutText)
             const phone = '5511959883728'
-            window.open("https://api.whatsapp.com/send?phone=" + phone + "&text=" + newCheckoutText, "_blank")       
+            window.open("https://api.whatsapp.com/send?phone=" + phone + "&text=" + newCheckoutText, "_blank")
+            showModal()       
         },
     });
 

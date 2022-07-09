@@ -7,7 +7,7 @@ const OrdersController = {
     try {
       const newOrder = await orderService.createOrder(req);
 
-      return res.status(201).json(newOrder)
+      return res.status(201).json(await newOrder)
 
     } catch (error) {
       console.log(error)

@@ -230,34 +230,6 @@ module.exports = {
       "product_albums",
       [
         {
-          id: 17,
-          id_product: 7,
-          url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242921/kelly_fofuradela%C3%A7os/7.2_uqwx1w.png",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-      ],
-      {}
-    );
-    await queryInterface.bulkInsert(
-      "product_albums",
-      [
-        {
-          id: 18,
-          id_product: 7,
-          url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242921/kelly_fofuradela%C3%A7os/7.1_lji1yo.png",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-      ],
-      {}
-    );
-    await queryInterface.bulkInsert(
-      "product_albums",
-      [
-        {
           id: 19,
           id_product: 8,
           url_image:

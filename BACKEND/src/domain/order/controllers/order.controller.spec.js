@@ -9,21 +9,43 @@ describe('No controller, ao executar função', () => {
             const response = await supertest(app)
             .post('/pedido')
             .send({
-              name: "jose",
-              phone: "111",
-              email: "ta@gmail.com",
-              total_order: 2,
-              discount: 0.5,
-              products_quantity: 3,
-              shipping_total: 10,
-              id_product: 1,
-              amount: 10,
-              unit_value: 15,
-              percentage_discount: 0.15,
-              id_product_size: "xx",
-              id_product_color: "azul",
-              id_product_material: "ecido"
-            })
+                "name": "Rafael",
+                "phone": "123456789",
+                "email": "rafale@gmail.com",
+                "total_order": 39,
+                "discount": null,
+                "products_quantity": 1,
+                "shipping_total": 1,
+                "Products": [
+                  {
+                    "id_product": 1,
+                    "id_product_size": null,
+                    "id_product_color": null,
+                    "id_product_material": null,
+                    "amount": 1,
+                    "unit_value": 39,
+                    "percentage_discount": null
+                  },
+                   {
+                    "id_product": 2,
+                    "id_product_size": null,
+                    "id_product_color": null,
+                    "id_product_material": null,
+                    "amount": 1,
+                    "unit_value": 39,
+                    "percentage_discount": null
+                  },
+                  {
+                    "id_product": 3,
+                    "id_product_size": 1,
+                    "id_product_color": 1,
+                    "id_product_material": 1,
+                    "amount": 1,
+                    "unit_value": 500,
+                    "percentage_discount": null
+                  }
+                ]
+              })
     
             expect(response.status).toBe(201)  
         })

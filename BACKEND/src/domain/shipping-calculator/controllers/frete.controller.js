@@ -5,7 +5,7 @@ const FreteController = {
 
   async getFrete(req, res) {
     try {
-      const frete = FreteService.calculaFrete(req);      
+      const frete = await FreteService.calculaFrete(req);      
       return res.status(201).json(frete);
     } catch (error) {
       return res.status(500).json(error);

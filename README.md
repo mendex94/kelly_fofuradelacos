@@ -46,7 +46,6 @@
 <p>No diretório /web</p>
 <li>npm install</li>
 <li>npm run dev</li> 
-<br>
 
 <ul>
 <li>Servidor: localhost/4000</li>

@@ -34,7 +34,7 @@ function Footer() {
               </div>
             </div>
             <div className='flex gap-6 mt-16 text-h4 justify-center items-center md:justify-start'>
-              <a href="https://www.instagram.com/kelly_fofuradelacosetiaras/"><img src={InstagramIcon} alt="" /></a>
+              <a href="https://www.instagram.com/kelly_fofuradelacosetiaras/" target="blank"><img src={InstagramIcon} alt="" /></a>
               <a href={`https://api.whatsapp.com/send?phone=${phone+"&text="+text}`} target="blank"><img src={WhatsAppIcon} alt=""/></a>
             </div>
           </div>

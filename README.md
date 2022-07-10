@@ -1,10 +1,8 @@
-<h1>Desafio Chefão
+<h1>Desafio Chefão <br>
     Show Me Your
     PRODUCT!</h1>
 <hr>
-
 ![logo](https://user-images.githubusercontent.com/92600746/178126555-6313bb18-7d85-4a38-9c3a-70ed98793486.png)
-
 <hr>
 <h2>Projeto realizado por:</h2>
 <ul>

@@ -40,7 +40,8 @@ function CheckoutModal({ showModal, active }: CheckoutModalProps) {
                 ${cart.cartItems.map((checkoutItem: Product)=> (
                 `${checkoutItem.description}: ${checkoutItem.cartQuantity} unidade(s)\n`
                 ))}
-                O valor total do pedido é: R$ ${cart.cartTotalAmount},00
+                O valor do pedido é: R$ ${cart.cartTotalAmount},00
+                Frete: R$ ${cart.shippingTotal}
             `
             const newCheckoutText = window.encodeURIComponent(checkoutText)
             const phone = '5511959883728'

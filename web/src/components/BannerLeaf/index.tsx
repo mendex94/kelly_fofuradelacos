@@ -3,7 +3,7 @@ function BannerLeaf() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="240"
-      height="488"
+      height=""
       fill="none"
       viewBox="0 0 240 488"
       className="ml-[150px]"

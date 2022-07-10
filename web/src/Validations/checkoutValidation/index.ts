@@ -12,3 +12,10 @@ export const validationSchema = Yup.object().shape({
       .required("É necessário que insira um número de telefone!")
   });
   
+const cepRegExp = /[0-9]{5}[0-9]{3}/
+
+export const cepValidationSchema = Yup.object().shape({
+  sCepDestino: Yup.string()
+  .matches(cepRegExp, "CEP invalido!")
+  .required("Campo obrigatório!")
+})

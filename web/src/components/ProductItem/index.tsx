@@ -44,12 +44,13 @@ function ProductItem() {
             />
 
           </div>
+            
             <InnerImageZoom
               src={product.Product_Albums[0]?.url_image}
               alt={product.description}
               aria-label={product.description}
               zoomSrc={product.Product_Albums[0]?.url_image}
-              className='object-cover h-[634px] rounded-[30px] w-8/12'
+              className='object-cover h-[634px] rounded-[30px] md:w-8/12'
               zoomScale={1}
               zoomType='hover'
               hideHint={false}

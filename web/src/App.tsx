@@ -10,7 +10,7 @@ function App() {
     store.dispatch(productsFetch())
   }, [])
   return (
-    <div className="App"> 
+    <div className="App">
       <Routes />
     </div>
   );

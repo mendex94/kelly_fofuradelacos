@@ -13,7 +13,7 @@ function BannerCatalogo({title, frase}: BannerCatalogoProps) {
       </div>
       <div className='text-[#FFFF] font-montserrat m-auto flex flex-col relative'>
         <h1 className='text-center font-bold py-4 text-[55px] md:text-[80px]'>{title}</h1>
-        <p className='hidden text-p2 text-center whitespace-nowrap md:flex relative'>{frase}</p>
+        <p className='hidden text-h3 text-center whitespace-nowrap md:flex relative'>{frase}</p>
       </div>
     </div>
   )

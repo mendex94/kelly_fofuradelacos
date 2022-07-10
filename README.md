@@ -11,7 +11,7 @@
 <hr>  
 
 <section class="devs">
-  <h2>:four_leaf_clover: Desenvolvedores </h2>
+  <h2> Desenvolvedores </h2>
 
 <table>
     <tr>
@@ -78,6 +78,7 @@
 </section>
 
 <section class="tecnologias">
+    <h2> Tecnologias </h2>
     <h3>Backend:</h3>
 <ul>
     <li>Javascript</li>
@@ -101,25 +102,35 @@
 <h2> Site </h2>
 <p> Acesse o site por <a href="https://kellylacosetiaras.herokuapp.com/"> aqui </a> </p>
 
-    <hr>
+<hr> 
 
 <h3>Instruções</h3>
 
 <p>No diretório /backend</p>
-<li>npm install</li>
-<li>npm run dev</li>
+
+
+```bash 
+npm install
+npm run dev
+```
+
 
 <br>
 
 <p>No diretório /web</p>
-<li>npm install</li>
-<li>npm run dev</li> 
+
+
+```bash 
+npm install
+npm run dev
+```
+
 
 <br>
 <ul>
     
-<li>Servidor: localhost/4000</li>
-<li>Web: localhost/3000</li>
+<li>Servidor: localhost:4000</li>
+<li>Web: localhost:3000</li>
 </ul>
     
 </section>

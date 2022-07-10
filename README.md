@@ -1,25 +1,73 @@
 <h1>Desafio Chefão <br>
-    Show Me Your
+    Show Me Your <br>
     PRODUCT!</h1>
-<hr>
 
-![logo3](https://user-images.githubusercontent.com/92600746/178126696-f56986ab-874a-48a7-993c-9d666a100898.png)
-
-<hr>
-<h2>Projeto realizado por:</h2>
-<ul>
-    <li>Anderson Sousa [Hacker Frontend]</li>
-    <li>Claudio Rosa Lopes [Hipster]</li>
-    <li>Danilo Sales [Hacker Backend]</li>
-    <li>Euller Fernandes [Hipster]</li>
-    <li>Jayne Nunes dos Santos [Hispter]</li>
-    <li>Juliana Andrade [Hacker Backend]</li>
-    <li>Lucas Roberto de Francisco [Hacker Backend]</li>
-    <li>Luiz Felipe Couto Mendes [Hacker Frontend]</li>
-    <li>Marília Pimenta Brito [Hipster]</li>
-    <li>Rafael Nascimento [Hacker Backend]</li>
-    <li>Talita de Lana Nascimento [Hacker Backend]</li>
-</ul>
+    <section class="devs">
+        <h2>Projeto realizado por: </h2>
+      
+      <table>
+          <tr>
+              <td align=”center”>
+                  <a href="https://github.com/andersonmsousa">
+                      <img src="https://avatars.githubusercontent.com/u/99672186?v=4" width="250px">
+                          <sub>
+                              <b> Anderson Sousa [Frontend] </b>
+                          </sub>
+                  </a>
+              </td>
+      
+      <td align=”center”>
+                  <a href="https://github.com/danilosalys">
+                      <img src="https://avatars.githubusercontent.com/u/40240895?v=4" width="250px">
+                          <sub>
+                              <b> Danilo Sales [Backend] </b>
+                          </sub>
+                  </a>
+              </td>
+      <td align=”center”>
+                  <a href="https://github.com/andradeju">
+                      <img src="https://avatars.githubusercontent.com/u/90662162?v=4" width="280px">
+                          <sub>
+                              <b> Juliana Andrade [Backend] </b>
+                          </sub>
+                  </a>
+              </td>
+      
+      <td align=”center”>
+                  <a href="https://github.com/lukedevelopy">
+                      <img src="https://avatars.githubusercontent.com/u/100739581?v=4" width="250px">
+                          <sub>
+                              <b> Lucas Roberto [Backend]  </b>
+                          </sub>
+                  </a>
+              </td>
+      <td align=”center”>
+                  <a href="https://github.com/mendex94">
+                      <img src="https://avatars.githubusercontent.com/u/59844712?v=4" width="280px">
+                          <sub>
+                              <b> Felipe Mendes [Frontend] </b>
+                          </sub>
+                  </a>
+              </td>
+      <td align=”center”>
+                  <a href="https://github.com/rafaelgarnasci">
+                      <img src="https://avatars.githubusercontent.com/u/92600746?v=4" width="280px">
+                          <sub>
+                              <b> Rafael Nascimento [Backend] </b>
+                          </sub>
+                  </a>
+              </td>
+        <td align=”center”>
+                <a href="https://github.com/tadlana">
+                    <img src="https://avatars.githubusercontent.com/u/100472925?v=4" width="280px">
+                        <sub>
+                            <b> Talita de Lana [Backend] </b>
+                        </sub>
+                </a>
+            </td>              
+      </table>
+      </br>
+      </section>
 
 
 <h3>Linguagens e ferramentas</h3>
@@ -33,10 +81,10 @@
 
 <p>Frontend:</p>
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>React</li>
+    <li>Tailwind</li>
+    <li>Typescript</li>
+    <li>Redux</li>
 </ul>
 
 <hr>

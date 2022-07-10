@@ -3,7 +3,7 @@
     PRODUCT!</h1>
 <hr>
 
-![logo13](https://user-images.githubusercontent.com/92600746/178126671-513685d2-790e-4628-b752-b7e01f745c20.png)
+![logo3](https://user-images.githubusercontent.com/92600746/178126696-f56986ab-874a-48a7-993c-9d666a100898.png)
 
 <hr>
 <h2>Projeto realizado por:</h2>

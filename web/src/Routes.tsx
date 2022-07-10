@@ -35,7 +35,7 @@ export default function Routes() {
         <Route path="/personalize" element={<Custom />} />
         <Route path="/produto" element={<Product />} />
         <Route path="/suporte" element={<Support />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/404" element={<NotFoundPage />} />
       </WrapperRoutes>
     </BrowserRouter>
   );

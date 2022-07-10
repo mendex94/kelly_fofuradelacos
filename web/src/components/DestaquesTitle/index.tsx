@@ -7,7 +7,7 @@ interface RowTitleProps {
 
 function RowTitle({title}: RowTitleProps) {
     return (
-        <div className='flex justify-center mt-10 items-center'>
+        <div className='flex justify-center mt-20 items-center'>
             <div className='flex items-center'>
                 <div className={`hidden ${title.length < 20 && 'md:inline'}`}>
                 <DestaquesLeftLeaf />

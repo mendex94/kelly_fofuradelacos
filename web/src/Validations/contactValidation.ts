@@ -9,4 +9,3 @@ export const validationSchema = Yup.object().shape({
     .min(10, "Mínimo de 10 caracteres")
     .required("É necessário que insira sua mensagem!"),
 });
-

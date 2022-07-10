@@ -11,7 +11,7 @@ const initialState: Contact = {
 }
 
 const api = axios.create({
-    baseURL: 'http://localhost:4000'
+    baseURL: 'https://kellylacosetiarasserver.herokuapp.com'
 })
 
 export const contactPersonalizedFetch: any = createAsyncThunk(

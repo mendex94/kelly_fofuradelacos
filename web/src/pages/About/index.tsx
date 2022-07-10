@@ -10,7 +10,7 @@ function About() {
   return (
     <div>
       <Header />
-      <BannerCatalogo title='Sobre Nós' frase={<React.Fragment>Conheça um pouco da <span className="font-bold">nossa história</span>!</React.Fragment>} />
+      <BannerCatalogo title='Sobre Nós' frase={<React.Fragment>Conheça um pouco da&nbsp;<span className="font-bold">nossa história</span>!</React.Fragment>} />
       <MeetKelly />
       <AboutUsGrid />
       <AboutUsProcess />

@@ -10,7 +10,7 @@ interface QuestionsProps {
 function Questions({ number, title, text }: QuestionsProps) {
   return (
     <div>
-      <div className="container py-5 m-auto">
+      <div className="container m-auto">
         <div className="bg-rosa-200 w-[60px] h-[60px] rounded-[90px] relative left-[30px] top-[30px] ">
           <p className="text-[40px] text-bege-100 font-semibold flex justify-center">
             {number}

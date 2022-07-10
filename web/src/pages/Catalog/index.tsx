@@ -24,7 +24,7 @@ function Catalog() {
         </div>
       ) : (
         <>
-        <BannerCatalogo title='Loja' frase={<React.Fragment>Consulte nosso catálogo feito com <span className="font-bold">cuidado e amor</span> para você!</React.Fragment>}/>
+        <BannerCatalogo title='Loja' frase={<React.Fragment>Consulte nosso catálogo feito com&nbsp;<span className="font-bold">cuidado e amor</span>&nbsp;para você!</React.Fragment>}/>
         <LacosRow title='Laços' product={products.lacoList}/>
         <DestaquesRow title='Destaques' product={products.destaquesList}/>
         <TiarasRow title='Tiaras' product={products.tiarasList}/>

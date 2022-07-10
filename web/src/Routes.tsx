@@ -17,6 +17,7 @@ import store, { RootStore } from "./store";
 import { useEffect } from "react";
 import { getTotals } from "./store/modules/cart";
 import NotFoundPage from "./pages/NotFoundPage";
+import ScrollToTop from "./wrapperRoutes";
 
 
 export default function Routes() {
@@ -27,6 +28,7 @@ export default function Routes() {
   return (
     <BrowserRouter>
     <ToastContainer hideProgressBar={true} limit={1}/>
+    <ScrollToTop />
       <WrapperRoutes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<About />} />

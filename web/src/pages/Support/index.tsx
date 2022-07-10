@@ -9,7 +9,7 @@ function Support() {
   return (
     <div>
       <Header />
-      <BannerCatalogo title='Dúvidas' frase={<React.Fragment>Ficou alguma dúvida? <span className='font-bold'>Comece por aqui</span>!</React.Fragment>} />
+      <BannerCatalogo title='Dúvidas' frase={<React.Fragment>Ficou alguma dúvida?&nbsp;<span className='font-bold'>Comece por aqui</span>!</React.Fragment>} />
       <QuestionsSection />
       <ContactForm />
       <Footer />

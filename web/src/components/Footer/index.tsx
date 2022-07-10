@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer className="bg-[#BC8383] w-full flex flex-col md:flex-row items-center justify-around text-[28px] font-normal text-[#F9F7F4] py-8">
-      <div className='container flex md:justify-between justify-center'>
+      <div className='container flex md:justify-between justify-center px-10'>
         <div className='flex gap-[63px]'>
           <div className='hidden md:inline'>
             <Link to={'/'}>
@@ -34,7 +34,7 @@ function Footer() {
               </div>
             </div>
             <div className='flex gap-6 mt-16 text-h4 justify-center items-center md:justify-start'>
-              <a href="https://www.instagram.com/kelly_fofuradelacosetiaras/"><img src={InstagramIcon} alt="" /></a>
+              <a href="https://www.instagram.com/kelly_fofuradelacosetiaras/" target="blank"><img src={InstagramIcon} alt="" /></a>
               <a href={`https://api.whatsapp.com/send?phone=${phone+"&text="+text}`} target="blank"><img src={WhatsAppIcon} alt=""/></a>
             </div>
           </div>

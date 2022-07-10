@@ -2,7 +2,7 @@
     Show Me Your <br>
     PRODUCT!</h1>
 
-    <section class="devs">
+    
         <h2>Projeto realizado por: </h2>
       
       <table>
@@ -67,7 +67,7 @@
             </td>              
       </table>
       </br>
-      </section>
+  
 
 
 <h3>Linguagens e ferramentas</h3>

@@ -7,13 +7,13 @@ interface BannerCatalogoProps {
 
 function BannerCatalogo({title, frase}: BannerCatalogoProps) {
   return (
-    <div className='hidden w-full bg-rosa-200 h-[488px] p-0 md:flex relative'>
-      <div className='absolute m-0 auto'>
+    <div className='w-full bg-rosa-200 h-[200px] md:h-[488px] p-0 flex content-center md:flex relative'>
+      <div className='absolute flex justify-start md:m-0 auto h-[200px] md:h-[488px] -left-[180px] md:-left-[0px]'>
         <BannerLeaf />
       </div>
-      <div className='text-[#FFFF] font-montserrat m-auto flex justify-center flex-col relative'>
-        <h1 className='text-center font-bold py-4 text-[80px]'>{title}</h1>
-        <p className='text-p2 text-center md:whitespace-nowrap'>{frase}</p>
+      <div className='text-[#FFFF] font-montserrat m-auto flex flex-col relative'>
+        <h1 className='text-center font-bold py-4 text-[70px] md:text-[80px]'>{title}</h1>
+        <p className='hidden text-p2 text-center whitespace-nowrap md:flex relative'>{frase}</p>
       </div>
     </div>
   )

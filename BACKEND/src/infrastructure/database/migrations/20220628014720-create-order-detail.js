@@ -25,13 +25,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       unit_value: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(10,2)
       },
       percentage_discount: {
         type: Sequelize.DECIMAL
       },
       total_value: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(10,2)
       },
       id_product_size: {
         type: Sequelize.INTEGER,

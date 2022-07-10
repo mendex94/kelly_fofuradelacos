@@ -47,7 +47,7 @@ function CartItem({ product }: CartItemProps) {
             </div>
             <div className='flex  items-center justify-between md:ml-24 md:gap-8 md:w-1/3'>
                 <div className='flex flex-col gap-3'>
-                    <div className='rounded-[30px] border-4 border-rosa-400 flex items-center ml-6 md:ml-0 hover:cursor-pointer md:w-36 justify-between'>
+                    <div className='rounded-[30px] border-4 border-rosa-400 flex items-center ml-6 md:ml-0 hover:cursor-pointer md:w-32 md:h-12 justify-center gap-2'>
                         <button onClick={() => handleDecreaseCartQuantity(product)}><RemoveOutlinedIcon /></button>
                         <div className='text-center focus:outline-none w-10 md:text-h4 text-h6 font-semibold font-montserrat'>{product.cartQuantity}</div>
                         <button onClick={() => handleIncreaseCartQuantity(product)}><AddOutlinedIcon /></button>

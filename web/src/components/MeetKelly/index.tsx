@@ -6,9 +6,9 @@ function MeetKelly() {
         <div className='bg-bege-100 pt-20 lg:pb-40'>
             <div className='container mx-auto w-10/12'>
                 <h1 className='text-center text-h1 text-rosa-200 font-semibold md:mb-12'>Conheça a Kelly</h1>
-                <img src={Kelly} alt="Imagem da Kelly" className='mx-auto my-4 w-3/12 md:hidden'/>
+                <img src={Kelly} alt="Imagem da Kelly" className='mx-auto my-4 w-8/12 md:w-3/12 md:hidden'/>
                 <div className='flex flex-col gap-5 items-center md:justify-between md:flex-row md:items-stretch'>
-                    <div className='px-8 w-9/12 max-w-6xl bg-[#FFFFFF] rounded-[30px] flex flex-col gap-9 pb-10 md:mx-0 md:pb-0 relative'>
+                    <div className='px-8 md:w-9/12 max-w-6xl bg-[#FFFFFF] rounded-[30px] flex flex-col gap-9 pb-10 md:mx-0 md:pb-0 relative'>
                         <h2 className='font-semibold italic leading-9 text-h4 mt-7'>Olá, meu nome é Kelly!</h2>
                         <p className='leading-9 text-h5'>
                             Sou artesã já há dez anos. Iniciei com cartonagem, mas um tempo depois comecei a fazer laços e fiquei apaixonada

@@ -8,7 +8,7 @@ function SectionPersonalize() {
         <p className="text-h1 font-semibold text-center text-rosa-200 pb-10">
           Conheça nosso Trabalho
         </p>
-        <div className="bg-[#FFFFFF] flex py-5 px-8  rounded-[30px]">
+        <div className="bg-[#FFFFFF] md:flex py-5 px-8  rounded-[30px]">
           <div>
             <p className="text-h4">
               Aqui, nossas clientes têm sempre razão! Se não encontrou no

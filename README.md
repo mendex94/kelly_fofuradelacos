@@ -66,7 +66,7 @@
             </a>
         </td>
  <td align=”center”>
-          <a href="https://github.com/tadlana">
+          <a href="https://www.linkedin.com/in/talita-de-lana-nascimento-511b44b3">
                <img src="https://avatars.githubusercontent.com/u/100472925?v=4" width="280px">
                     <sub>
                         <b> Talita de Lana [Backend]  </b>

@@ -131,7 +131,8 @@ npm run dev
 </section>
 <hr>
 <h3>Documentação da API</h3>
-https://documenter.getpostman.com/view/21853755/UzJPMuqb
+<p> Acesse a documentação do projeto por <a href="https://documenter.getpostman.com/view/21853755/UzJPMuqb"> aqui </a></p>
+
 </br>
 
 <hr>

@@ -16,7 +16,7 @@ function RowCard({product}: RowCardProps) {
     return (
         <div className='rounded-[35px] shadow-lg bg-[#FFFFFF] transition my-10 snap-center flex-shrink-0 md:hover:scale-105 snap-always'>
             <Link to={`/produto`} state={product}>
-                <img className='cursor-pointer object-cover max-h-[302px] min-w-[304px] rounded-t-[30px]' src={product.Product_Albums[1]?.url_image} alt={product.description} aria-label='Ir para detalhes do produto' title='Ir para detalhes do produto'/>
+                <img className='cursor-pointer object-center max-h-[302px] min-w-[304px] rounded-t-[30px]' src={product.Product_Albums[1]?.url_image} alt={product.description} aria-label='Ir para detalhes do produto' title='Ir para detalhes do produto'/>
             </Link>            
             <div className='flex justify-between items-center px-6 my-4 w-full relative'>
                 <div className='text-montserrat cursor-default'>

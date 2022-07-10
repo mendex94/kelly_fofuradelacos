@@ -21,13 +21,13 @@ function CartComponent() {
       <div className="container">
         {cart.cartItems.length === 0 ? (
           <div className="h-screen flex justify-center pt-72">
-            <div>
+            <div className='flex flex-col'>
               <p className="font-montserrat font-bold text-h3">
                 Seu carrinho está vazio!
               </p>
               <Link
                 to="/catalogo"
-                className="font-semibold text-rosa-200 text-h4 underline underline-offset-1"
+                className="font-semibold text-rosa-200 text-h4 underline underline-offset-1 text-center"
               >
                 Começar a comprar
               </Link>

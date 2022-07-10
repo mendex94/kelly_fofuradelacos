@@ -18,7 +18,7 @@ function SectionPersonalize() {
               seu cabelo. Escolha os materiais e combinações que deseja e faça
               um orçamento conosco.
             </p>
-            <p className="font-semibold">Teremos a maior satisfação em poder atender!</p>
+            <p className="font-semibold text-h4">Teremos a maior satisfação em poder atender!</p>
           </div>
             <img className="w-20 relative top-14 left-6" src={Icon} alt="" />
         </div>

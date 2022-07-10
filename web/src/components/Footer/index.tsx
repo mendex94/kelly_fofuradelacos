@@ -24,7 +24,7 @@ function Footer() {
           </div>
           <div className='flex flex-col justify-center'>
             <div className='flex gap-[150px]'>
-              <div className='flex flex-col font-montserrat text-[20px] items-center md:items-start gap-6'>
+              <div className='flex flex-col font-montserrat text-[20px] whitespace-nowrap items-center md:items-start gap-6'>
                 <Link to='/sobre'>Sobre nós</Link>
                 <Link to='/suporte'>Dúvidas</Link>
               </div>

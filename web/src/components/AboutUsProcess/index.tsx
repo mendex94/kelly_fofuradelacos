@@ -10,7 +10,7 @@ function AboutUsProcess() {
         </h1>
         <div className="container mx-auto mt-14 flex gap-16">
           <img src={handNiddle} alt="" className="hidden lg:inline w-4/12" />
-          <div className="px-8 max-w-6xl bg-[#FFFFFF] rounded-[30px] flex flex-col gap-9 pb-10 md:mx-0 md:pb-0 relative w-8/12">
+          <div className="px-8 max-w-6xl bg-[#FFFFFF] rounded-[30px] flex flex-col gap-9 pb-10 md:mx-0 md:pb-0 relative md:w-8/12">
             <p className="leading-9 text-h4 mt-10">
               Nosso processo de confecção dos acessórios segue um controle de
               qualidade muito cuidadoso. Desde a seleção e preparação dos

@@ -126,26 +126,6 @@ module.exports = {
       "products",
       [
         {
-          id: 7,
-          description: "Laço de Veludo Preto",
-          model: "",
-          type: "laço",
-          price: 38.0,
-          weight: null,
-          notes:
-            "O Laço é fabricado em fita de veludo preto com pernas longas medindo 11cm. O laço combina com looks sociais, românticos e despojados e demais ocasiões. Possui aproximadamente 11cm de largura, e 17cm de altura. Seu modelo romântico, fazem todos se apaixonar!",
-          overall_evaluation: 4,
-          status: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-      ],
-      {}
-    );
-    await queryInterface.bulkInsert(
-      "products",
-      [
-        {
           id: 8,
           description: "Laço Preto em Cadarço",
           model: "",

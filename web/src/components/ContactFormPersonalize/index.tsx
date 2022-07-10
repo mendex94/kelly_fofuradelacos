@@ -33,7 +33,7 @@ function ContactFormPersonalize() {
             value={formik.values.name}
             onChange={formik.handleChange}
           />
-          {formik.errors.name && <span>{formik.errors.name}</span>}
+          {formik.errors.name && <span className='text-rosa-100'>{formik.errors.name}</span>}
           <input
             type="email"
             name="email"
@@ -43,7 +43,7 @@ function ContactFormPersonalize() {
             value={formik.values.email}
             onChange={formik.handleChange}
           />
-          {formik.errors.email && <span>{formik.errors.email}</span>}
+          {formik.errors.email && <span className='text-rosa-100'>{formik.errors.email}</span>}
           <textarea
             name="description"
             id="description"
@@ -52,7 +52,7 @@ function ContactFormPersonalize() {
             value={formik.values.description}
             onChange={formik.handleChange}
           />
-          {formik.errors.description && <span>{formik.errors.description}</span>}
+          {formik.errors.description && <span className='text-rosa-100'>{formik.errors.description}</span>}
           <div className="flex justify-end">
           <button className="flex justify-center whitespace-nowrap text-p2 font-bold text-bege-100 bg-rosa-200 px-16 py-1 rounded-[15px] hover:bg-rosa-100" type="submit">Enviar pedido</button>
           </div>

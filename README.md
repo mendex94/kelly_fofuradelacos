@@ -109,33 +109,32 @@
 
 <p>No diretório /backend</p>
 
-
 ```bash 
 npm install
 npm run dev
 ```
-
-
+    
 <br>
 
 <p>No diretório /web</p>
 
-
 ```bash 
 npm install
 npm run dev
 ```
 
-
 <br>
 <ul>
-    
 <li>Servidor: localhost:4000</li>
-<li>Web: localhost:3000</li>
 </ul>
-    
+      
 </section>
+<hr>
+<h3>Documentação da API</h3>
+https://documenter.getpostman.com/view/21853755/UzJPMuqb
 </br>
+
+<hr>
 
 <section class="Designers">
   <h2> Designers </h2>

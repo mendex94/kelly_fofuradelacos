@@ -11,7 +11,7 @@ function SectionPersonalize() {
         <div className="bg-[#FFFFFF] md:flex py-5 px-8  rounded-[30px]">
           <div>
             <p className="text-h4">
-              Aqui, nossas clientes têm sempre razão! Se não encontrou no
+              Aqui, nossos clientes têm sempre razão! Se não encontrou no
               catálogo algo do seu gosto ou apenas quer algo mais exclusivo,
               personalize seus acessórios do seu jeitinho! Você pode
               personalizar uma tiara, um laço, uma boina ou um arranjo para o

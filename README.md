@@ -1,4 +1,4 @@
-<div align="center">
+<div style="background-color:white" align="center">
 <img src="https://user-images.githubusercontent.com/92600746/178127181-28a89aa4-4bf3-44d9-bf81-85cd706629e3.png" width="250px" height="300" align="center" > 
 </div>
 
@@ -6,7 +6,7 @@
 <h1 align="center">Desafio Chefão <br>
     Show Me Your
     PRODUCT!</h1>
-<div align="center"> <img src="https://user-images.githubusercontent.com/92600746/178127304-8d695dad-ee3d-4ae9-8cff-a6e438e266c4.png" align="center"> </div>
+
     
 <hr>  
 
@@ -85,6 +85,7 @@
     <li>Node.Js</li>
     <li>Express</li>
     <li>Sequelize</li>
+    <li>MySql</li>
 </ul>
 
 <h3>Frontend:</h3>

@@ -7,7 +7,7 @@ import Grid05 from '../../assets/grid-5.png'
 function AboutUsGrid() {
   return (
     <div className='bg-bege-100 lg:pb-14 hidden lg:block'> 
-        <div className="container mx-auto flex flex-row gap-14 justify-center">
+        <div className="container mx-auto flex flex-row gap-8 justify-center">
             
         <img className='hover:scale-105 transition-transform' src={Grid01} alt="" />
             <img className='hover:scale-105 transition-transform' src={Grid02} alt="" />

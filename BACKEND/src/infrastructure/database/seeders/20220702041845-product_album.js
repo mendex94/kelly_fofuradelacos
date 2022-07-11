@@ -65,7 +65,7 @@ module.exports = {
           id: 5,
           id_product: 2,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242919/kelly_fofuradela%C3%A7os/2.2_sqeemh.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242919/kelly_fofuradela%C3%A7os/2.1_rwhtra.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -79,7 +79,8 @@ module.exports = {
           id: 6,
           id_product: 2,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242919/kelly_fofuradela%C3%A7os/2.1_rwhtra.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242919/kelly_fofuradela%C3%A7os/2.2_sqeemh.png",
+
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -135,7 +136,7 @@ module.exports = {
           id: 10,
           id_product: 4,
           url_image:
-          "https://res.cloudinary.com/drderxybw/image/upload/v1657242920/kelly_fofuradela%C3%A7os/4.2_jekeos.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242920/kelly_fofuradela%C3%A7os/4.2_jekeos.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -191,7 +192,7 @@ module.exports = {
           id: 14,
           id_product: 5,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242921/kelly_fofuradela%C3%A7os/5.2_ozc967.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242921/kelly_fofuradela%C3%A7os/5.3_lifpy1.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -205,7 +206,7 @@ module.exports = {
           id: 15,
           id_product: 5,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242921/kelly_fofuradela%C3%A7os/5.3_lifpy1.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242921/kelly_fofuradela%C3%A7os/5.2_ozc967.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -625,7 +626,8 @@ module.exports = {
           id: 47,
           id_product: 17,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242926/kelly_fofuradela%C3%A7os/17.2_lacrio.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242926/kelly_fofuradela%C3%A7os/17.1_pyuxzy.png",
+
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -639,7 +641,7 @@ module.exports = {
           id: 48,
           id_product: 17,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242926/kelly_fofuradela%C3%A7os/17.1_pyuxzy.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242926/kelly_fofuradela%C3%A7os/17.2_lacrio.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -793,7 +795,7 @@ module.exports = {
           id: 59,
           id_product: 21,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242928/kelly_fofuradela%C3%A7os/21.2_ccghss.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242928/kelly_fofuradela%C3%A7os/21.1_omopwd.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -807,7 +809,7 @@ module.exports = {
           id: 60,
           id_product: 21,
           url_image:
-            "https://res.cloudinary.com/drderxybw/image/upload/v1657242928/kelly_fofuradela%C3%A7os/21.1_omopwd.png",
+            "https://res.cloudinary.com/drderxybw/image/upload/v1657242928/kelly_fofuradela%C3%A7os/21.2_ccghss.png",
           createdAt: new Date(),
           updatedAt: new Date(),
         },

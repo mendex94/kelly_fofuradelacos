@@ -10,16 +10,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       total_order: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(10,2)
       },
       discount: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(5,2)
       },
       products_quantity: {
         type: Sequelize.INTEGER
       },
       shipping_total: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(10,2)
       },
       createdAt: {
         allowNull: false,

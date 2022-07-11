@@ -6,9 +6,10 @@ import { addToCart } from "../../store/modules/cart"
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
+
 function ProductItem() {
   const location = useLocation()
-  const product: Product = location.state
+  const product = location.state as Product
   console.log(product)
   const dispatch = useDispatch()
   const handleAddToCart = (product: Product) => {

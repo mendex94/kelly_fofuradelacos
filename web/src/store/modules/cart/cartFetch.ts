@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "axios"
 
-const api = axios.create({
+export const api = axios.create({
     baseURL: 'https://kellylacosetiarasserver.herokuapp.com'
 })
 
@@ -10,6 +10,7 @@ export const checkoutFetch: any = createAsyncThunk(
     async (order: any) => {
         const checkout = await api.post('/pedido', order)
         return checkout.data
+        console.log(checkout)
     }
 )
 
